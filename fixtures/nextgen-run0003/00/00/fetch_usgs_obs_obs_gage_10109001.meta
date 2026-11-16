@@ -1,0 +1,14 @@
+[
+  {
+    "_id": "gage-10109001_usgs_obs.csv",
+    "_type": "file",
+    "_attributes": {
+      "user": "ubuntu",
+      "size": "1243914",
+      "ctime": "2026-08-31T15:40:41+00:00",
+      "checksum.type": "sha256",
+      "checksum.value": "e5526a61cf91fc252a259db83e3a0cd29235d4adb849260f738e85e9257762f9",
+      "checksum.timing": "0.0"
+    }
+  }
+]

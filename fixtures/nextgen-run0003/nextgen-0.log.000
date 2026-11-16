@@ -1,0 +1,2002 @@
+000 (424.000.000) 2026-08-31 15:39:30 Job submitted from host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dschedd_279116_f048%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=schedd_279116_f048>
+    DAG Node: create_dir_nextgen_0_local
+    pool:local
+...
+001 (424.000.000) 2026-08-31 15:39:34 Job executing on host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dstarter_279165_bf31_163%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=starter_279165_bf31_163>
+...
+005 (424.000.000) 2026-08-31 15:39:36 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+000 (425.000.000) 2026-08-31 15:39:50 Job submitted from host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dschedd_279116_f048%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=schedd_279116_f048>
+    DAG Node: stage_in_remote_local_0_0
+    pool:local
+...
+000 (426.000.000) 2026-08-31 15:39:50 Job submitted from host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dschedd_279116_f048%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=schedd_279116_f048>
+    DAG Node: stage_in_local_local_9_0
+    pool:local
+...
+000 (427.000.000) 2026-08-31 15:39:50 Job submitted from host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dschedd_279116_f048%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=schedd_279116_f048>
+    DAG Node: stage_in_local_local_4_0
+    pool:local
+...
+000 (428.000.000) 2026-08-31 15:39:50 Job submitted from host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dschedd_279116_f048%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=schedd_279116_f048>
+    DAG Node: stage_in_local_local_5_0
+    pool:local
+...
+000 (429.000.000) 2026-08-31 15:39:50 Job submitted from host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dschedd_279116_f048%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=schedd_279116_f048>
+    DAG Node: stage_in_local_local_6_0
+    pool:local
+...
+000 (430.000.000) 2026-08-31 15:39:50 Job submitted from host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dschedd_279116_f048%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=schedd_279116_f048>
+    DAG Node: stage_in_local_local_7_0
+    pool:local
+...
+000 (431.000.000) 2026-08-31 15:39:50 Job submitted from host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dschedd_279116_f048%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=schedd_279116_f048>
+    DAG Node: stage_in_local_local_0_0
+    pool:local
+...
+000 (432.000.000) 2026-08-31 15:39:50 Job submitted from host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dschedd_279116_f048%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=schedd_279116_f048>
+    DAG Node: stage_in_local_local_1_0
+    pool:local
+...
+000 (433.000.000) 2026-08-31 15:39:50 Job submitted from host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dschedd_279116_f048%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=schedd_279116_f048>
+    DAG Node: stage_in_remote_local_5_0
+    pool:local
+...
+000 (434.000.000) 2026-08-31 15:39:50 Job submitted from host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dschedd_279116_f048%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=schedd_279116_f048>
+    DAG Node: stage_in_local_local_2_0
+    pool:local
+...
+001 (425.000.000) 2026-08-31 15:39:50 Job executing on host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dstarter_279165_bf31_164%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=starter_279165_bf31_164>
+...
+001 (426.000.000) 2026-08-31 15:39:50 Job executing on host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dstarter_279165_bf31_165%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=starter_279165_bf31_165>
+...
+001 (427.000.000) 2026-08-31 15:39:50 Job executing on host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dstarter_279165_bf31_166%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=starter_279165_bf31_166>
+...
+001 (428.000.000) 2026-08-31 15:39:50 Job executing on host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dstarter_279165_bf31_167%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=starter_279165_bf31_167>
+...
+001 (429.000.000) 2026-08-31 15:39:50 Job executing on host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dstarter_279165_bf31_168%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=starter_279165_bf31_168>
+...
+001 (430.000.000) 2026-08-31 15:39:50 Job executing on host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dstarter_279165_bf31_169%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=starter_279165_bf31_169>
+...
+001 (431.000.000) 2026-08-31 15:39:50 Job executing on host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dstarter_279165_bf31_170%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=starter_279165_bf31_170>
+...
+001 (432.000.000) 2026-08-31 15:39:50 Job executing on host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dstarter_279165_bf31_171%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=starter_279165_bf31_171>
+...
+001 (433.000.000) 2026-08-31 15:39:50 Job executing on host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dstarter_279165_bf31_172%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=starter_279165_bf31_172>
+...
+001 (434.000.000) 2026-08-31 15:39:50 Job executing on host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dstarter_279165_bf31_173%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=starter_279165_bf31_173>
+...
+005 (427.000.000) 2026-08-31 15:39:52 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+005 (426.000.000) 2026-08-31 15:39:52 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+005 (429.000.000) 2026-08-31 15:39:52 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+005 (430.000.000) 2026-08-31 15:39:52 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+005 (432.000.000) 2026-08-31 15:39:53 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+005 (431.000.000) 2026-08-31 15:39:54 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+005 (434.000.000) 2026-08-31 15:39:54 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+005 (428.000.000) 2026-08-31 15:39:56 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+005 (433.000.000) 2026-08-31 15:39:58 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:01  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+000 (435.000.000) 2026-08-31 15:40:00 Job submitted from host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dschedd_279116_f048%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=schedd_279116_f048>
+    DAG Node: stage_in_local_local_3_0
+    pool:local
+...
+001 (435.000.000) 2026-08-31 15:40:00 Job executing on host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dstarter_279165_bf31_174%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=starter_279165_bf31_174>
+...
+005 (425.000.000) 2026-08-31 15:40:02 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:01, Sys 0 00:00:01  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+005 (435.000.000) 2026-08-31 15:40:03 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+000 (436.000.000) 2026-08-31 15:40:16 Job submitted from host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dschedd_279116_f048%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=schedd_279116_f048>
+    DAG Node: fetch_hydrofabric_fetch_hydrofabric
+    pool:condorpool
+...
+000 (437.000.000) 2026-08-31 15:40:16 Job submitted from host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dschedd_279116_f048%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=schedd_279116_f048>
+    DAG Node: fetch_usgs_obs_obs_gage_10109001
+    pool:condorpool
+...
+040 (437.000.000) 2026-08-31 15:40:25 Started transferring input files
+	Transferring to host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dslot1_1_279166_7391_9%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=slot1_1_279166_7391_9>
+...
+040 (436.000.000) 2026-08-31 15:40:25 Started transferring input files
+	Transferring to host: <10.138.130.2:9618?addrs=10.138.130.2-9618&alias=ATLA-worker-1&noUDP&sock=slot1_1_108747_d95f_16>
+...
+040 (437.000.000) 2026-08-31 15:40:30 Finished transferring input files
+...
+001 (437.000.000) 2026-08-31 15:40:30 Job executing on host: <10.137.131.3:9618?alias=pegasus-submit.pegasus.fabric&sock=startd_279116_f048>
+	SlotName: slot1_1@pegasus-submit.pegasus.fabric
+	CondorScratchDir = "/var/lib/condor/execute/dir_402511"
+	Cpus = 1
+	Disk = 1501184
+	GPUs = 0
+	Memory = 2048
+...
+006 (437.000.000) 2026-08-31 15:40:38 Image size of job updated: 93736
+	92  -  MemoryUsage of job (MB)
+	93736  -  ResidentSetSize of job (KB)
+...
+040 (436.000.000) 2026-08-31 15:40:40 Finished transferring input files
+...
+001 (436.000.000) 2026-08-31 15:40:40 Job executing on host: <10.138.130.2:9618?addrs=10.138.130.2-9618&alias=ATLA-worker-1&noUDP&sock=startd_108711_4843>
+	SlotName: slot1_1@ATLA-worker-1
+	CondorScratchDir = "/var/lib/condor/execute/dir_128613"
+	Cpus = 1
+	Disk = 1501184
+	GPUs = 0
+	Memory = 8192
+...
+006 (437.000.000) 2026-08-31 15:40:42 Image size of job updated: 99996
+	92  -  MemoryUsage of job (MB)
+	93736  -  ResidentSetSize of job (KB)
+...
+040 (437.000.000) 2026-08-31 15:40:42 Started transferring output files
+...
+040 (437.000.000) 2026-08-31 15:40:42 Finished transferring output files
+...
+005 (437.000.000) 2026-08-31 15:40:42 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:05, Sys 0 00:00:02  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:05, Sys 0 00:00:02  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	1251730  -  Run Bytes Sent By Job
+	1403465833  -  Run Bytes Received By Job
+	1251730  -  Total Bytes Sent By Job
+	1403465833  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :  1435725  1500000   1501184 
+	   GPUs                 :                           0 
+	   Memory (MB)          :       92     2048      2048 
+	   TimeExecute (s)      :       12                    
+	   TimeSlotBusy (s)     :       17                    
+...
+006 (436.000.000) 2026-08-31 15:40:49 Image size of job updated: 164124
+	161  -  MemoryUsage of job (MB)
+	164124  -  ResidentSetSize of job (KB)
+...
+000 (438.000.000) 2026-08-31 15:40:56 Job submitted from host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dschedd_279116_f048%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=schedd_279116_f048>
+    DAG Node: stage_out_local_local_0_0
+    pool:local
+...
+001 (438.000.000) 2026-08-31 15:40:56 Job executing on host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dstarter_279165_bf31_177%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=starter_279165_bf31_177>
+...
+005 (438.000.000) 2026-08-31 15:40:58 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+006 (436.000.000) 2026-08-31 15:42:55 Image size of job updated: 426784
+	170  -  MemoryUsage of job (MB)
+	174032  -  ResidentSetSize of job (KB)
+...
+040 (436.000.000) 2026-08-31 15:42:55 Started transferring output files
+...
+040 (436.000.000) 2026-08-31 15:43:44 Finished transferring output files
+...
+005 (436.000.000) 2026-08-31 15:43:46 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:53, Sys 0 00:01:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:53, Sys 0 00:01:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	6679827388  -  Run Bytes Sent By Job
+	1403462853  -  Run Bytes Received By Job
+	6679827388  -  Total Bytes Sent By Job
+	1403462853  -  Total Bytes Received By Job
+	Partitionable Resources :       Usage  Request Allocated 
+	   Cpus                 :        0.72        1         1 
+	   Disk (KB)            : 14481681     1500000   1501184 
+	   GPUs                 :                              0 
+	   Memory (MB)          :      170        8192      8192 
+	   TimeExecute (s)      :      135                       
+	   TimeSlotBusy (s)     :      199                       
+...
+000 (439.000.000) 2026-08-31 15:44:01 Job submitted from host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dschedd_279116_f048%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=schedd_279116_f048>
+    DAG Node: clean_up_local_level_3_0
+    pool:local
+...
+000 (440.000.000) 2026-08-31 15:44:01 Job submitted from host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dschedd_279116_f048%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=schedd_279116_f048>
+    DAG Node: subset_hydrofabric_subset_gage_10109001
+    pool:condorpool
+...
+001 (439.000.000) 2026-08-31 15:44:01 Job executing on host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dstarter_279165_bf31_178%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=starter_279165_bf31_178>
+...
+005 (439.000.000) 2026-08-31 15:44:05 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+040 (440.000.000) 2026-08-31 15:44:16 Started transferring input files
+	Transferring to host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dslot1_1_279166_7391_10%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=slot1_1_279166_7391_10>
+...
+040 (440.000.000) 2026-08-31 15:45:28 Finished transferring input files
+...
+001 (440.000.000) 2026-08-31 15:45:28 Job executing on host: <10.137.131.3:9618?alias=pegasus-submit.pegasus.fabric&sock=startd_279116_f048>
+	SlotName: slot1_1@pegasus-submit.pegasus.fabric
+	CondorScratchDir = "/var/lib/condor/execute/dir_402992"
+	Cpus = 1
+	Disk = 10001408
+	GPUs = 0
+	Memory = 8192
+...
+006 (440.000.000) 2026-08-31 15:45:36 Image size of job updated: 10948
+	11  -  MemoryUsage of job (MB)
+	10948  -  ResidentSetSize of job (KB)
+...
+006 (440.000.000) 2026-08-31 15:46:22 Image size of job updated: 374752
+	11  -  MemoryUsage of job (MB)
+	10948  -  ResidentSetSize of job (KB)
+...
+040 (440.000.000) 2026-08-31 15:46:22 Started transferring output files
+...
+040 (440.000.000) 2026-08-31 15:46:22 Finished transferring output files
+...
+005 (440.000.000) 2026-08-31 15:46:25 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:11, Sys 0 00:00:11  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:11, Sys 0 00:00:11  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	706037  -  Run Bytes Sent By Job
+	8083281180  -  Run Bytes Received By Job
+	706037  -  Total Bytes Sent By Job
+	8083281180  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            : 14482364 10000000  10001408 
+	   GPUs                 :                           0 
+	   Memory (MB)          :       11     8192      8192 
+	   TimeExecute (s)      :       54                    
+	   TimeSlotBusy (s)     :      127                    
+...
+000 (441.000.000) 2026-08-31 15:46:37 Job submitted from host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dschedd_279116_f048%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=schedd_279116_f048>
+    DAG Node: clean_up_local_level_4_0
+    pool:local
+...
+000 (442.000.000) 2026-08-31 15:46:37 Job submitted from host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dschedd_279116_f048%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=schedd_279116_f048>
+    DAG Node: generate_realization_realization_gage_10109001
+    pool:condorpool
+...
+000 (443.000.000) 2026-08-31 15:46:37 Job submitted from host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dschedd_279116_f048%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=schedd_279116_f048>
+    DAG Node: generate_forcings_forcings_gage_10109001
+    pool:condorpool
+...
+001 (441.000.000) 2026-08-31 15:46:37 Job executing on host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dstarter_279165_bf31_181%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=starter_279165_bf31_181>
+...
+040 (442.000.000) 2026-08-31 15:46:37 Started transferring input files
+	Transferring to host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dslot1_1_279166_7391_11%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=slot1_1_279166_7391_11>
+...
+040 (443.000.000) 2026-08-31 15:46:37 Started transferring input files
+	Transferring to host: <10.138.130.2:9618?addrs=10.138.130.2-9618&alias=ATLA-worker-1&noUDP&sock=slot1_1_108747_d95f_17>
+...
+005 (441.000.000) 2026-08-31 15:46:41 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+040 (442.000.000) 2026-08-31 15:46:42 Finished transferring input files
+...
+001 (442.000.000) 2026-08-31 15:46:42 Job executing on host: <10.137.131.3:9618?alias=pegasus-submit.pegasus.fabric&sock=startd_279116_f048>
+	SlotName: slot1_1@pegasus-submit.pegasus.fabric
+	CondorScratchDir = "/var/lib/condor/execute/dir_403447"
+	Cpus = 1
+	Disk = 10001408
+	GPUs = 0
+	Memory = 8192
+...
+040 (443.000.000) 2026-08-31 15:46:46 Finished transferring input files
+...
+001 (443.000.000) 2026-08-31 15:46:46 Job executing on host: <10.138.130.2:9618?addrs=10.138.130.2-9618&alias=ATLA-worker-1&noUDP&sock=startd_108711_4843>
+	SlotName: slot1_1@ATLA-worker-1
+	CondorScratchDir = "/var/lib/condor/execute/dir_129023"
+	Cpus = 2
+	Disk = 1501184
+	GPUs = 0
+	Memory = 12288
+...
+006 (442.000.000) 2026-08-31 15:46:52 Image size of job updated: 40212
+	40  -  MemoryUsage of job (MB)
+	40212  -  ResidentSetSize of job (KB)
+...
+006 (443.000.000) 2026-08-31 15:46:55 Image size of job updated: 164784
+	161  -  MemoryUsage of job (MB)
+	164784  -  ResidentSetSize of job (KB)
+...
+006 (442.000.000) 2026-08-31 15:48:08 Image size of job updated: 647092
+	41  -  MemoryUsage of job (MB)
+	41684  -  ResidentSetSize of job (KB)
+...
+040 (442.000.000) 2026-08-31 15:48:08 Started transferring output files
+...
+040 (442.000.000) 2026-08-31 15:48:08 Finished transferring output files
+...
+005 (442.000.000) 2026-08-31 15:48:10 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:30, Sys 0 00:00:43  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:30, Sys 0 00:00:43  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	1494832  -  Run Bytes Sent By Job
+	1404161774  -  Run Bytes Received By Job
+	1494832  -  Total Bytes Sent By Job
+	1404161774  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :  7961013  1500000  10001408 
+	   GPUs                 :                           0 
+	   Memory (MB)          :       41     4096      8192 
+	   TimeExecute (s)      :       86                    
+	   TimeSlotBusy (s)     :       91                    
+...
+006 (443.000.000) 2026-08-31 15:51:56 Image size of job updated: 2272264
+	1777  -  MemoryUsage of job (MB)
+	1819240  -  ResidentSetSize of job (KB)
+...
+006 (443.000.000) 2026-08-31 15:56:57 Image size of job updated: 2272264
+	1777  -  MemoryUsage of job (MB)
+	1819244  -  ResidentSetSize of job (KB)
+...
+040 (443.000.000) 2026-08-31 15:58:25 Started transferring output files
+...
+040 (443.000.000) 2026-08-31 15:58:37 Finished transferring output files
+...
+005 (443.000.000) 2026-08-31 15:58:39 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:09:46, Sys 0 00:11:47  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:09:46, Sys 0 00:11:47  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	1548902628  -  Run Bytes Sent By Job
+	1404159713  -  Run Bytes Received By Job
+	1548902628  -  Total Bytes Sent By Job
+	1404159713  -  Total Bytes Received By Job
+	Partitionable Resources :       Usage  Request Allocated 
+	   Cpus                 :        1.91        2         2 
+	   Disk (KB)            : 10984274     1500000   1501184 
+	   GPUs                 :                              0 
+	   Memory (MB)          :     1777       12288     12288 
+	   TimeExecute (s)      :      699                       
+	   TimeSlotBusy (s)     :      720                       
+...
+000 (444.000.000) 2026-08-31 15:58:53 Job submitted from host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dschedd_279116_f048%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=schedd_279116_f048>
+    DAG Node: clean_up_local_level_5_0
+    pool:local
+...
+000 (445.000.000) 2026-08-31 15:58:53 Job submitted from host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dschedd_279116_f048%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=schedd_279116_f048>
+    DAG Node: assemble_rundir_assemble_gage_10109001
+    pool:condorpool
+...
+001 (444.000.000) 2026-08-31 15:58:53 Job executing on host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dstarter_279165_bf31_183%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=starter_279165_bf31_183>
+...
+005 (444.000.000) 2026-08-31 15:58:57 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+040 (445.000.000) 2026-08-31 15:58:58 Started transferring input files
+	Transferring to host: <10.138.130.2:9618?addrs=10.138.130.2-9618&alias=ATLA-worker-1&noUDP&sock=slot1_2_108747_d95f_18>
+...
+040 (445.000.000) 2026-08-31 15:59:28 Finished transferring input files
+...
+001 (445.000.000) 2026-08-31 15:59:28 Job executing on host: <10.138.130.2:9618?addrs=10.138.130.2-9618&alias=ATLA-worker-1&noUDP&sock=startd_108711_4843>
+	SlotName: slot1_2@ATLA-worker-1
+	CondorScratchDir = "/var/lib/condor/execute/dir_129795"
+	Cpus = 1
+	Disk = 3001344
+	GPUs = 0
+	Memory = 2048
+...
+006 (445.000.000) 2026-08-31 15:59:36 Image size of job updated: 29440
+	29  -  MemoryUsage of job (MB)
+	29440  -  ResidentSetSize of job (KB)
+...
+006 (445.000.000) 2026-08-31 15:59:47 Image size of job updated: 29644
+	29  -  MemoryUsage of job (MB)
+	29440  -  ResidentSetSize of job (KB)
+...
+040 (445.000.000) 2026-08-31 15:59:47 Started transferring output files
+...
+040 (445.000.000) 2026-08-31 15:59:58 Finished transferring output files
+...
+005 (445.000.000) 2026-08-31 16:00:00 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:09, Sys 0 00:00:05  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:09, Sys 0 00:00:05  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	1550386093  -  Run Bytes Sent By Job
+	2954537968  -  Run Bytes Received By Job
+	1550386093  -  Total Bytes Sent By Job
+	2954537968  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :  5976978  3000000   3001344 
+	   GPUs                 :                           0 
+	   Memory (MB)          :       29     2048      2048 
+	   TimeExecute (s)      :       19                    
+	   TimeSlotBusy (s)     :       61                    
+...
+000 (446.000.000) 2026-08-31 16:00:13 Job submitted from host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dschedd_279116_f048%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=schedd_279116_f048>
+    DAG Node: clean_up_local_level_6_0
+    pool:local
+...
+000 (447.000.000) 2026-08-31 16:00:13 Job submitted from host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dschedd_279116_f048%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=schedd_279116_f048>
+    DAG Node: run_nextgen_run_gage_10109001
+    pool:condorpool
+...
+001 (446.000.000) 2026-08-31 16:00:13 Job executing on host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dstarter_279165_bf31_185%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=starter_279165_bf31_185>
+...
+040 (447.000.000) 2026-08-31 16:00:18 Started transferring input files
+	Transferring to host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dslot1_1_279166_7391_12%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=slot1_1_279166_7391_12>
+...
+005 (446.000.000) 2026-08-31 16:00:21 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+040 (447.000.000) 2026-08-31 16:00:32 Finished transferring input files
+...
+001 (447.000.000) 2026-08-31 16:00:32 Job executing on host: <10.137.131.3:9618?alias=pegasus-submit.pegasus.fabric&sock=startd_279116_f048>
+	SlotName: slot1_1@pegasus-submit.pegasus.fabric
+	CondorScratchDir = "/var/lib/condor/execute/dir_404293"
+	Cpus = 4
+	Disk = 3001344
+	GPUs = 0
+	Memory = 14336
+...
+006 (447.000.000) 2026-08-31 16:00:41 Image size of job updated: 56084
+	55  -  MemoryUsage of job (MB)
+	56084  -  ResidentSetSize of job (KB)
+...
+006 (447.000.000) 2026-08-31 16:05:43 Image size of job updated: 948168
+	926  -  MemoryUsage of job (MB)
+	948168  -  ResidentSetSize of job (KB)
+...
+006 (447.000.000) 2026-08-31 16:07:41 Image size of job updated: 2262312
+	926  -  MemoryUsage of job (MB)
+	948220  -  ResidentSetSize of job (KB)
+...
+040 (447.000.000) 2026-08-31 16:07:41 Started transferring output files
+...
+040 (447.000.000) 2026-08-31 16:07:51 Finished transferring output files
+...
+005 (447.000.000) 2026-08-31 16:07:53 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:21:20, Sys 0 00:03:10  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:21:20, Sys 0 00:03:10  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	2734154080  -  Run Bytes Sent By Job
+	2955089645  -  Run Bytes Received By Job
+	2734154080  -  Total Bytes Sent By Job
+	2955089645  -  Total Bytes Received By Job
+	Partitionable Resources :      Usage  Request Allocated 
+	   Cpus                 :       2.85        4         4 
+	   Disk (KB)            : 8289125     3000000   3001344 
+	   GPUs                 :                             0 
+	   Memory (MB)          :     926       14336     14336 
+	   TimeExecute (s)      :     429                       
+	   TimeSlotBusy (s)     :     453                       
+...
+000 (448.000.000) 2026-08-31 16:08:04 Job submitted from host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dschedd_279116_f048%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=schedd_279116_f048>
+    DAG Node: clean_up_local_level_7_0
+    pool:local
+...
+000 (449.000.000) 2026-08-31 16:08:04 Job submitted from host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dschedd_279116_f048%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=schedd_279116_f048>
+    DAG Node: stage_out_local_local_4_0
+    pool:local
+...
+000 (450.000.000) 2026-08-31 16:08:04 Job submitted from host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dschedd_279116_f048%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=schedd_279116_f048>
+    DAG Node: outputs_analysis_analysis_gage_10109001
+    pool:condorpool
+...
+000 (451.000.000) 2026-08-31 16:08:04 Job submitted from host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dschedd_279116_f048%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=schedd_279116_f048>
+    DAG Node: calibrate_calibrate_gage_10109001_t3
+    pool:condorpool
+...
+000 (452.000.000) 2026-08-31 16:08:04 Job submitted from host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dschedd_279116_f048%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=schedd_279116_f048>
+    DAG Node: teehr_evaluation_teehr_gage_10109001
+    pool:condorpool
+...
+000 (453.000.000) 2026-08-31 16:08:04 Job submitted from host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dschedd_279116_f048%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=schedd_279116_f048>
+    DAG Node: calibrate_calibrate_gage_10109001_t2
+    pool:condorpool
+...
+000 (454.000.000) 2026-08-31 16:08:04 Job submitted from host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dschedd_279116_f048%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=schedd_279116_f048>
+    DAG Node: calibrate_calibrate_gage_10109001_t5
+    pool:condorpool
+...
+000 (455.000.000) 2026-08-31 16:08:04 Job submitted from host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dschedd_279116_f048%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=schedd_279116_f048>
+    DAG Node: calibrate_calibrate_gage_10109001_t4
+    pool:condorpool
+...
+000 (456.000.000) 2026-08-31 16:08:04 Job submitted from host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dschedd_279116_f048%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=schedd_279116_f048>
+    DAG Node: calibrate_calibrate_gage_10109001_t1
+    pool:condorpool
+...
+001 (448.000.000) 2026-08-31 16:08:04 Job executing on host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dstarter_279165_bf31_187%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=starter_279165_bf31_187>
+...
+001 (449.000.000) 2026-08-31 16:08:04 Job executing on host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dstarter_279165_bf31_188%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=starter_279165_bf31_188>
+...
+040 (451.000.000) 2026-08-31 16:08:04 Started transferring input files
+	Transferring to host: <10.137.131.2:9618?addrs=10.137.131.2-9618&alias=NEWY-worker-1&noUDP&sock=slot1_1_109965_0a51_9>
+...
+040 (450.000.000) 2026-08-31 16:08:04 Started transferring input files
+	Transferring to host: <10.138.130.2:9618?addrs=10.138.130.2-9618&alias=ATLA-worker-1&noUDP&sock=slot1_1_108747_d95f_19>
+...
+040 (452.000.000) 2026-08-31 16:08:04 Started transferring input files
+	Transferring to host: <10.132.130.2:9618?addrs=10.132.130.2-9618&alias=NCSA-gpu-worker-1&noUDP&sock=slot1_1_66428_4906_27>
+...
+040 (453.000.000) 2026-08-31 16:08:04 Started transferring input files
+	Transferring to host: <10.135.11.2:9618?addrs=10.135.11.2-9618&alias=GPN-gpu-worker-1&noUDP&sock=slot1_1_67157_ee84_19>
+...
+005 (449.000.000) 2026-08-31 16:08:06 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+005 (448.000.000) 2026-08-31 16:08:08 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+040 (451.000.000) 2026-08-31 16:08:21 Finished transferring input files
+...
+001 (451.000.000) 2026-08-31 16:08:21 Job executing on host: <10.137.131.2:9618?addrs=10.137.131.2-9618&alias=NEWY-worker-1&noUDP&sock=startd_109930_6a36>
+	SlotName: slot1_1@NEWY-worker-1
+	CondorScratchDir = "/var/lib/condor/execute/dir_132068"
+	Cpus = 4
+	Disk = 4251648
+	GPUs = 0
+	Memory = 14336
+...
+006 (451.000.000) 2026-08-31 16:08:29 Image size of job updated: 29512
+	29  -  MemoryUsage of job (MB)
+	29512  -  ResidentSetSize of job (KB)
+...
+040 (450.000.000) 2026-08-31 16:08:31 Finished transferring input files
+...
+001 (450.000.000) 2026-08-31 16:08:31 Job executing on host: <10.138.130.2:9618?addrs=10.138.130.2-9618&alias=ATLA-worker-1&noUDP&sock=startd_108711_4843>
+	SlotName: slot1_1@ATLA-worker-1
+	CondorScratchDir = "/var/lib/condor/execute/dir_130171"
+	Cpus = 1
+	Disk = 4251648
+	GPUs = 0
+	Memory = 8192
+...
+040 (452.000.000) 2026-08-31 16:08:37 Finished transferring input files
+...
+001 (452.000.000) 2026-08-31 16:08:37 Job executing on host: <10.132.130.2:9618?addrs=10.132.130.2-9618&alias=NCSA-gpu-worker-1&noUDP&sock=startd_66391_4845>
+	SlotName: slot1_1@NCSA-gpu-worker-1
+	AvailableGPUs = {  }
+	CondorScratchDir = "/var/lib/condor/execute/dir_87880"
+	Cpus = 2
+	Disk = 4001792
+	GPUs = 0
+	Memory = 12288
+...
+006 (450.000.000) 2026-08-31 16:08:40 Image size of job updated: 28728
+	29  -  MemoryUsage of job (MB)
+	28728  -  ResidentSetSize of job (KB)
+...
+006 (452.000.000) 2026-08-31 16:08:47 Image size of job updated: 27840
+	28  -  MemoryUsage of job (MB)
+	27840  -  ResidentSetSize of job (KB)
+...
+040 (453.000.000) 2026-08-31 16:08:54 Finished transferring input files
+...
+001 (453.000.000) 2026-08-31 16:08:54 Job executing on host: <10.135.11.2:9618?addrs=10.135.11.2-9618&alias=GPN-gpu-worker-1&noUDP&sock=startd_67122_b000>
+	SlotName: slot1_1@GPN-gpu-worker-1
+	AvailableGPUs = {  }
+	CondorScratchDir = "/var/lib/condor/execute/dir_86246"
+	Cpus = 4
+	Disk = 4251648
+	GPUs = 0
+	Memory = 14336
+...
+006 (450.000.000) 2026-08-31 16:09:00 Image size of job updated: 288536
+	29  -  MemoryUsage of job (MB)
+	28728  -  ResidentSetSize of job (KB)
+...
+040 (450.000.000) 2026-08-31 16:09:00 Started transferring output files
+...
+040 (450.000.000) 2026-08-31 16:09:00 Finished transferring output files
+...
+005 (450.000.000) 2026-08-31 16:09:02 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:18, Sys 0 00:00:07  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:18, Sys 0 00:00:07  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	15829969  -  Run Bytes Sent By Job
+	4138549708  -  Run Bytes Received By Job
+	15829969  -  Total Bytes Sent By Job
+	4138549708  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :  6805606  4250000   4251648 
+	   GPUs                 :                           0 
+	   Memory (MB)          :       29     8192      8192 
+	   TimeExecute (s)      :       29                    
+	   TimeSlotBusy (s)     :       56                    
+...
+006 (453.000.000) 2026-08-31 16:09:03 Image size of job updated: 29424
+	29  -  MemoryUsage of job (MB)
+	29424  -  ResidentSetSize of job (KB)
+...
+006 (452.000.000) 2026-08-31 16:09:26 Image size of job updated: 733736
+	28  -  MemoryUsage of job (MB)
+	27840  -  ResidentSetSize of job (KB)
+...
+040 (452.000.000) 2026-08-31 16:09:27 Started transferring output files
+...
+040 (452.000.000) 2026-08-31 16:09:27 Finished transferring output files
+...
+005 (452.000.000) 2026-08-31 16:09:29 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:29, Sys 0 00:00:16  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:29, Sys 0 00:00:16  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	55953  -  Run Bytes Sent By Job
+	3853071953  -  Run Bytes Received By Job
+	55953  -  Total Bytes Sent By Job
+	3853071953  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        2         2 
+	   Disk (KB)            :  6496074  4000000   4001792 
+	   GPUs                 :                           0 
+	   Memory (MB)          :       28    12288     12288 
+	   TimeExecute (s)      :       49                    
+	   TimeSlotBusy (s)     :       83                    
+...
+000 (457.000.000) 2026-08-31 16:09:39 Job submitted from host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dschedd_279116_f048%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=schedd_279116_f048>
+    DAG Node: stage_out_local_local_5_0
+    pool:local
+...
+001 (457.000.000) 2026-08-31 16:09:39 Job executing on host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dstarter_279165_bf31_193%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=starter_279165_bf31_193>
+...
+005 (457.000.000) 2026-08-31 16:09:49 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+040 (455.000.000) 2026-08-31 16:10:39 Started transferring input files
+	Transferring to host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dslot1_1_279166_7391_13%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=slot1_1_279166_7391_13>
+...
+040 (454.000.000) 2026-08-31 16:10:40 Started transferring input files
+	Transferring to host: <10.138.130.2:9618?addrs=10.138.130.2-9618&alias=ATLA-worker-1&noUDP&sock=slot1_1_108747_d95f_20>
+...
+040 (455.000.000) 2026-08-31 16:10:57 Finished transferring input files
+...
+001 (455.000.000) 2026-08-31 16:10:58 Job executing on host: <10.137.131.3:9618?alias=pegasus-submit.pegasus.fabric&sock=startd_279116_f048>
+	SlotName: slot1_1@pegasus-submit.pegasus.fabric
+	CondorScratchDir = "/var/lib/condor/execute/dir_406041"
+	Cpus = 4
+	Disk = 4251648
+	GPUs = 0
+	Memory = 14336
+...
+006 (455.000.000) 2026-08-31 16:11:06 Image size of job updated: 29872
+	30  -  MemoryUsage of job (MB)
+	29872  -  ResidentSetSize of job (KB)
+...
+040 (454.000.000) 2026-08-31 16:11:12 Finished transferring input files
+...
+001 (454.000.000) 2026-08-31 16:11:12 Job executing on host: <10.138.130.2:9618?addrs=10.138.130.2-9618&alias=ATLA-worker-1&noUDP&sock=startd_108711_4843>
+	SlotName: slot1_1@ATLA-worker-1
+	CondorScratchDir = "/var/lib/condor/execute/dir_130542"
+	Cpus = 4
+	Disk = 4251648
+	GPUs = 0
+	Memory = 14336
+...
+006 (454.000.000) 2026-08-31 16:11:21 Image size of job updated: 29676
+	29  -  MemoryUsage of job (MB)
+	29676  -  ResidentSetSize of job (KB)
+...
+040 (456.000.000) 2026-08-31 16:11:40 Started transferring input files
+	Transferring to host: <10.132.130.2:9618?addrs=10.132.130.2-9618&alias=NCSA-gpu-worker-1&noUDP&sock=slot1_1_66428_4906_28>
+...
+040 (456.000.000) 2026-08-31 16:12:19 Finished transferring input files
+...
+001 (456.000.000) 2026-08-31 16:12:19 Job executing on host: <10.132.130.2:9618?addrs=10.132.130.2-9618&alias=NCSA-gpu-worker-1&noUDP&sock=startd_66391_4845>
+	SlotName: slot1_1@NCSA-gpu-worker-1
+	AvailableGPUs = {  }
+	CondorScratchDir = "/var/lib/condor/execute/dir_88433"
+	Cpus = 4
+	Disk = 4251648
+	GPUs = 0
+	Memory = 14336
+...
+006 (456.000.000) 2026-08-31 16:12:28 Image size of job updated: 30124
+	30  -  MemoryUsage of job (MB)
+	30124  -  ResidentSetSize of job (KB)
+...
+006 (451.000.000) 2026-08-31 16:13:29 Image size of job updated: 988832
+	966  -  MemoryUsage of job (MB)
+	988832  -  ResidentSetSize of job (KB)
+...
+006 (453.000.000) 2026-08-31 16:14:04 Image size of job updated: 933912
+	913  -  MemoryUsage of job (MB)
+	933912  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-08-31 16:16:06 Image size of job updated: 981368
+	959  -  MemoryUsage of job (MB)
+	981368  -  ResidentSetSize of job (KB)
+...
+006 (454.000.000) 2026-08-31 16:16:21 Image size of job updated: 1011032
+	988  -  MemoryUsage of job (MB)
+	1011032  -  ResidentSetSize of job (KB)
+...
+006 (456.000.000) 2026-08-31 16:17:29 Image size of job updated: 949944
+	928  -  MemoryUsage of job (MB)
+	949944  -  ResidentSetSize of job (KB)
+...
+006 (451.000.000) 2026-08-31 16:18:31 Image size of job updated: 2462968
+	966  -  MemoryUsage of job (MB)
+	988892  -  ResidentSetSize of job (KB)
+...
+006 (453.000.000) 2026-08-31 16:19:04 Image size of job updated: 2482924
+	913  -  MemoryUsage of job (MB)
+	934000  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-08-31 16:21:06 Image size of job updated: 2422312
+	959  -  MemoryUsage of job (MB)
+	981420  -  ResidentSetSize of job (KB)
+...
+006 (454.000.000) 2026-08-31 16:21:22 Image size of job updated: 2292636
+	988  -  MemoryUsage of job (MB)
+	1011108  -  ResidentSetSize of job (KB)
+...
+006 (456.000.000) 2026-08-31 16:22:29 Image size of job updated: 2347064
+	928  -  MemoryUsage of job (MB)
+	950040  -  ResidentSetSize of job (KB)
+...
+006 (453.000.000) 2026-08-31 16:24:05 Image size of job updated: 2482924
+	1037  -  MemoryUsage of job (MB)
+	1061364  -  ResidentSetSize of job (KB)
+...
+006 (454.000.000) 2026-08-31 16:26:22 Image size of job updated: 3133224
+	988  -  MemoryUsage of job (MB)
+	1011108  -  ResidentSetSize of job (KB)
+...
+006 (456.000.000) 2026-08-31 16:27:30 Image size of job updated: 2347064
+	1050  -  MemoryUsage of job (MB)
+	1075052  -  ResidentSetSize of job (KB)
+...
+006 (451.000.000) 2026-08-31 16:28:31 Image size of job updated: 2462968
+	2214  -  MemoryUsage of job (MB)
+	2266400  -  ResidentSetSize of job (KB)
+...
+006 (453.000.000) 2026-08-31 16:29:05 Image size of job updated: 2482924
+	1037  -  MemoryUsage of job (MB)
+	1061460  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-08-31 16:31:07 Image size of job updated: 2422312
+	1289  -  MemoryUsage of job (MB)
+	1319440  -  ResidentSetSize of job (KB)
+...
+006 (454.000.000) 2026-08-31 16:31:23 Image size of job updated: 3133224
+	2297  -  MemoryUsage of job (MB)
+	2352020  -  ResidentSetSize of job (KB)
+...
+006 (456.000.000) 2026-08-31 16:32:30 Image size of job updated: 2943172
+	1050  -  MemoryUsage of job (MB)
+	1075144  -  ResidentSetSize of job (KB)
+...
+006 (451.000.000) 2026-08-31 16:33:32 Image size of job updated: 3254252
+	2216  -  MemoryUsage of job (MB)
+	2268720  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-08-31 16:36:07 Image size of job updated: 2482948
+	1305  -  MemoryUsage of job (MB)
+	1335984  -  ResidentSetSize of job (KB)
+...
+006 (454.000.000) 2026-08-31 16:36:24 Image size of job updated: 3133224
+	2301  -  MemoryUsage of job (MB)
+	2355432  -  ResidentSetSize of job (KB)
+...
+006 (453.000.000) 2026-08-31 16:39:06 Image size of job updated: 2482924
+	1141  -  MemoryUsage of job (MB)
+	1167660  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-08-31 16:41:08 Image size of job updated: 3053448
+	1305  -  MemoryUsage of job (MB)
+	1335984  -  ResidentSetSize of job (KB)
+...
+006 (456.000.000) 2026-08-31 16:42:31 Image size of job updated: 2943172
+	1135  -  MemoryUsage of job (MB)
+	1161664  -  ResidentSetSize of job (KB)
+...
+006 (453.000.000) 2026-08-31 16:44:07 Image size of job updated: 2527764
+	1141  -  MemoryUsage of job (MB)
+	1167760  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-08-31 16:46:08 Image size of job updated: 3246480
+	1305  -  MemoryUsage of job (MB)
+	1335984  -  ResidentSetSize of job (KB)
+...
+006 (456.000.000) 2026-08-31 16:47:31 Image size of job updated: 2943172
+	1135  -  MemoryUsage of job (MB)
+	1161744  -  ResidentSetSize of job (KB)
+...
+006 (453.000.000) 2026-08-31 16:49:07 Image size of job updated: 2527764
+	1235  -  MemoryUsage of job (MB)
+	1264012  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-08-31 16:51:08 Image size of job updated: 3246480
+	1988  -  MemoryUsage of job (MB)
+	2034936  -  ResidentSetSize of job (KB)
+...
+006 (453.000.000) 2026-08-31 16:54:07 Image size of job updated: 3205304
+	1235  -  MemoryUsage of job (MB)
+	1264084  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-08-31 16:56:09 Image size of job updated: 3246480
+	1990  -  MemoryUsage of job (MB)
+	2037100  -  ResidentSetSize of job (KB)
+...
+006 (456.000.000) 2026-08-31 16:57:32 Image size of job updated: 2943172
+	1151  -  MemoryUsage of job (MB)
+	1178508  -  ResidentSetSize of job (KB)
+...
+006 (456.000.000) 2026-08-31 17:02:33 Image size of job updated: 2943172
+	1151  -  MemoryUsage of job (MB)
+	1178580  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-08-31 17:06:09 Image size of job updated: 3301612
+	1990  -  MemoryUsage of job (MB)
+	2037100  -  ResidentSetSize of job (KB)
+...
+006 (454.000.000) 2026-08-31 17:06:27 Image size of job updated: 3286004
+	2301  -  MemoryUsage of job (MB)
+	2355432  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-08-31 17:11:10 Image size of job updated: 3301612
+	2063  -  MemoryUsage of job (MB)
+	2112128  -  ResidentSetSize of job (KB)
+...
+006 (453.000.000) 2026-08-31 17:14:09 Image size of job updated: 3205304
+	1248  -  MemoryUsage of job (MB)
+	1277416  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-08-31 17:16:10 Image size of job updated: 3301612
+	2066  -  MemoryUsage of job (MB)
+	2114856  -  ResidentSetSize of job (KB)
+...
+006 (456.000.000) 2026-08-31 17:17:34 Image size of job updated: 3233948
+	1151  -  MemoryUsage of job (MB)
+	1178580  -  ResidentSetSize of job (KB)
+...
+006 (453.000.000) 2026-08-31 17:19:10 Image size of job updated: 3205304
+	1248  -  MemoryUsage of job (MB)
+	1277508  -  ResidentSetSize of job (KB)
+...
+006 (454.000.000) 2026-08-31 17:21:28 Image size of job updated: 3307608
+	2301  -  MemoryUsage of job (MB)
+	2355432  -  ResidentSetSize of job (KB)
+...
+006 (456.000.000) 2026-08-31 17:22:34 Image size of job updated: 3233948
+	1234  -  MemoryUsage of job (MB)
+	1263400  -  ResidentSetSize of job (KB)
+...
+006 (456.000.000) 2026-08-31 17:27:36 Image size of job updated: 3233948
+	1234  -  MemoryUsage of job (MB)
+	1263476  -  ResidentSetSize of job (KB)
+...
+006 (451.000.000) 2026-08-31 17:28:35 Image size of job updated: 3357328
+	2216  -  MemoryUsage of job (MB)
+	2268720  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-08-31 17:31:11 Image size of job updated: 3301612
+	2069  -  MemoryUsage of job (MB)
+	2117928  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-08-31 17:36:11 Image size of job updated: 3301612
+	2071  -  MemoryUsage of job (MB)
+	2120592  -  ResidentSetSize of job (KB)
+...
+006 (453.000.000) 2026-08-31 17:39:12 Image size of job updated: 3205304
+	2424  -  MemoryUsage of job (MB)
+	2481516  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-08-31 17:46:12 Image size of job updated: 3315472
+	2071  -  MemoryUsage of job (MB)
+	2120592  -  ResidentSetSize of job (KB)
+...
+006 (453.000.000) 2026-08-31 17:49:12 Image size of job updated: 3248292
+	2424  -  MemoryUsage of job (MB)
+	2481516  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-08-31 17:51:12 Image size of job updated: 3315472
+	2373  -  MemoryUsage of job (MB)
+	2429152  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-08-31 17:56:13 Image size of job updated: 3315472
+	2390  -  MemoryUsage of job (MB)
+	2447088  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-08-31 18:06:13 Image size of job updated: 3390516
+	2390  -  MemoryUsage of job (MB)
+	2447088  -  ResidentSetSize of job (KB)
+...
+006 (454.000.000) 2026-08-31 18:11:32 Image size of job updated: 3317656
+	2301  -  MemoryUsage of job (MB)
+	2355432  -  ResidentSetSize of job (KB)
+...
+006 (456.000.000) 2026-08-31 18:17:41 Image size of job updated: 3233948
+	1830  -  MemoryUsage of job (MB)
+	1873756  -  ResidentSetSize of job (KB)
+...
+006 (456.000.000) 2026-08-31 18:22:41 Image size of job updated: 3233948
+	1839  -  MemoryUsage of job (MB)
+	1882508  -  ResidentSetSize of job (KB)
+...
+006 (453.000.000) 2026-08-31 18:29:16 Image size of job updated: 3373716
+	2424  -  MemoryUsage of job (MB)
+	2481516  -  ResidentSetSize of job (KB)
+...
+006 (454.000.000) 2026-08-31 18:31:35 Image size of job updated: 3351160
+	2301  -  MemoryUsage of job (MB)
+	2355432  -  ResidentSetSize of job (KB)
+...
+006 (456.000.000) 2026-08-31 18:37:44 Image size of job updated: 3315716
+	1839  -  MemoryUsage of job (MB)
+	1882508  -  ResidentSetSize of job (KB)
+...
+006 (456.000.000) 2026-08-31 19:12:48 Image size of job updated: 3315716
+	2181  -  MemoryUsage of job (MB)
+	2232888  -  ResidentSetSize of job (KB)
+...
+006 (456.000.000) 2026-08-31 19:17:48 Image size of job updated: 3315716
+	2182  -  MemoryUsage of job (MB)
+	2233768  -  ResidentSetSize of job (KB)
+...
+006 (454.000.000) 2026-08-31 19:21:41 Image size of job updated: 3357960
+	2301  -  MemoryUsage of job (MB)
+	2355432  -  ResidentSetSize of job (KB)
+...
+006 (454.000.000) 2026-08-31 19:31:41 Image size of job updated: 3376400
+	2301  -  MemoryUsage of job (MB)
+	2355432  -  ResidentSetSize of job (KB)
+...
+006 (451.000.000) 2026-08-31 19:33:50 Image size of job updated: 3357328
+	2398  -  MemoryUsage of job (MB)
+	2454604  -  ResidentSetSize of job (KB)
+...
+006 (451.000.000) 2026-08-31 19:38:50 Image size of job updated: 3357328
+	2399  -  MemoryUsage of job (MB)
+	2456400  -  ResidentSetSize of job (KB)
+...
+006 (456.000.000) 2026-08-31 20:02:52 Image size of job updated: 3399004
+	2182  -  MemoryUsage of job (MB)
+	2233768  -  ResidentSetSize of job (KB)
+...
+006 (454.000.000) 2026-08-31 20:11:45 Image size of job updated: 3411848
+	2301  -  MemoryUsage of job (MB)
+	2355432  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-08-31 20:21:29 Image size of job updated: 3390516
+	2451  -  MemoryUsage of job (MB)
+	2509344  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-08-31 20:26:29 Image size of job updated: 3390516
+	2453  -  MemoryUsage of job (MB)
+	2511688  -  ResidentSetSize of job (KB)
+...
+006 (456.000.000) 2026-08-31 20:47:56 Image size of job updated: 3399004
+	2563  -  MemoryUsage of job (MB)
+	2623860  -  ResidentSetSize of job (KB)
+...
+006 (453.000.000) 2026-08-31 20:49:31 Image size of job updated: 3418252
+	2424  -  MemoryUsage of job (MB)
+	2481516  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-08-31 20:51:33 Image size of job updated: 3426116
+	2453  -  MemoryUsage of job (MB)
+	2511688  -  ResidentSetSize of job (KB)
+...
+006 (456.000.000) 2026-08-31 20:52:56 Image size of job updated: 3399004
+	2563  -  MemoryUsage of job (MB)
+	2624296  -  ResidentSetSize of job (KB)
+...
+006 (456.000.000) 2026-08-31 20:57:56 Image size of job updated: 3404996
+	2563  -  MemoryUsage of job (MB)
+	2624296  -  ResidentSetSize of job (KB)
+...
+006 (454.000.000) 2026-08-31 22:26:59 Image size of job updated: 3415140
+	2301  -  MemoryUsage of job (MB)
+	2355432  -  ResidentSetSize of job (KB)
+...
+006 (451.000.000) 2026-08-31 23:14:14 Image size of job updated: 3397520
+	2399  -  MemoryUsage of job (MB)
+	2456400  -  ResidentSetSize of job (KB)
+...
+006 (451.000.000) 2026-08-31 23:19:14 Image size of job updated: 3397520
+	2469  -  MemoryUsage of job (MB)
+	2527772  -  ResidentSetSize of job (KB)
+...
+006 (451.000.000) 2026-08-31 23:24:14 Image size of job updated: 3397520
+	2471  -  MemoryUsage of job (MB)
+	2529876  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-08-31 23:46:50 Image size of job updated: 3426116
+	2520  -  MemoryUsage of job (MB)
+	2579744  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-08-31 23:51:50 Image size of job updated: 3426116
+	2767  -  MemoryUsage of job (MB)
+	2832920  -  ResidentSetSize of job (KB)
+...
+006 (453.000.000) 2026-08-31 23:54:51 Image size of job updated: 3418252
+	2643  -  MemoryUsage of job (MB)
+	2706376  -  ResidentSetSize of job (KB)
+...
+006 (456.000.000) 2026-09-01 01:33:24 Image size of job updated: 3411196
+	2563  -  MemoryUsage of job (MB)
+	2624296  -  ResidentSetSize of job (KB)
+...
+006 (451.000.000) 2026-09-01 02:19:32 Image size of job updated: 3420132
+	2471  -  MemoryUsage of job (MB)
+	2529876  -  ResidentSetSize of job (KB)
+...
+006 (454.000.000) 2026-09-01 02:22:22 Image size of job updated: 3415140
+	2439  -  MemoryUsage of job (MB)
+	2496552  -  ResidentSetSize of job (KB)
+...
+006 (454.000.000) 2026-09-01 02:27:23 Image size of job updated: 3415140
+	2479  -  MemoryUsage of job (MB)
+	2537912  -  ResidentSetSize of job (KB)
+...
+006 (454.000.000) 2026-09-01 03:02:25 Image size of job updated: 3415140
+	2885  -  MemoryUsage of job (MB)
+	2953556  -  ResidentSetSize of job (KB)
+...
+006 (451.000.000) 2026-09-01 03:04:37 Image size of job updated: 3422836
+	3343  -  MemoryUsage of job (MB)
+	3422836  -  ResidentSetSize of job (KB)
+...
+006 (454.000.000) 2026-09-01 03:07:26 Image size of job updated: 3415140
+	2965  -  MemoryUsage of job (MB)
+	3035704  -  ResidentSetSize of job (KB)
+...
+006 (451.000.000) 2026-09-01 03:09:38 Image size of job updated: 3451368
+	3371  -  MemoryUsage of job (MB)
+	3451368  -  ResidentSetSize of job (KB)
+...
+006 (454.000.000) 2026-09-01 03:17:26 Image size of job updated: 3455380
+	2965  -  MemoryUsage of job (MB)
+	3035704  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 03:52:14 Image size of job updated: 3426116
+	3022  -  MemoryUsage of job (MB)
+	3094052  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 03:57:16 Image size of job updated: 3426116
+	3109  -  MemoryUsage of job (MB)
+	3182844  -  ResidentSetSize of job (KB)
+...
+006 (453.000.000) 2026-09-01 04:55:21 Image size of job updated: 3421808
+	2643  -  MemoryUsage of job (MB)
+	2706376  -  ResidentSetSize of job (KB)
+...
+006 (453.000.000) 2026-09-01 05:00:21 Image size of job updated: 3431336
+	2643  -  MemoryUsage of job (MB)
+	2706376  -  ResidentSetSize of job (KB)
+...
+022 (456.000.000) 2026-09-01 06:22:25 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_1@NCSA-gpu-worker-1 <10.132.130.2:9618?addrs=10.132.130.2-9618&alias=NCSA-gpu-worker-1&noUDP&sock=startd_66391_4845>
+...
+022 (455.000.000) 2026-09-01 06:22:25 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_1@pegasus-submit.pegasus.fabric <10.137.131.3:9618?alias=pegasus-submit.pegasus.fabric&sock=startd_279116_f048>
+...
+022 (454.000.000) 2026-09-01 06:22:25 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_1@ATLA-worker-1 <10.138.130.2:9618?addrs=10.138.130.2-9618&alias=ATLA-worker-1&noUDP&sock=startd_108711_4843>
+...
+022 (453.000.000) 2026-09-01 06:22:25 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_1@GPN-gpu-worker-1 <10.135.11.2:9618?addrs=10.135.11.2-9618&alias=GPN-gpu-worker-1&noUDP&sock=startd_67122_b000>
+...
+022 (451.000.000) 2026-09-01 06:22:25 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_1@NEWY-worker-1 <10.137.131.2:9618?addrs=10.137.131.2-9618&alias=NEWY-worker-1&noUDP&sock=startd_109930_6a36>
+...
+023 (451.000.000) 2026-09-01 06:22:25 Job reconnected to slot1_1@NEWY-worker-1
+    startd address: <10.137.131.2:9618?addrs=10.137.131.2-9618&alias=NEWY-worker-1&noUDP&sock=startd_109930_6a36>
+    starter address: <10.137.131.2:9618?addrs=10.137.131.2-9618&alias=NEWY-worker-1&noUDP&sock=slot1_1_109965_0a51_9>
+...
+023 (454.000.000) 2026-09-01 06:22:25 Job reconnected to slot1_1@ATLA-worker-1
+    startd address: <10.138.130.2:9618?addrs=10.138.130.2-9618&alias=ATLA-worker-1&noUDP&sock=startd_108711_4843>
+    starter address: <10.138.130.2:9618?addrs=10.138.130.2-9618&alias=ATLA-worker-1&noUDP&sock=slot1_1_108747_d95f_20>
+...
+023 (456.000.000) 2026-09-01 06:22:26 Job reconnected to slot1_1@NCSA-gpu-worker-1
+    startd address: <10.132.130.2:9618?addrs=10.132.130.2-9618&alias=NCSA-gpu-worker-1&noUDP&sock=startd_66391_4845>
+    starter address: <10.132.130.2:9618?addrs=10.132.130.2-9618&alias=NCSA-gpu-worker-1&noUDP&sock=slot1_1_66428_4906_28>
+...
+023 (453.000.000) 2026-09-01 06:22:26 Job reconnected to slot1_1@GPN-gpu-worker-1
+    startd address: <10.135.11.2:9618?addrs=10.135.11.2-9618&alias=GPN-gpu-worker-1&noUDP&sock=startd_67122_b000>
+    starter address: <10.135.11.2:9618?addrs=10.135.11.2-9618&alias=GPN-gpu-worker-1&noUDP&sock=slot1_1_67157_ee84_19>
+...
+022 (456.000.000) 2026-09-01 06:22:36 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_1@NCSA-gpu-worker-1 <10.132.130.2:9618?addrs=10.132.130.2-9618&alias=NCSA-gpu-worker-1&noUDP&sock=startd_66391_4845>
+...
+022 (455.000.000) 2026-09-01 06:22:36 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_1@pegasus-submit.pegasus.fabric <10.137.131.3:9618?alias=pegasus-submit.pegasus.fabric&sock=startd_279116_f048>
+...
+022 (454.000.000) 2026-09-01 06:22:36 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_1@ATLA-worker-1 <10.138.130.2:9618?addrs=10.138.130.2-9618&alias=ATLA-worker-1&noUDP&sock=startd_108711_4843>
+...
+022 (453.000.000) 2026-09-01 06:22:36 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_1@GPN-gpu-worker-1 <10.135.11.2:9618?addrs=10.135.11.2-9618&alias=GPN-gpu-worker-1&noUDP&sock=startd_67122_b000>
+...
+022 (451.000.000) 2026-09-01 06:22:36 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_1@NEWY-worker-1 <10.137.131.2:9618?addrs=10.137.131.2-9618&alias=NEWY-worker-1&noUDP&sock=startd_109930_6a36>
+...
+023 (451.000.000) 2026-09-01 06:22:36 Job reconnected to slot1_1@NEWY-worker-1
+    startd address: <10.137.131.2:9618?addrs=10.137.131.2-9618&alias=NEWY-worker-1&noUDP&sock=startd_109930_6a36>
+    starter address: <10.137.131.2:9618?addrs=10.137.131.2-9618&alias=NEWY-worker-1&noUDP&sock=slot1_1_109965_0a51_9>
+...
+023 (454.000.000) 2026-09-01 06:22:37 Job reconnected to slot1_1@ATLA-worker-1
+    startd address: <10.138.130.2:9618?addrs=10.138.130.2-9618&alias=ATLA-worker-1&noUDP&sock=startd_108711_4843>
+    starter address: <10.138.130.2:9618?addrs=10.138.130.2-9618&alias=ATLA-worker-1&noUDP&sock=slot1_1_108747_d95f_20>
+...
+023 (456.000.000) 2026-09-01 06:22:37 Job reconnected to slot1_1@NCSA-gpu-worker-1
+    startd address: <10.132.130.2:9618?addrs=10.132.130.2-9618&alias=NCSA-gpu-worker-1&noUDP&sock=startd_66391_4845>
+    starter address: <10.132.130.2:9618?addrs=10.132.130.2-9618&alias=NCSA-gpu-worker-1&noUDP&sock=slot1_1_66428_4906_28>
+...
+023 (453.000.000) 2026-09-01 06:22:37 Job reconnected to slot1_1@GPN-gpu-worker-1
+    startd address: <10.135.11.2:9618?addrs=10.135.11.2-9618&alias=GPN-gpu-worker-1&noUDP&sock=startd_67122_b000>
+    starter address: <10.135.11.2:9618?addrs=10.135.11.2-9618&alias=GPN-gpu-worker-1&noUDP&sock=slot1_1_67157_ee84_19>
+...
+022 (456.000.000) 2026-09-01 06:22:46 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_1@NCSA-gpu-worker-1 <10.132.130.2:9618?addrs=10.132.130.2-9618&alias=NCSA-gpu-worker-1&noUDP&sock=startd_66391_4845>
+...
+022 (455.000.000) 2026-09-01 06:22:46 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_1@pegasus-submit.pegasus.fabric <10.137.131.3:9618?alias=pegasus-submit.pegasus.fabric&sock=startd_279116_f048>
+...
+022 (454.000.000) 2026-09-01 06:22:46 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_1@ATLA-worker-1 <10.138.130.2:9618?addrs=10.138.130.2-9618&alias=ATLA-worker-1&noUDP&sock=startd_108711_4843>
+...
+022 (453.000.000) 2026-09-01 06:22:46 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_1@GPN-gpu-worker-1 <10.135.11.2:9618?addrs=10.135.11.2-9618&alias=GPN-gpu-worker-1&noUDP&sock=startd_67122_b000>
+...
+022 (451.000.000) 2026-09-01 06:22:46 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_1@NEWY-worker-1 <10.137.131.2:9618?addrs=10.137.131.2-9618&alias=NEWY-worker-1&noUDP&sock=startd_109930_6a36>
+...
+023 (451.000.000) 2026-09-01 06:22:46 Job reconnected to slot1_1@NEWY-worker-1
+    startd address: <10.137.131.2:9618?addrs=10.137.131.2-9618&alias=NEWY-worker-1&noUDP&sock=startd_109930_6a36>
+    starter address: <10.137.131.2:9618?addrs=10.137.131.2-9618&alias=NEWY-worker-1&noUDP&sock=slot1_1_109965_0a51_9>
+...
+023 (454.000.000) 2026-09-01 06:22:46 Job reconnected to slot1_1@ATLA-worker-1
+    startd address: <10.138.130.2:9618?addrs=10.138.130.2-9618&alias=ATLA-worker-1&noUDP&sock=startd_108711_4843>
+    starter address: <10.138.130.2:9618?addrs=10.138.130.2-9618&alias=ATLA-worker-1&noUDP&sock=slot1_1_108747_d95f_20>
+...
+023 (456.000.000) 2026-09-01 06:22:46 Job reconnected to slot1_1@NCSA-gpu-worker-1
+    startd address: <10.132.130.2:9618?addrs=10.132.130.2-9618&alias=NCSA-gpu-worker-1&noUDP&sock=startd_66391_4845>
+    starter address: <10.132.130.2:9618?addrs=10.132.130.2-9618&alias=NCSA-gpu-worker-1&noUDP&sock=slot1_1_66428_4906_28>
+...
+023 (453.000.000) 2026-09-01 06:22:46 Job reconnected to slot1_1@GPN-gpu-worker-1
+    startd address: <10.135.11.2:9618?addrs=10.135.11.2-9618&alias=GPN-gpu-worker-1&noUDP&sock=startd_67122_b000>
+    starter address: <10.135.11.2:9618?addrs=10.135.11.2-9618&alias=GPN-gpu-worker-1&noUDP&sock=slot1_1_67157_ee84_19>
+...
+004 (454.000.000) 2026-09-01 06:37:15 Job was evicted. Code 1013 Subcode 0
+	(0) CPU times
+		Usr 1 22:06:11, Sys 0 06:35:10  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Reason: Startd was shutdown
+	Partitionable Resources :      Usage  Request Allocated 
+	   Cpus                 :       4.60        4         4 
+	   Disk (KB)            : 6058813     6058813   4251648 
+	   GPUs                 :                             0 
+	   Memory (MB)          :    2965       14336     14336 
+	   TimeExecute (s)      :   51963                       
+	   TimeSlotBusy (s)     :   51996                       
+...
+040 (454.000.000) 2026-09-01 06:37:22 Started transferring input files
+	Transferring to host: <10.138.130.2:9618?addrs=10.138.130.2-9618&alias=ATLA-worker-1&noUDP&sock=slot1_1_148603_01b4_1>
+...
+040 (454.000.000) 2026-09-01 06:37:26 Finished transferring input files
+...
+022 (454.000.000) 2026-09-01 06:37:26 Job disconnected, attempting to reconnect
+    Socket between submit and execute hosts closed unexpectedly
+    Trying to reconnect to slot1_1@ATLA-worker-1 <10.138.130.2:9618?addrs=10.138.130.2-9618&alias=ATLA-worker-1&noUDP&sock=startd_148515_83f9>
+...
+004 (453.000.000) 2026-09-01 06:45:39 Job was evicted. Code 1013 Subcode 0
+	(0) CPU times
+		Usr 2 04:45:05, Sys 0 10:25:37  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Reason: Startd was shutdown
+	Partitionable Resources :      Usage  Request Allocated 
+	   Cpus                 :       3.43        4         4 
+	   Disk (KB)            : 5970002     5970002   4251648 
+	   GPUs                 :                             0 
+	   Memory (MB)          :    2643       14336     14336 
+	   TimeExecute (s)      :   52605                       
+	   TimeSlotBusy (s)     :   52655                       
+...
+040 (453.000.000) 2026-09-01 06:46:22 Started transferring input files
+	Transferring to host: <10.135.11.2:9618?addrs=10.135.11.2-9618&alias=GPN-gpu-worker-1&noUDP&sock=slot1_1_102394_95fd_2>
+...
+040 (453.000.000) 2026-09-01 06:47:18 Finished transferring input files
+...
+001 (453.000.000) 2026-09-01 06:47:18 Job executing on host: <10.135.11.2:9618?addrs=10.135.11.2-9618&alias=GPN-gpu-worker-1&noUDP&sock=startd_102337_3f9a>
+	SlotName: slot1_1@GPN-gpu-worker-1
+	AvailableGPUs = {  }
+	CondorScratchDir = "/var/lib/condor/execute/dir_104347"
+	Cpus = 4
+	Disk = 7501824
+	GPUs = 0
+	Memory = 14336
+...
+006 (453.000.000) 2026-09-01 06:52:27 Image size of job updated: 3500000
+	2686  -  MemoryUsage of job (MB)
+	914796  -  ResidentSetSize of job (KB)
+...
+004 (451.000.000) 2026-09-01 06:56:19 Job was evicted. Code 1013 Subcode 0
+	(0) CPU times
+		Usr 1 23:08:27, Sys 0 06:45:46  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Reason: Startd was shutdown
+	Partitionable Resources :      Usage  Request Allocated 
+	   Cpus                 :       4.58        4         4 
+	   Disk (KB)            : 6695369     6695369   4251648 
+	   GPUs                 :                             0 
+	   Memory (MB)          :    3371       14336     14336 
+	   TimeExecute (s)      :   53278                       
+	   TimeSlotBusy (s)     :   53295                       
+...
+040 (451.000.000) 2026-09-01 06:57:22 Started transferring input files
+	Transferring to host: <10.137.131.2:9618?addrs=10.137.131.2-9618&alias=NEWY-worker-1&noUDP&sock=slot1_1_150671_1988_1>
+...
+006 (453.000.000) 2026-09-01 06:57:27 Image size of job updated: 3500000
+	2686  -  MemoryUsage of job (MB)
+	914836  -  ResidentSetSize of job (KB)
+...
+040 (451.000.000) 2026-09-01 06:57:40 Finished transferring input files
+...
+001 (451.000.000) 2026-09-01 06:57:40 Job executing on host: <10.137.131.2:9618?addrs=10.137.131.2-9618&alias=NEWY-worker-1&noUDP&sock=startd_150583_fdd4>
+	SlotName: slot1_1@NEWY-worker-1
+	CondorScratchDir = "/var/lib/condor/execute/dir_152965"
+	Cpus = 4
+	Disk = 7501824
+	GPUs = 0
+	Memory = 14336
+...
+006 (453.000.000) 2026-09-01 07:02:28 Image size of job updated: 3500000
+	2686  -  MemoryUsage of job (MB)
+	1043208  -  ResidentSetSize of job (KB)
+...
+024 (455.000.000) 2026-09-01 07:02:36 Job reconnection failed
+    Job disconnected too long: JobLeaseDuration (2400 seconds) expired
+    Can not reconnect to slot1_1@pegasus-submit.pegasus.fabric, rescheduling job
+...
+006 (451.000.000) 2026-09-01 07:02:48 Image size of job updated: 3500000
+	3418  -  MemoryUsage of job (MB)
+	1016340  -  ResidentSetSize of job (KB)
+...
+006 (453.000.000) 2026-09-01 07:07:28 Image size of job updated: 3500000
+	2686  -  MemoryUsage of job (MB)
+	1043296  -  ResidentSetSize of job (KB)
+...
+006 (451.000.000) 2026-09-01 07:07:49 Image size of job updated: 3500000
+	3418  -  MemoryUsage of job (MB)
+	1016388  -  ResidentSetSize of job (KB)
+...
+024 (454.000.000) 2026-09-01 07:17:26 Job reconnection failed
+    Job disconnected too long: JobLeaseDuration (2400 seconds) expired
+    Can not reconnect to slot1_1@ATLA-worker-1, rescheduling job
+...
+006 (453.000.000) 2026-09-01 07:17:30 Image size of job updated: 3500000
+	2686  -  MemoryUsage of job (MB)
+	1181392  -  ResidentSetSize of job (KB)
+...
+004 (454.000.000) 2026-09-01 07:17:36 Job was evicted. Code 1008 Subcode 0
+	(0) CPU times
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Reason: Job disconnected too long: JobLeaseDuration (2400 seconds) expired
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        4         4 
+	   Disk (KB)            :   534805  7500000   7501824 
+	   GPUs                 :                           0 
+	   Memory (MB)          :     3174    14336     14336 
+	   TimeExecute (s)      :    51963                    
+	   TimeSlotBusy (s)     :    51996                    
+...
+006 (453.000.000) 2026-09-01 07:22:30 Image size of job updated: 3500000
+	2686  -  MemoryUsage of job (MB)
+	1181476  -  ResidentSetSize of job (KB)
+...
+006 (451.000.000) 2026-09-01 07:22:50 Image size of job updated: 3500000
+	3418  -  MemoryUsage of job (MB)
+	1172000  -  ResidentSetSize of job (KB)
+...
+006 (453.000.000) 2026-09-01 07:27:31 Image size of job updated: 3500000
+	2686  -  MemoryUsage of job (MB)
+	2456828  -  ResidentSetSize of job (KB)
+...
+006 (451.000.000) 2026-09-01 07:27:50 Image size of job updated: 3500000
+	3418  -  MemoryUsage of job (MB)
+	1172056  -  ResidentSetSize of job (KB)
+...
+006 (453.000.000) 2026-09-01 07:32:31 Image size of job updated: 3500000
+	2686  -  MemoryUsage of job (MB)
+	2460096  -  ResidentSetSize of job (KB)
+...
+006 (451.000.000) 2026-09-01 07:42:51 Image size of job updated: 3500000
+	3418  -  MemoryUsage of job (MB)
+	1225776  -  ResidentSetSize of job (KB)
+...
+006 (451.000.000) 2026-09-01 07:47:51 Image size of job updated: 3500000
+	3418  -  MemoryUsage of job (MB)
+	1225848  -  ResidentSetSize of job (KB)
+...
+040 (454.000.000) 2026-09-01 07:54:11 Started transferring input files
+	Transferring to host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dslot1_1_522350_9432_10%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=slot1_1_522350_9432_10>
+...
+040 (454.000.000) 2026-09-01 07:55:12 Finished transferring input files
+...
+001 (454.000.000) 2026-09-01 07:55:12 Job executing on host: <10.137.131.3:9618?alias=pegasus-submit.pegasus.fabric&sock=startd_522198_f8cf>
+	SlotName: slot1_1@pegasus-submit.pegasus.fabric
+	CondorScratchDir = "/var/lib/condor/execute/dir_571510"
+	Cpus = 4
+	Disk = 751616
+	GPUs = 0
+	Memory = 14336
+...
+006 (454.000.000) 2026-09-01 08:00:20 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	983992  -  ResidentSetSize of job (KB)
+...
+006 (451.000.000) 2026-09-01 08:02:52 Image size of job updated: 3500000
+	3418  -  MemoryUsage of job (MB)
+	1240164  -  ResidentSetSize of job (KB)
+...
+006 (454.000.000) 2026-09-01 08:05:21 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	984048  -  ResidentSetSize of job (KB)
+...
+006 (453.000.000) 2026-09-01 08:07:34 Image size of job updated: 3500000
+	3305  -  MemoryUsage of job (MB)
+	3384048  -  ResidentSetSize of job (KB)
+...
+006 (451.000.000) 2026-09-01 08:07:53 Image size of job updated: 3500000
+	3418  -  MemoryUsage of job (MB)
+	1240236  -  ResidentSetSize of job (KB)
+...
+040 (455.000.000) 2026-09-01 08:09:32 Started transferring input files
+	Transferring to host: <10.138.130.2:9618?addrs=10.138.130.2-9618&alias=ATLA-worker-1&noUDP&sock=slot1_1_149827_6ce6_8>
+...
+040 (455.000.000) 2026-09-01 08:10:03 Finished transferring input files
+...
+001 (455.000.000) 2026-09-01 08:10:03 Job executing on host: <10.138.130.2:9618?addrs=10.138.130.2-9618&alias=ATLA-worker-1&noUDP&sock=startd_149735_5584>
+	SlotName: slot1_1@ATLA-worker-1
+	CondorScratchDir = "/var/lib/condor/execute/dir_197664"
+	Cpus = 4
+	Disk = 7501824
+	GPUs = 0
+	Memory = 14336
+...
+006 (455.000.000) 2026-09-01 08:15:13 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	997560  -  ResidentSetSize of job (KB)
+...
+006 (454.000.000) 2026-09-01 08:15:21 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1943148  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 08:20:14 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	997648  -  ResidentSetSize of job (KB)
+...
+006 (454.000.000) 2026-09-01 08:20:22 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1945788  -  ResidentSetSize of job (KB)
+...
+006 (451.000.000) 2026-09-01 08:22:54 Image size of job updated: 3500000
+	3418  -  MemoryUsage of job (MB)
+	1255028  -  ResidentSetSize of job (KB)
+...
+006 (451.000.000) 2026-09-01 08:27:54 Image size of job updated: 3500000
+	3418  -  MemoryUsage of job (MB)
+	1255076  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 08:35:16 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1170500  -  ResidentSetSize of job (KB)
+...
+006 (454.000.000) 2026-09-01 08:35:24 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1967664  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 08:40:16 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1170584  -  ResidentSetSize of job (KB)
+...
+006 (454.000.000) 2026-09-01 08:40:24 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1970032  -  ResidentSetSize of job (KB)
+...
+006 (451.000.000) 2026-09-01 08:42:56 Image size of job updated: 3500000
+	3418  -  MemoryUsage of job (MB)
+	1267416  -  ResidentSetSize of job (KB)
+...
+006 (451.000.000) 2026-09-01 08:47:57 Image size of job updated: 3500000
+	3418  -  MemoryUsage of job (MB)
+	1267480  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 08:55:17 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1209360  -  ResidentSetSize of job (KB)
+...
+006 (454.000.000) 2026-09-01 08:55:26 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	2372512  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 09:00:18 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1209440  -  ResidentSetSize of job (KB)
+...
+006 (454.000.000) 2026-09-01 09:00:28 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	2375056  -  ResidentSetSize of job (KB)
+...
+006 (451.000.000) 2026-09-01 09:02:59 Image size of job updated: 3500000
+	3418  -  MemoryUsage of job (MB)
+	1277464  -  ResidentSetSize of job (KB)
+...
+006 (451.000.000) 2026-09-01 09:08:00 Image size of job updated: 3500000
+	3418  -  MemoryUsage of job (MB)
+	1277528  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 09:15:19 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1223904  -  ResidentSetSize of job (KB)
+...
+006 (454.000.000) 2026-09-01 09:15:29 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	3197028  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 09:20:19 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1224004  -  ResidentSetSize of job (KB)
+...
+006 (454.000.000) 2026-09-01 09:20:30 Image size of job updated: 3500000
+	3189  -  MemoryUsage of job (MB)
+	3264604  -  ResidentSetSize of job (KB)
+...
+006 (451.000.000) 2026-09-01 09:23:02 Image size of job updated: 3500000
+	3418  -  MemoryUsage of job (MB)
+	2028120  -  ResidentSetSize of job (KB)
+...
+006 (451.000.000) 2026-09-01 09:28:02 Image size of job updated: 3500000
+	3418  -  MemoryUsage of job (MB)
+	2031048  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 09:35:21 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1240720  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 09:40:22 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1240800  -  ResidentSetSize of job (KB)
+...
+006 (451.000.000) 2026-09-01 09:43:04 Image size of job updated: 3500000
+	3418  -  MemoryUsage of job (MB)
+	2761348  -  ResidentSetSize of job (KB)
+...
+006 (451.000.000) 2026-09-01 09:48:05 Image size of job updated: 3500000
+	3418  -  MemoryUsage of job (MB)
+	2832016  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 09:55:25 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1251068  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 10:00:25 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1251148  -  ResidentSetSize of job (KB)
+...
+006 (456.000.000) 2026-09-01 10:04:14 Image size of job updated: 3500000
+	3240  -  MemoryUsage of job (MB)
+	3317380  -  ResidentSetSize of job (KB)
+...
+006 (456.000.000) 2026-09-01 10:09:14 Image size of job updated: 3500000
+	3280  -  MemoryUsage of job (MB)
+	3358084  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 10:55:30 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1257888  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 11:00:30 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1257972  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 11:15:32 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1260900  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 11:20:33 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1260996  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 11:35:34 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1268884  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 11:40:34 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1268968  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 11:55:35 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1271108  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 12:00:36 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1271176  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 12:40:40 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1271244  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 13:55:46 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1276856  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 14:00:48 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1276940  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 14:55:52 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1283736  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 15:00:52 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1283816  -  ResidentSetSize of job (KB)
+...
+040 (454.000.000) 2026-09-01 15:05:55 Started transferring output files
+...
+040 (454.000.000) 2026-09-01 15:05:55 Finished transferring output files
+...
+005 (454.000.000) 2026-09-01 15:05:57 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 22:48:52, Sys 0 03:30:58  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 4 17:27:01, Sys 0 16:27:41  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	638024  -  Run Bytes Sent By Job
+	4138553863  -  Run Bytes Received By Job
+	638024  -  Total Bytes Sent By Job
+	8277107726  -  Total Bytes Received By Job
+	Partitionable Resources :      Usage  Request Allocated 
+	   Cpus                 :       4.56        4         4 
+	   Disk (KB)            : 6496561      750000    751616 
+	   GPUs                 :                             0 
+	   Memory (MB)          :    3189       14336     14336 
+	   TimeExecute (s)      :   25843                       
+	   TimeSlotBusy (s)     :   25904                       
+...
+000 (511.000.000) 2026-09-01 15:06:10 Job submitted from host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dschedd_522198_f8cf%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=schedd_522198_f8cf>
+    DAG Node: calibrate_calibrate_gage_10109001_t5
+    pool:condorpool
+...
+040 (511.000.000) 2026-09-01 15:06:10 Started transferring input files
+	Transferring to host: <23.134.233.50:9618?PrivAddr=%3c10.137.131.3:9618%3fsock%3dslot1_1_522350_9432_11%3e&PrivNet=pegasus.fabric&addrs=23.134.233.50-9618&alias=pegasus-submit.pegasus.fabric&noUDP&sock=slot1_1_522350_9432_11>
+...
+040 (511.000.000) 2026-09-01 15:06:46 Finished transferring input files
+...
+001 (511.000.000) 2026-09-01 15:06:46 Job executing on host: <10.137.131.3:9618?alias=pegasus-submit.pegasus.fabric&sock=startd_522198_f8cf>
+	SlotName: slot1_1@pegasus-submit.pegasus.fabric
+	CondorScratchDir = "/var/lib/condor/execute/dir_584907"
+	Cpus = 4
+	Disk = 4251648
+	GPUs = 0
+	Memory = 14336
+...
+006 (511.000.000) 2026-09-01 15:06:55 Image size of job updated: 23500
+	23  -  MemoryUsage of job (MB)
+	23500  -  ResidentSetSize of job (KB)
+...
+006 (511.000.000) 2026-09-01 15:11:57 Image size of job updated: 985952
+	963  -  MemoryUsage of job (MB)
+	985952  -  ResidentSetSize of job (KB)
+...
+006 (511.000.000) 2026-09-01 15:16:57 Image size of job updated: 3189140
+	963  -  MemoryUsage of job (MB)
+	986004  -  ResidentSetSize of job (KB)
+...
+006 (511.000.000) 2026-09-01 15:26:59 Image size of job updated: 3189140
+	2202  -  MemoryUsage of job (MB)
+	2254316  -  ResidentSetSize of job (KB)
+...
+006 (511.000.000) 2026-09-01 15:31:59 Image size of job updated: 3189140
+	2204  -  MemoryUsage of job (MB)
+	2256224  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 15:35:56 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1285236  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 15:40:56 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1285324  -  ResidentSetSize of job (KB)
+...
+006 (511.000.000) 2026-09-01 15:42:01 Image size of job updated: 3369076
+	2204  -  MemoryUsage of job (MB)
+	2256224  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 16:15:59 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1288732  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 16:21:00 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1288812  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 16:36:01 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1292748  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 16:41:01 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1292824  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 17:16:05 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1305236  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 17:21:05 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1305308  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 17:36:06 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1318480  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 17:41:07 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	1318564  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 17:56:09 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	2040364  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 18:01:09 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	2043792  -  ResidentSetSize of job (KB)
+...
+005 (456.000.000) 2026-09-01 18:39:44 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 3 21:46:19, Sys 0 19:21:31  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 5 23:16:11, Sys 1 05:29:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	715937  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	715937  -  Total Bytes Sent By Job
+	4138553863  -  Total Bytes Received By Job
+	Partitionable Resources :      Usage  Request Allocated 
+	   Cpus                 :       5.24        4         4 
+	   Disk (KB)            : 6789382     6789382   4251648 
+	   GPUs                 :                             0 
+	   Memory (MB)          :    3280       14336     14336 
+	   TimeExecute (s)      :   95242                       
+	   TimeSlotBusy (s)     :   95282                       
+...
+006 (455.000.000) 2026-09-01 18:56:14 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	2307680  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 19:01:15 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	2311208  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 19:16:17 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	2517804  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 19:21:17 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	2521116  -  ResidentSetSize of job (KB)
+...
+006 (511.000.000) 2026-09-01 19:52:25 Image size of job updated: 3369076
+	3142  -  MemoryUsage of job (MB)
+	3216664  -  ResidentSetSize of job (KB)
+...
+006 (511.000.000) 2026-09-01 19:57:25 Image size of job updated: 3369076
+	3182  -  MemoryUsage of job (MB)
+	3257500  -  ResidentSetSize of job (KB)
+...
+040 (511.000.000) 2026-09-01 19:58:29 Started transferring output files
+...
+040 (511.000.000) 2026-09-01 19:58:29 Finished transferring output files
+...
+005 (511.000.000) 2026-09-01 19:58:31 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 15:25:08, Sys 0 02:17:21  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 15:25:08, Sys 0 02:17:21  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	637944  -  Run Bytes Sent By Job
+	4138553863  -  Run Bytes Received By Job
+	637944  -  Total Bytes Sent By Job
+	4138553863  -  Total Bytes Received By Job
+	Partitionable Resources :      Usage  Request Allocated 
+	   Cpus                 :       2.81        4         4 
+	   Disk (KB)            : 6682224     4250000   4251648 
+	   GPUs                 :                             0 
+	   Memory (MB)          :    3182       14336     14336 
+	   TimeExecute (s)      :   17503                       
+	   TimeSlotBusy (s)     :   17539                       
+...
+006 (455.000.000) 2026-09-01 20:16:22 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	2538956  -  ResidentSetSize of job (KB)
+...
+006 (455.000.000) 2026-09-01 20:21:22 Image size of job updated: 3500000
+	3174  -  MemoryUsage of job (MB)
+	2542620  -  ResidentSetSize of job (KB)
+...
+040 (451.000.000) 2026-09-02 05:10:29 Started transferring output files
+...
+040 (451.000.000) 2026-09-02 05:10:29 Finished transferring output files
+...
+005 (451.000.000) 2026-09-02 05:10:31 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 2 22:27:06, Sys 0 10:09:30  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 6 18:00:18, Sys 0 23:17:38  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	721399  -  Run Bytes Sent By Job
+	4138553863  -  Run Bytes Received By Job
+	721399  -  Total Bytes Sent By Job
+	8277107726  -  Total Bytes Received By Job
+	Partitionable Resources :      Usage  Request Allocated 
+	   Cpus                 :       4.49        4         4 
+	   Disk (KB)            : 6789328     7500000   7501824 
+	   GPUs                 :                             0 
+	   Memory (MB)          :    2766       14336     14336 
+	   TimeExecute (s)      :   79969                       
+	   TimeSlotBusy (s)     :   79987                       
+...
+022 (455.000.000) 2026-09-02 06:22:09 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_1@ATLA-worker-1 <10.138.130.2:9618?addrs=10.138.130.2-9618&alias=ATLA-worker-1&noUDP&sock=startd_149735_5584>
+...
+022 (453.000.000) 2026-09-02 06:22:09 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_1@GPN-gpu-worker-1 <10.135.11.2:9618?addrs=10.135.11.2-9618&alias=GPN-gpu-worker-1&noUDP&sock=startd_102337_3f9a>
+...
+023 (455.000.000) 2026-09-02 06:22:09 Job reconnected to slot1_1@ATLA-worker-1
+    startd address: <10.138.130.2:9618?addrs=10.138.130.2-9618&alias=ATLA-worker-1&noUDP&sock=startd_149735_5584>
+    starter address: <10.138.130.2:9618?addrs=10.138.130.2-9618&alias=ATLA-worker-1&noUDP&sock=slot1_1_149827_6ce6_8>
+...
+023 (453.000.000) 2026-09-02 06:22:09 Job reconnected to slot1_1@GPN-gpu-worker-1
+    startd address: <10.135.11.2:9618?addrs=10.135.11.2-9618&alias=GPN-gpu-worker-1&noUDP&sock=startd_102337_3f9a>
+    starter address: <10.135.11.2:9618?addrs=10.135.11.2-9618&alias=GPN-gpu-worker-1&noUDP&sock=slot1_1_102394_95fd_2>
+...
+005 (455.000.000) 2026-09-02 06:30:24 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 2 23:02:41, Sys 0 10:37:40  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 7 17:09:18, Sys 1 03:33:50  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	715156  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	715156  -  Total Bytes Sent By Job
+	8277107726  -  Total Bytes Received By Job
+	Partitionable Resources :      Usage  Request Allocated 
+	   Cpus                 :       2.94        4         4 
+	   Disk (KB)            : 6791434     6791434   7501824 
+	   GPUs                 :                             0 
+	   Memory (MB)          :    2484       14336     14336 
+	   TimeExecute (s)      :   80419                       
+	   TimeSlotBusy (s)     :   80452                       
+...
+005 (453.000.000) 2026-09-02 09:33:31 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 3 22:24:34, Sys 0 20:57:49  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 11 16:21:51, Sys 2 11:38:33  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	725665  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	725665  -  Total Bytes Sent By Job
+	8277107726  -  Total Bytes Received By Job
+	Partitionable Resources :      Usage  Request Allocated 
+	   Cpus                 :       3.50        4         4 
+	   Disk (KB)            : 6788808     6788808   7501824 
+	   GPUs                 :                             0 
+	   Memory (MB)          :    3305       14336     14336 
+	   TimeExecute (s)      :   96371                       
+	   TimeSlotBusy (s)     :   96427                       
+...

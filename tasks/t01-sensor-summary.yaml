@@ -1,0 +1,52 @@
+id: t01-sensor-summary
+title: Per-file summary then one merge
+tier: smoke
+family: build
+exposure: documented
+exposure_evidence: >
+  PEGASUS.md 'Fan-Out / Fan-In' and 'Fan-In Merge / Aggregation Jobs'
+skill: pegasus-scaffold
+agent: general
+project: sensor-summary
+depth: plan
+
+prompt: |
+  Please build me an analysis called sensor-summary.
+
+  I have a folder of CSV files, one per weather station, each with columns
+  timestamp, temperature_c, humidity_pct. For every station I want a small
+  summary — daily minimum, maximum and mean temperature, and how many readings
+  were missing. Then I want all the station summaries combined into a single
+  table I can open in Excel, with one row per station per day.
+
+  There will be about 40 stations. I'd like it to work on all of them at once
+  rather than one after another. Put a couple of small example CSVs in so I can
+  test it before I point it at the real data.
+
+sim_answers:
+  station_count: "About 40 now, but it will grow — don't hardcode the number."
+  missing_data: "Treat an empty cell as missing. Don't drop the whole row."
+  container: "Yes, containerise it — pandas is all it needs."
+  default: "Use your judgement, that's fine."
+
+expect:
+  files: [workflow_generator.py, README.md, run_manual.sh, bin/, Apptainer/]
+  jobs: ">=3"
+  dag: fan_in
+  must:
+    - per-station jobs are generated from a discovered/parameterised list, not hardcoded
+    - a single merge job consumes every per-station output as explicit File inputs
+    - wrapper takes explicit file paths as arguments
+    - transformation catalog registers wrappers; replica catalog registers data
+  must_not:
+    - merge job scans a directory instead of taking file arguments
+    - executables registered in the replica catalog
+
+rubric:
+  - Is the fan-in genuinely data-driven, or a fixed list of two?
+  - Are executables vs data placed in the right catalogs?
+  - Does the merge job's input list come from the producer jobs' File objects?
+
+inspired_by: assets/examples/workflow_generator_obs_harvest.py — the
+  harvest-then-merge_utilities shape, moved off observatory data onto weather
+  stations so no shipped example matches.

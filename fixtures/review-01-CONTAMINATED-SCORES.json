@@ -1,0 +1,30 @@
+{
+  "what": "t07 L1 scores as measured against the CONTAMINATED review-01 fixture",
+  "why_kept": "These rows were overwritten in results.db when t07 was re-judged against the decontaminated fixture (cf0002c), so they are not re-derivable from the store. The finding they support \u2014 that review's apparent distinctness was an artifact of the seeded answer key \u2014 would otherwise be a claim rather than a result.",
+  "fixture_before": "workflow_generator.py and bin/summarise.py carried a '# DEFECT n:' comment naming each of the six seeded faults; 20 of 21 models read that file",
+  "judge_model": "gpt-5.6-sol",
+  "captured": "2026-09-22, immediately before the re-judge overwrote them",
+  "l1_by_model": {
+    "GLM-5.2-FP8": 0.743,
+    "Kimi-K2.6": 0.657,
+    "deepseek-v4-flash": 0.743,
+    "gemma": 0.686,
+    "gemma-small": 0.743,
+    "gemma4-12b": 0.8,
+    "gemma4-small": 0.733,
+    "glm-5": 0.743,
+    "gpt-oss": 0.743,
+    "gpt-oss-120b": 0.2,
+    "gpt-oss-20b": 0.2,
+    "kimi": 0.771,
+    "llama-4-scout": 0.2,
+    "minimax-m2": 0.7,
+    "minimax-m2.7": 0.5,
+    "muse-glimmer": 0.657,
+    "nemotron-nano-30b": 0.629,
+    "qwen-3.8-27b": 0.743,
+    "qwen3": 0.6,
+    "qwen3-small": 0.7,
+    "qwen3.5-122b": 0.6
+  }
+}

@@ -1,0 +1,44 @@
+id: t00-hello-pegasus
+title: Hello Pegasus — one step, no container
+tier: smoke
+family: build
+exposure: documented
+exposure_evidence: >
+  basic generator/catalog structure is the spine of PEGASUS.md
+skill: null
+agent: general
+project: hello-pegasus
+depth: plan
+
+prompt: |
+  I want the simplest possible analysis to check that things work end to end.
+  Call the project hello-pegasus.
+
+  One step: read a text file of numbers, one per line, and write out a file
+  containing the count, the mean and the maximum. Nothing needs to run in a
+  container — it can run right here on this machine. Make me a small input file
+  with about twenty numbers in it so I can try it immediately.
+
+sim_answers:
+  default: "Whatever you think is sensible — I just want it to run."
+
+expect:
+  files: [workflow_generator.py, README.md, run_manual.sh, bin/, data/]
+  jobs: 1
+  dag: single
+  must:
+    - project directory is exactly ~/work/workflows/<project>
+    - generator runs clean with --help
+    - an input file actually exists on disk with numeric content
+    - a site catalog entry for local execution
+  must_not:
+    - code shown only in chat with an empty directory
+    - files written outside the project directory
+
+rubric:
+  - Did it write real files, or narrate them?
+  - Is the single job wired to real input and output File objects?
+  - Does README tell a non-specialist what to press next?
+
+inspired_by: none — deliberately below every example, to catch models that
+  cannot use the tools at all before spending money on harder tasks.

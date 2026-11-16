@@ -1,0 +1,14 @@
+[
+  {
+    "_id": "summarize",
+    "_type": "file",
+    "_attributes": {
+      "user": "ubuntu",
+      "size": "4420",
+      "ctime": "2026-08-17T18:11:04.975677",
+      "checksum.type": "sha256",
+      "checksum.value": "dec50e7ee777f7fd7c63d710864a88e6ecb4f95b011237996362fc7c67aaeb2f",
+      "checksum.timing": "0.023"
+    }
+  }
+]

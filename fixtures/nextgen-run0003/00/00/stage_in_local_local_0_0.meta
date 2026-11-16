@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "fetch_hydrofabric",
+    "_type": "file",
+    "_attributes": {
+      "user": "ubuntu",
+      "size": "1972",
+      "ctime": "2026-08-17T18:11:04.974677",
+      "checksum.type": "sha256",
+      "checksum.value": "b6845b0b3f61aba174980710c81b892bcc7bf51cba26e62ebdfe141676a8e89f",
+      "checksum.timing": "0.023"
+    }
+  },
+  {
+    "_id": "fetch_usgs_obs",
+    "_type": "file",
+    "_attributes": {
+      "user": "ubuntu",
+      "size": "4928",
+      "ctime": "2026-08-31T15:23:50.334182",
+      "checksum.type": "sha256",
+      "checksum.value": "5b3760fa15336f2ece594fbf305e3f02898eee0605b248b011159e9c50828a61",
+      "checksum.timing": "0.019"
+    }
+  }
+]

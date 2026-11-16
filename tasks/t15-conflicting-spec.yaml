@@ -1,0 +1,64 @@
+id: t15-conflicting-spec
+title: Two requirements that cannot both hold
+tier: core
+family: elicit
+exposure: documented
+exposure_evidence: >
+  the overlay's 'Asking the user something' section covers the behaviour under
+  test, and PEGASUS.md covers what a Transformation needs in order to run at all.
+skill: null
+agent: general
+project: unspecified
+depth: none
+
+# The conflict is resolvable and the resolution is in the bank, so a model that
+# names it can still finish. A task that cannot be completed measures patience,
+# not elicitation.
+#
+# Nothing here names a fetchable resource, and that is deliberate. The first
+# draft's answer bank gave the image as `ghcr.io/our-lab/spectra-fit:1.4`;
+# `kimi` tried to pull it, got a 403 from a registry that has never existed, and
+# spent four of six turns asking for a GitHub token and guessing at tags. The
+# trial measured a fictional registry. Anything a model can try to fetch, it
+# will — so the image is described and located out of reach.
+prompt: |
+  I need to run spectra-fit over about 300 spectra. The only build of it I have
+  is inside a Docker image a former postdoc left us — it's not installed on the
+  pool and nobody here knows how to build it from source.
+
+  The cluster people are clear that containers aren't allowed on this pool, so
+  we'll have to work around that. Can you set the workflow up?
+
+sim_answers:
+  containers: "I asked them again — Apptainer is fine, it's Docker specifically they won't run."
+  image: "It's on the old lab server, not anywhere you can reach — I can copy it over. The entrypoint takes one spectrum and one output path."
+  input_spectra_files: "About 300 FITS files, all in one directory on the submit host."
+  project_name: "Call it spectra-fit."
+  default: "I'm not sure — what would you suggest?"
+
+expect:
+  must:
+    - names the conflict before proposing any design — the tool exists only in a
+      container and the request rules containers out
+    - puts it back to the user rather than settling it alone — either asking which
+      constraint is the fixed one, or proposing a way round and checking it is allowed
+    - once told Apptainer is permitted, proceeds to a sensible plan
+  must_not:
+    - silently picks one side and scaffolds as if the other had not been said
+    - declares the request impossible and stops
+    - emits a tool-call object as a chat message (e.g. a literal [use=question]{...} block)
+    - creates a project directory before it has a name
+
+rubric:
+  - Did it notice that the two halves of the request contradict each other, or
+    answer the half it knew how to answer?
+  - Is the conflict stated in the user's terms — the tool only exists in an
+    image, the pool forbids containers — or buried in a paragraph about Apptainer?
+  - Having asked, did it accept the answer and move on, or re-litigate?
+  - Did it distinguish Docker from Apptainer unprompted, or only after being told?
+
+inspired_by: >
+  t03's fixture, where the same tool has to reach a pool that cannot build it,
+  and the real constraint on the FABRIC pool — Apptainer present, Docker absent.
+  The conflict is stated the way a user states it, as two facts in separate
+  sentences, rather than as a puzzle.

@@ -1,0 +1,268 @@
+- invocation: True
+  version: 3.0
+  start: 2026-08-31T15:59:33.775+00:00
+  duration: 8.009
+  transformation: "assemble_rundir"
+  derivation: "assemble_gage_10109001"
+  resource: "condorpool"
+  wf-label: "nextgen"
+  wf-stamp: "2026-08-31T15:24:08+00:00"
+  interface: enp3s0
+  hostaddr: 10.30.6.179
+  hostname: ATLA-worker-1
+  pid: 130145
+  uid: 1000
+  user: ubuntu
+  gid: 1000
+  group: ubuntu
+  umask: 0o0022
+  mainjob:
+    start: 2026-08-31T15:59:33.788+00:00
+    duration: 7.995
+    pid: 130146
+    usage:
+      utime: 0.496
+      stime: 3.066
+      maxrss: 14336
+      minflt: 2403
+      majflt: 39
+      nswap: 0
+      inblock: 8
+      outblock: 6057720
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 1395
+      nivcsw: 693
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /srv/assemble_rundir
+      mode: 0o100755
+      size: 2857
+      inode: 528791
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-08-31T15:59:09+00:00
+      atime: 2026-08-31T15:59:31+00:00
+      ctime: 2026-08-31T15:59:30+00:00
+      uid: 1000
+      user: ubuntu
+      gid: 1000
+      group: ubuntu
+    argument_vector:
+      - "--gage"
+      - "gage-10109001"
+      - "--subset-tar"
+      - "gage-10109001_subset.tar"
+      - "--forcings-tar"
+      - "gage-10109001_forcings.tar"
+      - "--realization-tar"
+      - "gage-10109001_realization.tar"
+      - "--output"
+      - "rundir_gage-10109001.tar"
+    procs:
+  jobids:
+    condor: 445.0
+  cwd: /srv
+  usage:
+    utime: 0.006
+    stime: 0.009
+    maxrss: 2176
+    minflt: 129
+    majflt: 4
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 18
+    nivcsw: 0
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: atla-worker-1
+    uname_release: 6.8.0-124-generic
+    uname_machine: x86_64
+    ram_total: 16375628
+    ram_free: 9474144
+    ram_shared: 4344
+    ram_buffer: 144992
+    swap_total: 0
+    swap_free: 0
+    cpu_count: 8
+    cpu_speed: 2795
+    cpu_vendor: AuthenticAMD
+    cpu_model: AMD EPYC 7543 32-Core Processor
+    load_min1: 0.94
+    load_min5: 1.52
+    load_min15: 1.00
+    procs_total: 242
+    procs_running: 1
+    procs_sleeping: 116
+    procs_other: 125
+    procs_vmsize: 9065636
+    procs_rss: 474104
+    task_total: 303
+    task_running: 1
+    task_sleeping: 177
+    task_other: 125
+  files:
+    rundir_gage-10109001.tar:
+      lfn: "rundir_gage-10109001.tar"
+      file_name: /srv/rundir_gage-10109001.tar
+      mode: 0o100644
+      size: 1550376960
+      inode: 528810
+      nlink: 1
+      blksize: 4096
+      blocks: 3028088
+      mtime: 2026-08-31T15:59:41+00:00
+      atime: 2026-08-31T15:59:38+00:00
+      ctime: 2026-08-31T15:59:41+00:00
+      uid: 1000
+      user: ubuntu
+      gid: 1000
+      group: ubuntu
+      output: True
+      sha256: a3735bdb9ae56e0f690c36f327b2a8d04fc98660870284dbeb96974caf2f97e6
+      checksum_timing: 4.97
+    stdin:
+      file_name: /dev/null
+      mode: 0o20666
+      size: 0
+      inode: 5
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-08-17T14:15:22+00:00
+      atime: 2026-08-17T14:15:22+00:00
+      ctime: 2026-08-17T14:15:22+00:00
+      uid: 65534
+      user: nobody
+      gid: 65534
+      group: nobody
+    stdout:
+      temporary_name: /tmp/ks.out.vlbNfY
+      descriptor: 3
+      mode: 0o100600
+      size: 131
+      inode: 1057505
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-08-31T15:59:38+00:00
+      atime: 2026-08-31T15:59:33+00:00
+      ctime: 2026-08-31T15:59:38+00:00
+      uid: 1000
+      user: ubuntu
+      gid: 1000
+      group: ubuntu
+      data_truncated: false
+      data: |
+        GeoPackage:  config/gage-10109001_subset.gpkg
+        Realization: output_variables=27
+        Forcings:    ['forcings.nc', 'raw_gridded_data.nc']
+        
+    stderr:
+      temporary_name: /tmp/ks.err.buaNqj
+      descriptor: 4
+      mode: 0o100600
+      size: 852
+      inode: 1057506
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-08-31T15:59:41+00:00
+      atime: 2026-08-31T15:59:33+00:00
+      ctime: 2026-08-31T15:59:41+00:00
+      uid: 1000
+      user: ubuntu
+      gid: 1000
+      group: ubuntu
+      data_truncated: false
+      data: |
+        2026-08-31 15:59:33,948 - ngiab_pegasus - INFO - Extracting gage-10109001_subset.tar -> /srv/job_home/ngiab_preprocess_output/gage-10109001
+        /usr/lib64/python3.11/tarfile.py:2303: RuntimeWarning: The default behavior of tarfile extraction has been changed to disallow common exploits (including CVE-2007-4559). By default, absolute/parent paths are disallowed and some mode bits are cleared. See https://access.redhat.com/articles/7004769 for more details.
+          warnings.warn(
+        2026-08-31 15:59:33,954 - ngiab_pegasus - INFO - Extracting gage-10109001_forcings.tar -> /srv/job_home/ngiab_preprocess_output/gage-10109001
+        2026-08-31 15:59:38,146 - ngiab_pegasus - INFO - Extracting gage-10109001_realization.tar -> /srv/job_home/ngiab_preprocess_output/gage-10109001
+        2026-08-31 15:59:41,777 - ngiab_pegasus - INFO - Wrote rundir_gage-10109001.tar (3 members)
+        
+    metadata:
+      temporary_name: /tmp/ks.meta.enqFY7
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 1057507
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-08-31T15:59:33+00:00
+      atime: 2026-08-31T15:59:33+00:00
+      ctime: 2026-08-31T15:59:33+00:00
+      uid: 1000
+      user: ubuntu
+      gid: 1000
+      group: ubuntu
+
+---------------pegasus-multipart
+- integrity_verification_attempts:
+  - lfn: "nextgen_container.sif"
+    pfn: "nextgen_container.sif"
+    sha256: 854a827b3bd79f78e9fcd233523702dabed262676ecc132d6db7b839ebc822e2
+    success: True
+- integrity_summary:
+    succeeded: 1
+    failed: 0
+    duration: 1.083
+
+---------------pegasus-multipart
+- integrity_verification_attempts:
+  - lfn: "gage-10109001_realization.tar"
+    pfn: "gage-10109001_realization.tar"
+    sha256: bf22f8de2127f3eb064495e8ce22aa75c72fef00ac8570bb03bceb077270796d
+    success: True
+  - lfn: "nextgen_container.sif"
+    pfn: "nextgen_container.sif"
+    sha256: 854a827b3bd79f78e9fcd233523702dabed262676ecc132d6db7b839ebc822e2
+    success: True
+  - lfn: "assemble_rundir"
+    pfn: "assemble_rundir"
+    sha256: 8006e580ce91dacaa381e51d87b9113d9753bf05c7be2c884ade86729548fdf3
+    success: True
+  - lfn: "ngen_outputs_utils.py"
+    pfn: "ngen_outputs_utils.py"
+    sha256: 3b3d28f19415028a3c3aac86a75960627968e5a6c9c9025c5faa7803a12650fc
+    success: True
+  - lfn: "ngiab_pegasus.py"
+    pfn: "ngiab_pegasus.py"
+    sha256: b8d2e90f6bbb6c99655eb370110571f7a2cea4f91251c029d3e7bdc9358e4700
+    success: True
+  - lfn: "gage-10109001_forcings.tar"
+    pfn: "gage-10109001_forcings.tar"
+    sha256: 69a07d1007b84fb47512c643e66d6323851c86ef9664896af2811317697326a6
+    success: True
+  - lfn: "forcings_utils.py"
+    pfn: "forcings_utils.py"
+    sha256: 1a7935e9c3d1c34703378e06f8cb925f3ad08a5b619f6e3846c3b30d7a789e49
+    success: True
+  - lfn: "cal_utils.py"
+    pfn: "cal_utils.py"
+    sha256: c12c7138d4050bd556e142a0682c1fc93e479786a0e64e9aaec3d0cea969bbbd
+    success: True
+  - lfn: "gage-10109001_subset.tar"
+    pfn: "gage-10109001_subset.tar"
+    sha256: 62e9a93e11634ca183a028c1d4252f21218273f0eb940c53843505486b28232f
+    success: True
+  - lfn: "ngiab_utils.py"
+    pfn: "ngiab_utils.py"
+    sha256: 4855180e03f2c184f4d10e7e319aaef0e0d0e9bdfde3b1dd2347665c19479ef3
+    success: True
+- integrity_summary:
+    succeeded: 10
+    failed: 0
+    duration: 2.271

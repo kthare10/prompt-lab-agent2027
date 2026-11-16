@@ -1,0 +1,42 @@
+{
+  "client": "pegasus-plan",
+  "version": "5.1.2",
+  "wf_api": "python",
+  "type": "metrics",
+  "start_time": 1.788190763632E9,
+  "end_time": 1.788190769338E9,
+  "duration": 5.706,
+  "exitcode": 0,
+  "root_wf_uuid": "94c5b250-a44c-4f6e-85ef-09297a309d87",
+  "wf_uuid": "94c5b250-a44c-4f6e-85ef-09297a309d87",
+  "data_config": "condorio",
+  "planner_args": "--submit -s condorpool -o local workflow.yml ",
+  "uses_pmc": false,
+  "wf_metrics": {
+    "compute_tasks": 19,
+    "dax_tasks": 0,
+    "dag_tasks": 0,
+    "total_tasks": 19,
+    "deleted_tasks": 0,
+    "dax_input_files": 5,
+    "dax_inter_files": 23,
+    "dax_output_files": 10,
+    "dax_total_files": 38,
+    "compute_jobs": 19,
+    "clustered_jobs": 0,
+    "si_tx_jobs": 11,
+    "so_tx_jobs": 6,
+    "inter_tx_jobs": 0,
+    "reg_jobs": 0,
+    "cleanup_jobs": 12,
+    "create_dir_jobs": 1,
+    "dax_jobs": 0,
+    "dag_jobs": 0,
+    "chmod_jobs": 0,
+    "total_jobs": 49
+  },
+  "app_metrics": {
+    "name": "nextgen"
+  }
+}
+

@@ -1,0 +1,180 @@
+- invocation: True
+  version: 3.0
+  start: 2026-08-31T15:46:37.320+00:00
+  duration: 4.419
+  transformation: "pegasus::cleanup"
+  derivation: "null"
+  resource: "local"
+  wf-label: "nextgen"
+  wf-stamp: "2026-08-31T15:24:08+00:00"
+  interface: enp8s0
+  hostaddr: 23.134.233.50
+  hostname: pegasus-submit
+  pid: 403448
+  uid: 1000
+  user: ubuntu
+  gid: 1000
+  group: ubuntu
+  umask: 0o0022
+  mainjob:
+    start: 2026-08-31T15:46:37.337+00:00
+    duration: 4.401
+    pid: 403451
+    usage:
+      utime: 0.107
+      stime: 0.624
+      maxrss: 27892
+      minflt: 9493
+      majflt: 1
+      nswap: 0
+      inblock: 1752
+      outblock: 16
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 141
+      nivcsw: 100
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /usr/bin/pegasus-transfer
+      mode: 0o100755
+      size: 2901
+      inode: 86477
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-02-03T22:39:35+00:00
+      atime: 2026-08-30T19:18:53+00:00
+      ctime: 2026-08-17T15:10:12+00:00
+      uid: 0
+      user: root
+      gid: 0
+      group: root
+    argument_vector:
+    procs:
+  jobids:
+    condor: 441.0
+  cwd: /home/ubuntu/nextgen-workflow/ubuntu/pegasus/nextgen/run0003
+  usage:
+    utime: 0.004
+    stime: 0.017
+    maxrss: 6636
+    minflt: 236
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 2
+    nivcsw: 1
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: pegasus-submit
+    uname_release: 6.8.0-124-generic
+    uname_machine: x86_64
+    ram_total: 16375628
+    ram_free: 12094320
+    ram_shared: 4388
+    ram_buffer: 47768
+    swap_total: 0
+    swap_free: 0
+    cpu_count: 8
+    cpu_speed: 2795
+    cpu_vendor: AuthenticAMD
+    cpu_model: AMD EPYC 7543 32-Core Processor
+    load_min1: 0.84
+    load_min5: 0.53
+    load_min15: 0.23
+    procs_total: 261
+    procs_running: 2
+    procs_sleeping: 127
+    procs_other: 132
+    procs_vmsize: 7942168
+    procs_rss: 564280
+    task_total: 314
+    task_running: 2
+    task_sleeping: 180
+    task_other: 132
+  files:
+    stdin:
+      descriptor_number: 0
+      mode: 0o100664
+      size: 431
+      inode: 1081050
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-08-31T15:39:24+00:00
+      atime: 2026-08-31T15:39:24+00:00
+      ctime: 2026-08-31T15:39:24+00:00
+      uid: 1000
+      user: ubuntu
+      gid: 1000
+      group: ubuntu
+    stdout:
+      temporary_name: /var/spool/condor/local_univ_execute/dir_403445/ks.out.g6j3vj
+      descriptor: 3
+      mode: 0o100600
+      size: 0
+      inode: 1081227
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-08-31T15:46:37+00:00
+      atime: 2026-08-31T15:46:37+00:00
+      ctime: 2026-08-31T15:46:37+00:00
+      uid: 1000
+      user: ubuntu
+      gid: 1000
+      group: ubuntu
+    stderr:
+      temporary_name: /var/spool/condor/local_univ_execute/dir_403445/ks.err.pX1hZD
+      descriptor: 4
+      mode: 0o100600
+      size: 1027
+      inode: 1081228
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-08-31T15:46:41+00:00
+      atime: 2026-08-31T15:46:37+00:00
+      ctime: 2026-08-31T15:46:41+00:00
+      uid: 1000
+      user: ubuntu
+      gid: 1000
+      group: ubuntu
+      data_truncated: false
+      data: |
+        2026-08-31 15:46:37,657    INFO:  Reading URL pairs from stdin
+        2026-08-31 15:46:37,699    INFO:  2 transfers loaded
+        2026-08-31 15:46:37,699    INFO:  PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+        2026-08-31 15:46:37,699    INFO:  LD_LIBRARY_PATH=
+        2026-08-31 15:46:37,715    INFO:  --------------------------------------------------------------------------------
+        2026-08-31 15:46:37,715    INFO:  Starting transfers - attempt 1
+        2026-08-31 15:46:39,716    INFO:  /bin/rm -f '/home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003/./hydrofabric_cache.tar' 
+        2026-08-31 15:46:41,520    INFO:  /bin/rm -f '/home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003/./subset_hydrofabric' 
+        2026-08-31 15:46:41,718    INFO:  --------------------------------------------------------------------------------
+        2026-08-31 15:46:41,718    INFO:  Stats: no local files in the transfer set
+        2026-08-31 15:46:41,718    INFO:  All transfers completed successfully.
+        
+    metadata:
+      temporary_name: /var/spool/condor/local_univ_execute/dir_403445/ks.meta.0Ju70V
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 1081229
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-08-31T15:46:37+00:00
+      atime: 2026-08-31T15:46:37+00:00
+      ctime: 2026-08-31T15:46:37+00:00
+      uid: 1000
+      user: ubuntu
+      gid: 1000
+      group: ubuntu

@@ -1,0 +1,38 @@
+[
+  {
+    "_id": "calibrate",
+    "_type": "file",
+    "_attributes": {
+      "user": "ubuntu",
+      "size": "12958",
+      "ctime": "2026-08-31T15:23:50.334182",
+      "checksum.type": "sha256",
+      "checksum.value": "97cbea7c6836e787c26a77c6c38638d8a646467615add94e39a56e377c5a3da0",
+      "checksum.timing": "0.024"
+    }
+  },
+  {
+    "_id": "teehr_evaluation",
+    "_type": "file",
+    "_attributes": {
+      "user": "ubuntu",
+      "size": "17922",
+      "ctime": "2026-08-31T15:23:50.335182",
+      "checksum.type": "sha256",
+      "checksum.value": "481a0c005848c3c7a53a82c28bd2eabf7bf3e1c47d151d30fdd976cbfaa863f6",
+      "checksum.timing": "0.02"
+    }
+  },
+  {
+    "_id": "outputs_analysis",
+    "_type": "file",
+    "_attributes": {
+      "user": "ubuntu",
+      "size": "8812",
+      "ctime": "2026-08-31T15:23:50.335182",
+      "checksum.type": "sha256",
+      "checksum.value": "b900651da4311fe71e7c3df8854ced281b2e857016f1d881bf660097bda6d08d",
+      "checksum.timing": "0.019"
+    }
+  }
+]

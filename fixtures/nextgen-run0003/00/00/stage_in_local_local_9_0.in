@@ -1,0 +1,13 @@
+[
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "summarize",
+   "id": 1,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "condorpool", "url": "file:///home/ubuntu/nextgen-workflow/bin/summarize.py", "priority": 100 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003/./summarize" }
+   ] }
+]

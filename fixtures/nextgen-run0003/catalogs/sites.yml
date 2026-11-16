@@ -1,0 +1,27 @@
+x-pegasus:
+  apiLang: python
+  createdBy: ubuntu
+  createdOn: 08-31-26T15:24:08Z
+pegasus: 5.0.4
+sites:
+- name: local
+  directories:
+  - type: sharedScratch
+    path: /home/ubuntu/nextgen-workflow/scratch
+    sharedFileSystem: false
+    fileServers:
+    - url: file:///home/ubuntu/nextgen-workflow/scratch
+      operation: all
+  - type: localStorage
+    path: /home/ubuntu/nextgen-workflow/output
+    sharedFileSystem: false
+    fileServers:
+    - url: file:///home/ubuntu/nextgen-workflow/output
+      operation: all
+- name: condorpool
+  directories: []
+  profiles:
+    condor:
+      universe: vanilla
+    pegasus:
+      style: condor

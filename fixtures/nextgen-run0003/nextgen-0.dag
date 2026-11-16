@@ -1,0 +1,475 @@
+######################################################################
+# PEGASUS WMS GENERATED DAG FILE
+# DAG nextgen
+# Index = 0, Count = null
+######################################################################
+MAXJOBS cleanup 4
+MAXJOBS registration 1
+MAXJOBS stageout 10
+MAXJOBS stagein 10
+
+JOB create_dir_nextgen_0_local 00/00/create_dir_nextgen_0_local.sub
+SCRIPT POST create_dir_nextgen_0_local /usr/bin/pegasus-exitcode  -r $RETURN -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/create_dir_nextgen_0_local.out
+PRIORITY create_dir_nextgen_0_local 800
+RETRY create_dir_nextgen_0_local 1
+VARS create_dir_nextgen_0_local My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_remote_local_0_0 00/00/stage_in_remote_local_0_0.sub
+SCRIPT POST stage_in_remote_local_0_0 /usr/bin/pegasus-exitcode  -r $RETURN -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/stage_in_remote_local_0_0.out
+PRIORITY stage_in_remote_local_0_0 700
+RETRY stage_in_remote_local_0_0 1
+CATEGORY stage_in_remote_local_0_0 stagein
+VARS stage_in_remote_local_0_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_local_local_9_0 00/00/stage_in_local_local_9_0.sub
+SCRIPT POST stage_in_local_local_9_0 /usr/bin/pegasus-exitcode  -r $RETURN -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/stage_in_local_local_9_0.out
+PRIORITY stage_in_local_local_9_0 700
+RETRY stage_in_local_local_9_0 1
+CATEGORY stage_in_local_local_9_0 stagein
+VARS stage_in_local_local_9_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_local_local_4_0 00/00/stage_in_local_local_4_0.sub
+SCRIPT POST stage_in_local_local_4_0 /usr/bin/pegasus-exitcode  -r $RETURN -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/stage_in_local_local_4_0.out
+PRIORITY stage_in_local_local_4_0 700
+RETRY stage_in_local_local_4_0 1
+CATEGORY stage_in_local_local_4_0 stagein
+VARS stage_in_local_local_4_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_local_local_5_0 00/00/stage_in_local_local_5_0.sub
+SCRIPT POST stage_in_local_local_5_0 /usr/bin/pegasus-exitcode  -r $RETURN -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/stage_in_local_local_5_0.out
+PRIORITY stage_in_local_local_5_0 700
+RETRY stage_in_local_local_5_0 1
+CATEGORY stage_in_local_local_5_0 stagein
+VARS stage_in_local_local_5_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_local_local_6_0 00/00/stage_in_local_local_6_0.sub
+SCRIPT POST stage_in_local_local_6_0 /usr/bin/pegasus-exitcode  -r $RETURN -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/stage_in_local_local_6_0.out
+PRIORITY stage_in_local_local_6_0 700
+RETRY stage_in_local_local_6_0 1
+CATEGORY stage_in_local_local_6_0 stagein
+VARS stage_in_local_local_6_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_local_local_7_0 00/00/stage_in_local_local_7_0.sub
+SCRIPT POST stage_in_local_local_7_0 /usr/bin/pegasus-exitcode  -r $RETURN -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/stage_in_local_local_7_0.out
+PRIORITY stage_in_local_local_7_0 700
+RETRY stage_in_local_local_7_0 1
+CATEGORY stage_in_local_local_7_0 stagein
+VARS stage_in_local_local_7_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_local_local_0_0 00/00/stage_in_local_local_0_0.sub
+SCRIPT POST stage_in_local_local_0_0 /usr/bin/pegasus-exitcode  -r $RETURN -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/stage_in_local_local_0_0.out
+PRIORITY stage_in_local_local_0_0 700
+RETRY stage_in_local_local_0_0 1
+CATEGORY stage_in_local_local_0_0 stagein
+VARS stage_in_local_local_0_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_local_local_1_0 00/00/stage_in_local_local_1_0.sub
+SCRIPT POST stage_in_local_local_1_0 /usr/bin/pegasus-exitcode  -r $RETURN -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/stage_in_local_local_1_0.out
+PRIORITY stage_in_local_local_1_0 700
+RETRY stage_in_local_local_1_0 1
+CATEGORY stage_in_local_local_1_0 stagein
+VARS stage_in_local_local_1_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_remote_local_5_0 00/00/stage_in_remote_local_5_0.sub
+SCRIPT POST stage_in_remote_local_5_0 /usr/bin/pegasus-exitcode  -r $RETURN -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/stage_in_remote_local_5_0.out
+PRIORITY stage_in_remote_local_5_0 700
+RETRY stage_in_remote_local_5_0 1
+CATEGORY stage_in_remote_local_5_0 stagein
+VARS stage_in_remote_local_5_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_local_local_2_0 00/00/stage_in_local_local_2_0.sub
+SCRIPT POST stage_in_local_local_2_0 /usr/bin/pegasus-exitcode  -r $RETURN -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/stage_in_local_local_2_0.out
+PRIORITY stage_in_local_local_2_0 700
+RETRY stage_in_local_local_2_0 1
+CATEGORY stage_in_local_local_2_0 stagein
+VARS stage_in_local_local_2_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_local_local_3_0 00/00/stage_in_local_local_3_0.sub
+SCRIPT POST stage_in_local_local_3_0 /usr/bin/pegasus-exitcode  -r $RETURN -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/stage_in_local_local_3_0.out
+PRIORITY stage_in_local_local_3_0 700
+RETRY stage_in_local_local_3_0 1
+CATEGORY stage_in_local_local_3_0 stagein
+VARS stage_in_local_local_3_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB fetch_hydrofabric_fetch_hydrofabric 00/00/fetch_hydrofabric_fetch_hydrofabric.sub
+SCRIPT POST fetch_hydrofabric_fetch_hydrofabric /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/fetch_hydrofabric_fetch_hydrofabric.out
+PRIORITY fetch_hydrofabric_fetch_hydrofabric 20
+RETRY fetch_hydrofabric_fetch_hydrofabric 2
+VARS fetch_hydrofabric_fetch_hydrofabric My.DAGNodeRetry="$(RETRY)"
+
+JOB fetch_usgs_obs_obs_gage_10109001 00/00/fetch_usgs_obs_obs_gage_10109001.sub
+SCRIPT POST fetch_usgs_obs_obs_gage_10109001 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/fetch_usgs_obs_obs_gage_10109001.out
+PRIORITY fetch_usgs_obs_obs_gage_10109001 20
+RETRY fetch_usgs_obs_obs_gage_10109001 2
+VARS fetch_usgs_obs_obs_gage_10109001 My.DAGNodeRetry="$(RETRY)"
+
+JOB subset_hydrofabric_subset_gage_10109001 00/00/subset_hydrofabric_subset_gage_10109001.sub
+SCRIPT POST subset_hydrofabric_subset_gage_10109001 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/subset_hydrofabric_subset_gage_10109001.out
+PRIORITY subset_hydrofabric_subset_gage_10109001 30
+RETRY subset_hydrofabric_subset_gage_10109001 1
+VARS subset_hydrofabric_subset_gage_10109001 My.DAGNodeRetry="$(RETRY)"
+
+JOB clean_up_local_level_3_0 00/01/clean_up_local_level_3_0.sub
+SCRIPT POST clean_up_local_level_3_0 /usr/bin/pegasus-exitcode  -r $RETURN -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/01/clean_up_local_level_3_0.out
+PRIORITY clean_up_local_level_3_0 1000
+RETRY clean_up_local_level_3_0 1
+CATEGORY clean_up_local_level_3_0 cleanup
+VARS clean_up_local_level_3_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_out_local_local_0_0 00/00/stage_out_local_local_0_0.sub
+SCRIPT POST stage_out_local_local_0_0 /usr/bin/pegasus-exitcode  -r $RETURN -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/stage_out_local_local_0_0.out
+PRIORITY stage_out_local_local_0_0 900
+RETRY stage_out_local_local_0_0 1
+CATEGORY stage_out_local_local_0_0 stageout
+VARS stage_out_local_local_0_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB generate_realization_realization_gage_10109001 00/00/generate_realization_realization_gage_10109001.sub
+SCRIPT POST generate_realization_realization_gage_10109001 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/generate_realization_realization_gage_10109001.out
+PRIORITY generate_realization_realization_gage_10109001 40
+RETRY generate_realization_realization_gage_10109001 1
+VARS generate_realization_realization_gage_10109001 My.DAGNodeRetry="$(RETRY)"
+
+JOB generate_forcings_forcings_gage_10109001 00/00/generate_forcings_forcings_gage_10109001.sub
+SCRIPT POST generate_forcings_forcings_gage_10109001 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/generate_forcings_forcings_gage_10109001.out
+PRIORITY generate_forcings_forcings_gage_10109001 40
+RETRY generate_forcings_forcings_gage_10109001 1
+VARS generate_forcings_forcings_gage_10109001 My.DAGNodeRetry="$(RETRY)"
+
+JOB clean_up_local_level_4_0 00/01/clean_up_local_level_4_0.sub
+SCRIPT POST clean_up_local_level_4_0 /usr/bin/pegasus-exitcode  -r $RETURN -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/01/clean_up_local_level_4_0.out
+PRIORITY clean_up_local_level_4_0 1000
+RETRY clean_up_local_level_4_0 1
+CATEGORY clean_up_local_level_4_0 cleanup
+VARS clean_up_local_level_4_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB assemble_rundir_assemble_gage_10109001 00/00/assemble_rundir_assemble_gage_10109001.sub
+SCRIPT POST assemble_rundir_assemble_gage_10109001 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/assemble_rundir_assemble_gage_10109001.out
+PRIORITY assemble_rundir_assemble_gage_10109001 50
+RETRY assemble_rundir_assemble_gage_10109001 1
+VARS assemble_rundir_assemble_gage_10109001 My.DAGNodeRetry="$(RETRY)"
+
+JOB clean_up_local_level_5_0 00/01/clean_up_local_level_5_0.sub
+SCRIPT POST clean_up_local_level_5_0 /usr/bin/pegasus-exitcode  -r $RETURN -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/01/clean_up_local_level_5_0.out
+PRIORITY clean_up_local_level_5_0 1000
+RETRY clean_up_local_level_5_0 1
+CATEGORY clean_up_local_level_5_0 cleanup
+VARS clean_up_local_level_5_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB run_nextgen_run_gage_10109001 00/00/run_nextgen_run_gage_10109001.sub
+SCRIPT POST run_nextgen_run_gage_10109001 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/run_nextgen_run_gage_10109001.out
+PRIORITY run_nextgen_run_gage_10109001 60
+RETRY run_nextgen_run_gage_10109001 1
+VARS run_nextgen_run_gage_10109001 My.DAGNodeRetry="$(RETRY)"
+
+JOB clean_up_local_level_6_0 00/00/clean_up_local_level_6_0.sub
+SCRIPT POST clean_up_local_level_6_0 /usr/bin/pegasus-exitcode  -r $RETURN -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/clean_up_local_level_6_0.out
+PRIORITY clean_up_local_level_6_0 1000
+RETRY clean_up_local_level_6_0 1
+CATEGORY clean_up_local_level_6_0 cleanup
+VARS clean_up_local_level_6_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_out_local_local_4_0 00/00/stage_out_local_local_4_0.sub
+SCRIPT POST stage_out_local_local_4_0 /usr/bin/pegasus-exitcode  -r $RETURN -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/stage_out_local_local_4_0.out
+PRIORITY stage_out_local_local_4_0 900
+RETRY stage_out_local_local_4_0 1
+CATEGORY stage_out_local_local_4_0 stageout
+VARS stage_out_local_local_4_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB outputs_analysis_analysis_gage_10109001 00/00/outputs_analysis_analysis_gage_10109001.sub
+SCRIPT POST outputs_analysis_analysis_gage_10109001 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/outputs_analysis_analysis_gage_10109001.out
+PRIORITY outputs_analysis_analysis_gage_10109001 70
+RETRY outputs_analysis_analysis_gage_10109001 1
+VARS outputs_analysis_analysis_gage_10109001 My.DAGNodeRetry="$(RETRY)"
+
+JOB clean_up_local_level_7_0 00/00/clean_up_local_level_7_0.sub
+SCRIPT POST clean_up_local_level_7_0 /usr/bin/pegasus-exitcode  -r $RETURN -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/clean_up_local_level_7_0.out
+PRIORITY clean_up_local_level_7_0 1000
+RETRY clean_up_local_level_7_0 1
+CATEGORY clean_up_local_level_7_0 cleanup
+VARS clean_up_local_level_7_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB calibrate_calibrate_gage_10109001_t3 00/00/calibrate_calibrate_gage_10109001_t3.sub
+SCRIPT POST calibrate_calibrate_gage_10109001_t3 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/calibrate_calibrate_gage_10109001_t3.out
+PRIORITY calibrate_calibrate_gage_10109001_t3 70
+RETRY calibrate_calibrate_gage_10109001_t3 1
+VARS calibrate_calibrate_gage_10109001_t3 My.DAGNodeRetry="$(RETRY)"
+
+JOB teehr_evaluation_teehr_gage_10109001 00/00/teehr_evaluation_teehr_gage_10109001.sub
+SCRIPT POST teehr_evaluation_teehr_gage_10109001 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/teehr_evaluation_teehr_gage_10109001.out
+PRIORITY teehr_evaluation_teehr_gage_10109001 70
+RETRY teehr_evaluation_teehr_gage_10109001 2
+VARS teehr_evaluation_teehr_gage_10109001 My.DAGNodeRetry="$(RETRY)"
+
+JOB calibrate_calibrate_gage_10109001_t2 00/00/calibrate_calibrate_gage_10109001_t2.sub
+SCRIPT POST calibrate_calibrate_gage_10109001_t2 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/calibrate_calibrate_gage_10109001_t2.out
+PRIORITY calibrate_calibrate_gage_10109001_t2 70
+RETRY calibrate_calibrate_gage_10109001_t2 1
+VARS calibrate_calibrate_gage_10109001_t2 My.DAGNodeRetry="$(RETRY)"
+
+JOB calibrate_calibrate_gage_10109001_t5 00/00/calibrate_calibrate_gage_10109001_t5.sub
+SCRIPT POST calibrate_calibrate_gage_10109001_t5 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/calibrate_calibrate_gage_10109001_t5.out
+PRIORITY calibrate_calibrate_gage_10109001_t5 70
+RETRY calibrate_calibrate_gage_10109001_t5 1
+VARS calibrate_calibrate_gage_10109001_t5 My.DAGNodeRetry="$(RETRY)"
+
+JOB calibrate_calibrate_gage_10109001_t4 00/00/calibrate_calibrate_gage_10109001_t4.sub
+SCRIPT POST calibrate_calibrate_gage_10109001_t4 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/calibrate_calibrate_gage_10109001_t4.out
+PRIORITY calibrate_calibrate_gage_10109001_t4 70
+RETRY calibrate_calibrate_gage_10109001_t4 1
+VARS calibrate_calibrate_gage_10109001_t4 My.DAGNodeRetry="$(RETRY)"
+
+JOB calibrate_calibrate_gage_10109001_t1 00/00/calibrate_calibrate_gage_10109001_t1.sub
+SCRIPT POST calibrate_calibrate_gage_10109001_t1 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/calibrate_calibrate_gage_10109001_t1.out
+PRIORITY calibrate_calibrate_gage_10109001_t1 70
+RETRY calibrate_calibrate_gage_10109001_t1 1
+VARS calibrate_calibrate_gage_10109001_t1 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_out_local_local_5_0 00/00/stage_out_local_local_5_0.sub
+SCRIPT POST stage_out_local_local_5_0 /usr/bin/pegasus-exitcode  -r $RETURN -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/stage_out_local_local_5_0.out
+PRIORITY stage_out_local_local_5_0 900
+RETRY stage_out_local_local_5_0 1
+CATEGORY stage_out_local_local_5_0 stageout
+VARS stage_out_local_local_5_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB select_best_params_selectbest_gage_10109001 00/00/select_best_params_selectbest_gage_10109001.sub
+SCRIPT POST select_best_params_selectbest_gage_10109001 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/select_best_params_selectbest_gage_10109001.out
+PRIORITY select_best_params_selectbest_gage_10109001 80
+RETRY select_best_params_selectbest_gage_10109001 1
+VARS select_best_params_selectbest_gage_10109001 My.DAGNodeRetry="$(RETRY)"
+
+JOB clean_up_local_level_8_0 00/00/clean_up_local_level_8_0.sub
+SCRIPT POST clean_up_local_level_8_0 /usr/bin/pegasus-exitcode  -r $RETURN -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/clean_up_local_level_8_0.out
+PRIORITY clean_up_local_level_8_0 1000
+RETRY clean_up_local_level_8_0 1
+CATEGORY clean_up_local_level_8_0 cleanup
+VARS clean_up_local_level_8_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_out_local_local_6_0 00/00/stage_out_local_local_6_0.sub
+SCRIPT POST stage_out_local_local_6_0 /usr/bin/pegasus-exitcode  -r $RETURN -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/stage_out_local_local_6_0.out
+PRIORITY stage_out_local_local_6_0 900
+RETRY stage_out_local_local_6_0 1
+CATEGORY stage_out_local_local_6_0 stageout
+VARS stage_out_local_local_6_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB apply_params_apply_gage_10109001 00/00/apply_params_apply_gage_10109001.sub
+SCRIPT POST apply_params_apply_gage_10109001 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/apply_params_apply_gage_10109001.out
+PRIORITY apply_params_apply_gage_10109001 90
+RETRY apply_params_apply_gage_10109001 1
+VARS apply_params_apply_gage_10109001 My.DAGNodeRetry="$(RETRY)"
+
+JOB clean_up_local_level_9_0 00/00/clean_up_local_level_9_0.sub
+SCRIPT POST clean_up_local_level_9_0 /usr/bin/pegasus-exitcode  -r $RETURN -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/clean_up_local_level_9_0.out
+PRIORITY clean_up_local_level_9_0 1000
+RETRY clean_up_local_level_9_0 1
+CATEGORY clean_up_local_level_9_0 cleanup
+VARS clean_up_local_level_9_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB outputs_analysis_analysis_gage_10109001_cal 00/00/outputs_analysis_analysis_gage_10109001_cal.sub
+SCRIPT POST outputs_analysis_analysis_gage_10109001_cal /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/outputs_analysis_analysis_gage_10109001_cal.out
+PRIORITY outputs_analysis_analysis_gage_10109001_cal 100
+RETRY outputs_analysis_analysis_gage_10109001_cal 1
+VARS outputs_analysis_analysis_gage_10109001_cal My.DAGNodeRetry="$(RETRY)"
+
+JOB teehr_evaluation_teehr_gage_10109001_cal 00/00/teehr_evaluation_teehr_gage_10109001_cal.sub
+SCRIPT POST teehr_evaluation_teehr_gage_10109001_cal /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/teehr_evaluation_teehr_gage_10109001_cal.out
+PRIORITY teehr_evaluation_teehr_gage_10109001_cal 100
+RETRY teehr_evaluation_teehr_gage_10109001_cal 2
+VARS teehr_evaluation_teehr_gage_10109001_cal My.DAGNodeRetry="$(RETRY)"
+
+JOB clean_up_local_level_10_0 00/00/clean_up_local_level_10_0.sub
+SCRIPT POST clean_up_local_level_10_0 /usr/bin/pegasus-exitcode  -r $RETURN -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/clean_up_local_level_10_0.out
+PRIORITY clean_up_local_level_10_0 1000
+RETRY clean_up_local_level_10_0 1
+CATEGORY clean_up_local_level_10_0 cleanup
+VARS clean_up_local_level_10_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_out_local_local_8_0 00/00/stage_out_local_local_8_0.sub
+SCRIPT POST stage_out_local_local_8_0 /usr/bin/pegasus-exitcode  -r $RETURN -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/stage_out_local_local_8_0.out
+PRIORITY stage_out_local_local_8_0 900
+RETRY stage_out_local_local_8_0 1
+CATEGORY stage_out_local_local_8_0 stageout
+VARS stage_out_local_local_8_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB clean_up_local_level_11_0 00/00/clean_up_local_level_11_0.sub
+SCRIPT POST clean_up_local_level_11_0 /usr/bin/pegasus-exitcode  -r $RETURN -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/clean_up_local_level_11_0.out
+PRIORITY clean_up_local_level_11_0 1000
+RETRY clean_up_local_level_11_0 1
+CATEGORY clean_up_local_level_11_0 cleanup
+VARS clean_up_local_level_11_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB summarize_summarize 00/00/summarize_summarize.sub
+SCRIPT POST summarize_summarize /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/summarize_summarize.out
+PRIORITY summarize_summarize 110
+RETRY summarize_summarize 1
+VARS summarize_summarize My.DAGNodeRetry="$(RETRY)"
+
+JOB clean_up_local_level_12_0 00/00/clean_up_local_level_12_0.sub
+SCRIPT POST clean_up_local_level_12_0 /usr/bin/pegasus-exitcode  -r $RETURN -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/clean_up_local_level_12_0.out
+PRIORITY clean_up_local_level_12_0 1000
+RETRY clean_up_local_level_12_0 1
+CATEGORY clean_up_local_level_12_0 cleanup
+VARS clean_up_local_level_12_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_out_local_local_9_0 00/00/stage_out_local_local_9_0.sub
+SCRIPT POST stage_out_local_local_9_0 /usr/bin/pegasus-exitcode  -r $RETURN -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/stage_out_local_local_9_0.out
+PRIORITY stage_out_local_local_9_0 900
+RETRY stage_out_local_local_9_0 1
+CATEGORY stage_out_local_local_9_0 stageout
+VARS stage_out_local_local_9_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB clean_up_local_level_13_0 00/00/clean_up_local_level_13_0.sub
+SCRIPT POST clean_up_local_level_13_0 /usr/bin/pegasus-exitcode  -r $RETURN -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/00/clean_up_local_level_13_0.out
+PRIORITY clean_up_local_level_13_0 1000
+RETRY clean_up_local_level_13_0 1
+CATEGORY clean_up_local_level_13_0 cleanup
+VARS clean_up_local_level_13_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB cleanup_nextgen_0_local 00/01/cleanup_nextgen_0_local.sub
+SCRIPT POST cleanup_nextgen_0_local /usr/bin/pegasus-exitcode  -r $RETURN -l nextgen-0.exitcode.log -M nextgen-0.cache.meta   .//00/01/cleanup_nextgen_0_local.out
+PRIORITY cleanup_nextgen_0_local 1000
+RETRY cleanup_nextgen_0_local 1
+VARS cleanup_nextgen_0_local My.DAGNodeRetry="$(RETRY)"
+
+PARENT  stage_in_remote_local_0_0 CHILD assemble_rundir_assemble_gage_10109001
+PARENT  stage_in_remote_local_0_0 CHILD outputs_analysis_analysis_gage_10109001
+PARENT  stage_in_remote_local_0_0 CHILD run_nextgen_run_gage_10109001
+PARENT  stage_in_remote_local_0_0 CHILD outputs_analysis_analysis_gage_10109001_cal
+PARENT  stage_in_remote_local_0_0 CHILD summarize_summarize
+PARENT  stage_in_remote_local_0_0 CHILD calibrate_calibrate_gage_10109001_t3
+PARENT  stage_in_remote_local_0_0 CHILD teehr_evaluation_teehr_gage_10109001
+PARENT  stage_in_remote_local_0_0 CHILD calibrate_calibrate_gage_10109001_t2
+PARENT  stage_in_remote_local_0_0 CHILD calibrate_calibrate_gage_10109001_t5
+PARENT  stage_in_remote_local_0_0 CHILD subset_hydrofabric_subset_gage_10109001
+PARENT  stage_in_remote_local_0_0 CHILD calibrate_calibrate_gage_10109001_t4
+PARENT  stage_in_remote_local_0_0 CHILD fetch_hydrofabric_fetch_hydrofabric
+PARENT  stage_in_remote_local_0_0 CHILD fetch_usgs_obs_obs_gage_10109001
+PARENT  stage_in_remote_local_0_0 CHILD calibrate_calibrate_gage_10109001_t1
+PARENT  stage_in_remote_local_0_0 CHILD generate_realization_realization_gage_10109001
+PARENT  stage_in_remote_local_0_0 CHILD generate_forcings_forcings_gage_10109001
+PARENT  stage_in_remote_local_0_0 CHILD select_best_params_selectbest_gage_10109001
+PARENT  stage_in_remote_local_0_0 CHILD apply_params_apply_gage_10109001
+PARENT  stage_in_remote_local_0_0 CHILD teehr_evaluation_teehr_gage_10109001_cal
+PARENT  outputs_analysis_analysis_gage_10109001 CHILD stage_out_local_local_5_0
+PARENT  outputs_analysis_analysis_gage_10109001 CHILD clean_up_local_level_11_0
+PARENT  outputs_analysis_analysis_gage_10109001 CHILD summarize_summarize
+PARENT  outputs_analysis_analysis_gage_10109001 CHILD clean_up_local_level_10_0
+PARENT  clean_up_local_level_13_0 CHILD cleanup_nextgen_0_local
+PARENT  stage_in_local_local_4_0 CHILD run_nextgen_run_gage_10109001
+PARENT  clean_up_local_level_4_0 CHILD cleanup_nextgen_0_local
+PARENT  stage_in_local_local_6_0 CHILD select_best_params_selectbest_gage_10109001
+PARENT  clean_up_local_level_6_0 CHILD cleanup_nextgen_0_local
+PARENT  stage_in_local_local_0_0 CHILD fetch_hydrofabric_fetch_hydrofabric
+PARENT  stage_in_local_local_0_0 CHILD fetch_usgs_obs_obs_gage_10109001
+PARENT  clean_up_local_level_8_0 CHILD cleanup_nextgen_0_local
+PARENT  stage_in_local_local_2_0 CHILD generate_realization_realization_gage_10109001
+PARENT  stage_in_local_local_2_0 CHILD generate_forcings_forcings_gage_10109001
+PARENT  clean_up_local_level_11_0 CHILD cleanup_nextgen_0_local
+PARENT  stage_out_local_local_8_0 CHILD clean_up_local_level_12_0
+PARENT  stage_out_local_local_6_0 CHILD clean_up_local_level_10_0
+PARENT  stage_out_local_local_4_0 CHILD clean_up_local_level_8_0
+PARENT  run_nextgen_run_gage_10109001 CHILD stage_out_local_local_4_0
+PARENT  run_nextgen_run_gage_10109001 CHILD outputs_analysis_analysis_gage_10109001
+PARENT  run_nextgen_run_gage_10109001 CHILD clean_up_local_level_7_0
+PARENT  run_nextgen_run_gage_10109001 CHILD calibrate_calibrate_gage_10109001_t3
+PARENT  run_nextgen_run_gage_10109001 CHILD teehr_evaluation_teehr_gage_10109001
+PARENT  run_nextgen_run_gage_10109001 CHILD calibrate_calibrate_gage_10109001_t2
+PARENT  run_nextgen_run_gage_10109001 CHILD calibrate_calibrate_gage_10109001_t5
+PARENT  run_nextgen_run_gage_10109001 CHILD calibrate_calibrate_gage_10109001_t4
+PARENT  run_nextgen_run_gage_10109001 CHILD calibrate_calibrate_gage_10109001_t1
+PARENT  run_nextgen_run_gage_10109001 CHILD apply_params_apply_gage_10109001
+PARENT  stage_out_local_local_0_0 CHILD clean_up_local_level_11_0
+PARENT  fetch_usgs_obs_obs_gage_10109001 CHILD outputs_analysis_analysis_gage_10109001
+PARENT  fetch_usgs_obs_obs_gage_10109001 CHILD clean_up_local_level_3_0
+PARENT  fetch_usgs_obs_obs_gage_10109001 CHILD run_nextgen_run_gage_10109001
+PARENT  fetch_usgs_obs_obs_gage_10109001 CHILD stage_out_local_local_0_0
+PARENT  fetch_usgs_obs_obs_gage_10109001 CHILD outputs_analysis_analysis_gage_10109001_cal
+PARENT  fetch_usgs_obs_obs_gage_10109001 CHILD calibrate_calibrate_gage_10109001_t3
+PARENT  fetch_usgs_obs_obs_gage_10109001 CHILD teehr_evaluation_teehr_gage_10109001
+PARENT  fetch_usgs_obs_obs_gage_10109001 CHILD calibrate_calibrate_gage_10109001_t2
+PARENT  fetch_usgs_obs_obs_gage_10109001 CHILD calibrate_calibrate_gage_10109001_t5
+PARENT  fetch_usgs_obs_obs_gage_10109001 CHILD calibrate_calibrate_gage_10109001_t4
+PARENT  fetch_usgs_obs_obs_gage_10109001 CHILD calibrate_calibrate_gage_10109001_t1
+PARENT  fetch_usgs_obs_obs_gage_10109001 CHILD teehr_evaluation_teehr_gage_10109001_cal
+PARENT  generate_forcings_forcings_gage_10109001 CHILD assemble_rundir_assemble_gage_10109001
+PARENT  generate_forcings_forcings_gage_10109001 CHILD clean_up_local_level_5_0
+PARENT  apply_params_apply_gage_10109001 CHILD outputs_analysis_analysis_gage_10109001_cal
+PARENT  apply_params_apply_gage_10109001 CHILD teehr_evaluation_teehr_gage_10109001_cal
+PARENT  apply_params_apply_gage_10109001 CHILD clean_up_local_level_10_0
+PARENT  assemble_rundir_assemble_gage_10109001 CHILD run_nextgen_run_gage_10109001
+PARENT  assemble_rundir_assemble_gage_10109001 CHILD clean_up_local_level_6_0
+PARENT  stage_in_local_local_9_0 CHILD summarize_summarize
+PARENT  clean_up_local_level_3_0 CHILD cleanup_nextgen_0_local
+PARENT  outputs_analysis_analysis_gage_10109001_cal CHILD stage_out_local_local_8_0
+PARENT  outputs_analysis_analysis_gage_10109001_cal CHILD clean_up_local_level_11_0
+PARENT  outputs_analysis_analysis_gage_10109001_cal CHILD summarize_summarize
+PARENT  stage_in_local_local_5_0 CHILD calibrate_calibrate_gage_10109001_t1
+PARENT  stage_in_local_local_5_0 CHILD outputs_analysis_analysis_gage_10109001
+PARENT  stage_in_local_local_5_0 CHILD outputs_analysis_analysis_gage_10109001_cal
+PARENT  stage_in_local_local_5_0 CHILD teehr_evaluation_teehr_gage_10109001_cal
+PARENT  stage_in_local_local_5_0 CHILD calibrate_calibrate_gage_10109001_t3
+PARENT  stage_in_local_local_5_0 CHILD teehr_evaluation_teehr_gage_10109001
+PARENT  stage_in_local_local_5_0 CHILD calibrate_calibrate_gage_10109001_t2
+PARENT  stage_in_local_local_5_0 CHILD calibrate_calibrate_gage_10109001_t5
+PARENT  stage_in_local_local_5_0 CHILD calibrate_calibrate_gage_10109001_t4
+PARENT  clean_up_local_level_5_0 CHILD cleanup_nextgen_0_local
+PARENT  stage_in_local_local_7_0 CHILD apply_params_apply_gage_10109001
+PARENT  clean_up_local_level_7_0 CHILD cleanup_nextgen_0_local
+PARENT  teehr_evaluation_teehr_gage_10109001 CHILD stage_out_local_local_5_0
+PARENT  teehr_evaluation_teehr_gage_10109001 CHILD clean_up_local_level_11_0
+PARENT  teehr_evaluation_teehr_gage_10109001 CHILD summarize_summarize
+PARENT  teehr_evaluation_teehr_gage_10109001 CHILD clean_up_local_level_10_0
+PARENT  calibrate_calibrate_gage_10109001_t3 CHILD select_best_params_selectbest_gage_10109001
+PARENT  calibrate_calibrate_gage_10109001_t3 CHILD clean_up_local_level_11_0
+PARENT  calibrate_calibrate_gage_10109001_t3 CHILD clean_up_local_level_8_0
+PARENT  calibrate_calibrate_gage_10109001_t2 CHILD select_best_params_selectbest_gage_10109001
+PARENT  calibrate_calibrate_gage_10109001_t2 CHILD clean_up_local_level_11_0
+PARENT  calibrate_calibrate_gage_10109001_t2 CHILD clean_up_local_level_8_0
+PARENT  stage_in_local_local_1_0 CHILD subset_hydrofabric_subset_gage_10109001
+PARENT  clean_up_local_level_9_0 CHILD cleanup_nextgen_0_local
+PARENT  calibrate_calibrate_gage_10109001_t5 CHILD select_best_params_selectbest_gage_10109001
+PARENT  calibrate_calibrate_gage_10109001_t5 CHILD clean_up_local_level_11_0
+PARENT  calibrate_calibrate_gage_10109001_t5 CHILD clean_up_local_level_8_0
+PARENT  subset_hydrofabric_subset_gage_10109001 CHILD assemble_rundir_assemble_gage_10109001
+PARENT  subset_hydrofabric_subset_gage_10109001 CHILD generate_realization_realization_gage_10109001
+PARENT  subset_hydrofabric_subset_gage_10109001 CHILD generate_forcings_forcings_gage_10109001
+PARENT  subset_hydrofabric_subset_gage_10109001 CHILD clean_up_local_level_4_0
+PARENT  calibrate_calibrate_gage_10109001_t4 CHILD select_best_params_selectbest_gage_10109001
+PARENT  calibrate_calibrate_gage_10109001_t4 CHILD clean_up_local_level_11_0
+PARENT  calibrate_calibrate_gage_10109001_t4 CHILD clean_up_local_level_8_0
+PARENT  stage_in_local_local_3_0 CHILD assemble_rundir_assemble_gage_10109001
+PARENT  create_dir_nextgen_0_local CHILD stage_in_remote_local_0_0
+PARENT  create_dir_nextgen_0_local CHILD stage_in_local_local_9_0
+PARENT  create_dir_nextgen_0_local CHILD stage_in_local_local_4_0
+PARENT  create_dir_nextgen_0_local CHILD stage_in_local_local_5_0
+PARENT  create_dir_nextgen_0_local CHILD stage_in_local_local_6_0
+PARENT  create_dir_nextgen_0_local CHILD stage_in_local_local_7_0
+PARENT  create_dir_nextgen_0_local CHILD stage_in_local_local_0_0
+PARENT  create_dir_nextgen_0_local CHILD stage_in_local_local_1_0
+PARENT  create_dir_nextgen_0_local CHILD stage_in_remote_local_5_0
+PARENT  create_dir_nextgen_0_local CHILD stage_in_local_local_2_0
+PARENT  create_dir_nextgen_0_local CHILD stage_in_local_local_3_0
+PARENT  calibrate_calibrate_gage_10109001_t1 CHILD select_best_params_selectbest_gage_10109001
+PARENT  calibrate_calibrate_gage_10109001_t1 CHILD clean_up_local_level_11_0
+PARENT  calibrate_calibrate_gage_10109001_t1 CHILD clean_up_local_level_8_0
+PARENT  clean_up_local_level_12_0 CHILD cleanup_nextgen_0_local
+PARENT  teehr_evaluation_teehr_gage_10109001_cal CHILD stage_out_local_local_8_0
+PARENT  teehr_evaluation_teehr_gage_10109001_cal CHILD clean_up_local_level_11_0
+PARENT  teehr_evaluation_teehr_gage_10109001_cal CHILD summarize_summarize
+PARENT  clean_up_local_level_10_0 CHILD cleanup_nextgen_0_local
+PARENT  stage_in_remote_local_5_0 CHILD teehr_evaluation_teehr_gage_10109001_cal
+PARENT  stage_in_remote_local_5_0 CHILD teehr_evaluation_teehr_gage_10109001
+PARENT  stage_out_local_local_5_0 CHILD clean_up_local_level_12_0
+PARENT  stage_out_local_local_5_0 CHILD clean_up_local_level_9_0
+PARENT  summarize_summarize CHILD clean_up_local_level_12_0
+PARENT  summarize_summarize CHILD stage_out_local_local_9_0
+PARENT  fetch_hydrofabric_fetch_hydrofabric CHILD clean_up_local_level_3_0
+PARENT  fetch_hydrofabric_fetch_hydrofabric CHILD subset_hydrofabric_subset_gage_10109001
+PARENT  generate_realization_realization_gage_10109001 CHILD assemble_rundir_assemble_gage_10109001
+PARENT  generate_realization_realization_gage_10109001 CHILD clean_up_local_level_5_0
+PARENT  select_best_params_selectbest_gage_10109001 CHILD stage_out_local_local_6_0
+PARENT  select_best_params_selectbest_gage_10109001 CHILD apply_params_apply_gage_10109001
+PARENT  select_best_params_selectbest_gage_10109001 CHILD clean_up_local_level_9_0
+PARENT  stage_out_local_local_9_0 CHILD clean_up_local_level_13_0
+######################################################################
+# End of DAG
+######################################################################

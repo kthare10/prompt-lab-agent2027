@@ -1,0 +1,48 @@
+######################################################################
+# PEGASUS WMS GENERATED SUBMIT FILE
+# DAG : nextgen, Index = 0, Count = null
+# SUBMIT FILE NAME : teehr_evaluation_teehr_gage_10109001.sub
+######################################################################
+stream_error  = false
+stream_output = false
+environment = "LANG=en_US.UTF-8 CONDOR_JOBID=$(cluster).$(process) PEGASUS_WF_UUID=94c5b250-a44c-4f6e-85ef-09297a309d87 PEGASUS_WF_LABEL=nextgen PEGASUS_DAG_JOB_ID=teehr_evaluation_teehr_gage_10109001 PEGASUS_SITE=condorpool"
++WantIOProxy = True
+error = /home/ubuntu/nextgen-workflow/ubuntu/pegasus/nextgen/run0003//00/00/teehr_evaluation_teehr_gage_10109001.err
+executable = /home/ubuntu/nextgen-workflow/ubuntu/pegasus/nextgen/run0003/00/00/teehr_evaluation_teehr_gage_10109001.sh
+initialdir = /home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003
+log = /home/ubuntu/nextgen-workflow/ubuntu/pegasus/nextgen/run0003/nextgen-0.log
+notification = NEVER
+output = /home/ubuntu/nextgen-workflow/ubuntu/pegasus/nextgen/run0003//00/00/teehr_evaluation_teehr_gage_10109001.out
+periodic_release = False
+periodic_remove = (JobStatus == 5) && ((CurrentTime - EnteredCurrentStatus) > 1800)
+priority = 70
+request_cpus = 2
+request_memory = 12288
+should_transfer_files = YES
+submit_event_user_notes = pool:condorpool
+transfer_executable = true
+transfer_input_files = rundir_gage-10109001_run.tar,ngen_outputs_utils.py,teehr_container.sif,ngiab_pegasus.py,forcings_utils.py,gage-10109001_usgs_obs.csv,cal_utils.py,ngiab_utils.py,teehr_evaluation,$(wf_submit_dir)/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz,$(wf_submit_dir)/00/00/fetch_usgs_obs_obs_gage_10109001.meta,$(wf_submit_dir)/00/00/stage_in_remote_local_0_0.meta,$(wf_submit_dir)/00/00/run_nextgen_run_gage_10109001.meta,$(wf_submit_dir)/00/00/stage_in_local_local_5_0.meta,$(wf_submit_dir)/00/00/stage_in_remote_local_5_0.meta,$(wf_submit_dir)/pegasus-lite-common.sh
+transfer_output_files = plots/gage-10109001_teehr.png,analysis/gage-10109001_teehr_metrics.csv
+transfer_output_remaps = "gage-10109001_teehr.png=plots/gage-10109001_teehr.png;gage-10109001_teehr_metrics.csv=analysis/gage-10109001_teehr_metrics.csv"
+universe = vanilla
+wf_submit_dir = /home/ubuntu/nextgen-workflow/ubuntu/pegasus/nextgen/run0003
+when_to_transfer_output = ON_EXIT
++pegasus_generator = "Pegasus"
++pegasus_root_wf_uuid = "94c5b250-a44c-4f6e-85ef-09297a309d87"
++pegasus_wf_uuid = "94c5b250-a44c-4f6e-85ef-09297a309d87"
++pegasus_version = "5.1.2"
++pegasus_wf_name = "nextgen-0"
++pegasus_wf_time = "20260831T153923+0000"
++pegasus_wf_xformation = "teehr_evaluation"
++pegasus_wf_dax_job_id = "teehr_gage_10109001"
++pegasus_wf_dag_job_id = "teehr_evaluation_teehr_gage_10109001"
++pegasus_job_class = 1
++pegasus_site = "condorpool"
++pegasus_job_runtime = 0
++pegasus_cores = 2
++pegasus_gpus = 1
++pegasus_cluster_size = 1
+queue
+######################################################################
+# END OF SUBMIT FILE
+######################################################################

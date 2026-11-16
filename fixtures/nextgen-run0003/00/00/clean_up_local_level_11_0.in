@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003/./outputs_analysis", "recursive": "False" } }
+  ,
+  {
+    "id": 2,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003/./gage-10109001_usgs_obs.csv", "recursive": "False" } }
+  ,
+  {
+    "id": 3,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003/./rundir_gage-10109001_cal.tar", "recursive": "False" } }
+  ,
+  {
+    "id": 4,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003/./teehr_container.sif", "recursive": "False" } }
+  ,
+  {
+    "id": 5,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003/./teehr_evaluation", "recursive": "False" } }
+]

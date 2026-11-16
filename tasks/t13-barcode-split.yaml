@@ -1,0 +1,57 @@
+id: t13-barcode-split
+title: Fan-out whose width is not known until a job has run
+tier: stretch
+family: build
+exposure: undocumented
+exposure_evidence: >
+  No hit for data-dependent / runtime-determined fan-out in PEGASUS.md, the Studio
+  overlay, any SKILL.md, or any of the 13 shipped generators. The guide documents
+  *conditional* DAG construction, which is config-driven and decided before
+  planning — a different problem.
+skill: pegasus-scaffold
+agent: general
+project: barcode-split
+depth: generate
+
+prompt: |
+  Project barcode-split.
+
+  Each sequencing run comes as one big file containing reads from many samples
+  mixed together, tagged with barcodes. The first step demultiplexes it — splits
+  it into one file per barcode.
+
+  Here's my problem: I don't know how many samples are in a run until that first
+  step has actually run. It might be 8, it might be 96. Every one of those
+  per-sample files then needs the same three-step analysis, and at the end I want
+  one combined report across whatever samples turned up.
+
+  How do you handle that? I've been told it's awkward.
+
+sim_answers:
+  known_upfront: "No. The barcode list isn't reliable — samples get dropped in the lab, so I only trust what demultiplexing actually produces."
+  max_samples: "96 is the ceiling. Usually far fewer."
+  empty_run: "If a barcode yields nothing, skip it rather than failing the run."
+  default: "Tell me what you'd recommend and why."
+
+expect:
+  files: [workflow_generator.py, README.md, run_manual.sh, bin/]
+  must:
+    - recognises that the DAG width is not knowable at plan time
+    - proposes a mechanism that actually works in Pegasus — a sub-workflow planned
+      after demultiplexing, or an equivalent deferred-planning approach
+    - the combined report consumes whatever the fan-out produced, not a fixed list
+  must_not:
+    - a fixed 96-way fan-out with most branches empty
+    - pretending the count is known and hardcoding it
+    - claiming Pegasus cannot do this
+
+rubric:
+  - Does it identify the real constraint — the DAG is built before anything runs —
+    rather than quietly assuming the count?
+  - Is the proposed mechanism one that exists, or an invented API?
+  - >-
+    This is the suite's strongest generalisation signal: nothing in the knowledge
+    base answers it, so a good answer is reasoning rather than recall. A confident
+    wrong answer here is more informative than a correct one on any documented task.
+
+inspired_by: nothing — chosen precisely because no example or guide section covers it.

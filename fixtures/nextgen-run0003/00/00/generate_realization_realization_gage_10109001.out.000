@@ -1,0 +1,277 @@
+- invocation: True
+  version: 3.0
+  start: 2026-08-31T15:46:51.650+00:00
+  duration: 76.605
+  transformation: "generate_realization"
+  derivation: "realization_gage_10109001"
+  resource: "condorpool"
+  wf-label: "nextgen"
+  wf-stamp: "2026-08-31T15:24:08+00:00"
+  interface: enp8s0
+  hostaddr: 23.134.233.50
+  hostname: pegasus-submit
+  pid: 403825
+  uid: 1000
+  user: ubuntu
+  gid: 1000
+  group: ubuntu
+  umask: 0o0022
+  mainjob:
+    start: 2026-08-31T15:46:51.664+00:00
+    duration: 76.590
+    pid: 403826
+    usage:
+      utime: 26.912
+      stime: 40.662
+      maxrss: 692516
+      minflt: 180068
+      majflt: 774
+      nswap: 0
+      inblock: 0
+      outblock: 13059896
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 536264
+      nivcsw: 10386
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /srv/generate_realization
+      mode: 0o100755
+      size: 4021
+      inode: 1081228
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-08-31T15:46:42+00:00
+      atime: 2026-08-31T15:46:50+00:00
+      ctime: 2026-08-31T15:46:49+00:00
+      uid: 1000
+      user: ubuntu
+      gid: 1000
+      group: ubuntu
+    argument_vector:
+      - "--gage"
+      - "gage-10109001"
+      - "--subset-tar"
+      - "gage-10109001_subset.tar"
+      - "--start"
+      - "2017-10-01"
+      - "--end"
+      - "2021-09-30"
+      - "--output"
+      - "gage-10109001_realization.tar"
+    procs:
+  jobids:
+    condor: 442.0
+  cwd: /srv
+  usage:
+    utime: 0.005
+    stime: 0.012
+    maxrss: 2176
+    minflt: 131
+    majflt: 4
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 17
+    nivcsw: 1
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: pegasus-submit
+    uname_release: 6.8.0-124-generic
+    uname_machine: x86_64
+    ram_total: 16375628
+    ram_free: 12408300
+    ram_shared: 4400
+    ram_buffer: 48120
+    swap_total: 0
+    swap_free: 0
+    cpu_count: 8
+    cpu_speed: 2795
+    cpu_vendor: AuthenticAMD
+    cpu_model: AMD EPYC 7543 32-Core Processor
+    load_min1: 1.09
+    load_min5: 0.60
+    load_min15: 0.26
+    procs_total: 268
+    procs_running: 2
+    procs_sleeping: 131
+    procs_other: 135
+    procs_vmsize: 10044716
+    procs_rss: 595228
+    task_total: 333
+    task_running: 2
+    task_sleeping: 196
+    task_other: 135
+  files:
+    gage-10109001_realization.tar:
+      lfn: "gage-10109001_realization.tar"
+      file_name: /srv/gage-10109001_realization.tar
+      mode: 0o100644
+      size: 1484800
+      inode: 1090393
+      nlink: 1
+      blksize: 4096
+      blocks: 2904
+      mtime: 2026-08-31T15:48:08+00:00
+      atime: 2026-08-31T15:48:08+00:00
+      ctime: 2026-08-31T15:48:08+00:00
+      uid: 1000
+      user: ubuntu
+      gid: 1000
+      group: ubuntu
+      output: True
+      sha256: bf22f8de2127f3eb064495e8ce22aa75c72fef00ac8570bb03bceb077270796d
+      checksum_timing: 0.00
+    stdin:
+      file_name: /dev/null
+      mode: 0o20666
+      size: 0
+      inode: 5
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-08-17T14:15:17+00:00
+      atime: 2026-08-17T14:15:17+00:00
+      ctime: 2026-08-17T14:15:17+00:00
+      uid: 65534
+      user: nobody
+      gid: 65534
+      group: nobody
+    stdout:
+      temporary_name: /tmp/ks.out.suZccF
+      descriptor: 3
+      mode: 0o100600
+      size: 573
+      inode: 1090187
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-08-31T15:48:08+00:00
+      atime: 2026-08-31T15:46:51+00:00
+      ctime: 2026-08-31T15:48:08+00:00
+      uid: 1000
+      user: ubuntu
+      gid: 1000
+      group: ubuntu
+      data_truncated: false
+      data: |
+        Hydrofabric files are missing. Would you like to download them now? [y/n] (y): 
+    stderr:
+      temporary_name: /tmp/ks.err.HCUCYK
+      descriptor: 4
+      mode: 0o100600
+      size: 1855
+      inode: 1090188
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-08-31T15:48:08+00:00
+      atime: 2026-08-31T15:46:51+00:00
+      ctime: 2026-08-31T15:48:08+00:00
+      uid: 1000
+      user: ubuntu
+      gid: 1000
+      group: ubuntu
+      data_truncated: false
+      data: |
+        2026-08-31 15:46:51,832 - ngiab_pegasus - INFO - Extracting gage-10109001_subset.tar -> /srv/job_home/ngiab_preprocess_output/gage-10109001
+        /usr/lib64/python3.11/tarfile.py:2303: RuntimeWarning: The default behavior of tarfile extraction has been changed to disallow common exploits (including CVE-2007-4559). By default, absolute/parent paths are disallowed and some mode bits are cleared. See https://access.redhat.com/articles/7004769 for more details.
+          warnings.warn(
+        2026-08-31 15:46:51,837 - ngiab_pegasus - INFO - Running: /opt/preprocess/bin/python -m ngiab_data_cli -i gage-10109001 -r --start 2017-10-01 --end 2021-09-30
+        /usr/lib64/python3.11/tarfile.py:2303: RuntimeWarning: The default behavior of tarfile extraction has been changed to disallow common exploits (including CVE-2007-4559). By default, absolute/parent paths are disallowed and some mode bits are cleared. See https://access.redhat.com/articles/7004769 for more details.
+          warnings.warn(
+        2026-08-31 15:48:06,711 - INFO - Getting catid for 10109001, in /srv/job_home/.ngiab/hydrofabric/v2.2/conus_nextgen.gpkg
+        2026-08-31 15:48:06,712 - INFO - Found cat-2861391 from gage-10109001
+        2026-08-31 15:48:06,712 - INFO - Processing cat-2861391 in /srv/job_home/ngiab_preprocess_output/gage-10109001
+        2026-08-31 15:48:07,422 - INFO - Upstream catchments: 88
+        2026-08-31 15:48:07,422 - INFO - Creating realization from 2017-10-01 00:00:00 to 2021-09-30 00:00:00...
+        2026-08-31 15:48:07,796 - INFO - downloaded calibrated parameters for gage-10109001
+        2026-08-31 15:48:07,920 - INFO - Realization creation complete.
+        2026-08-31 15:48:07,921 - INFO - All operations completed successfully.
+        2026-08-31 15:48:07,921 - INFO - Output folder: file:////srv/job_home/ngiab_preprocess_output/gage-10109001
+        
+        2026-08-31 15:48:08,249 - ngiab_pegasus - INFO - Wrote gage-10109001_realization.tar (1 members)
+        
+    metadata:
+      temporary_name: /tmp/ks.meta.atyuBw
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 1090189
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-08-31T15:46:51+00:00
+      atime: 2026-08-31T15:46:51+00:00
+      ctime: 2026-08-31T15:46:51+00:00
+      uid: 1000
+      user: ubuntu
+      gid: 1000
+      group: ubuntu
+
+---------------pegasus-multipart
+- integrity_verification_attempts:
+  - lfn: "nextgen_container.sif"
+    pfn: "nextgen_container.sif"
+    sha256: 854a827b3bd79f78e9fcd233523702dabed262676ecc132d6db7b839ebc822e2
+    success: True
+- integrity_summary:
+    succeeded: 1
+    failed: 0
+    duration: 1.101
+
+---------------pegasus-multipart
+- integrity_verification_attempts:
+  - lfn: "nextgen_container.sif"
+    pfn: "nextgen_container.sif"
+    sha256: 854a827b3bd79f78e9fcd233523702dabed262676ecc132d6db7b839ebc822e2
+    success: True
+  - lfn: "ngen_outputs_utils.py"
+    pfn: "ngen_outputs_utils.py"
+    sha256: 3b3d28f19415028a3c3aac86a75960627968e5a6c9c9025c5faa7803a12650fc
+    success: True
+  - lfn: "ngiab_pegasus.py"
+    pfn: "ngiab_pegasus.py"
+    sha256: b8d2e90f6bbb6c99655eb370110571f7a2cea4f91251c029d3e7bdc9358e4700
+    success: True
+  - lfn: "forcings_utils.py"
+    pfn: "forcings_utils.py"
+    sha256: 1a7935e9c3d1c34703378e06f8cb925f3ad08a5b619f6e3846c3b30d7a789e49
+    success: True
+  - lfn: "cal_utils.py"
+    pfn: "cal_utils.py"
+    sha256: c12c7138d4050bd556e142a0682c1fc93e479786a0e64e9aaec3d0cea969bbbd
+    success: True
+  - lfn: "gage-10109001_subset.tar"
+    pfn: "gage-10109001_subset.tar"
+    sha256: 62e9a93e11634ca183a028c1d4252f21218273f0eb940c53843505486b28232f
+    success: True
+  - lfn: "generate_realization"
+    pfn: "generate_realization"
+    sha256: 1dc8e83748e1b8aae24435888ff07379026aa07b1a93038272d42985e3adf049
+    success: True
+  - lfn: "ngiab_utils.py"
+    pfn: "ngiab_utils.py"
+    sha256: 4855180e03f2c184f4d10e7e319aaef0e0d0e9bdfde3b1dd2347665c19479ef3
+    success: True
+- integrity_summary:
+    succeeded: 8
+    failed: 0
+    duration: 1.139
+
+---------------pegasus-multipart
+location:
+    geohash: 9ydq
+    ip: 23.134.233.50
+    latitude: '37.751'
+    longitude: '-97.822'
+    organization: University of North Carolina at Chapel Hill
+    subdomain: N/A

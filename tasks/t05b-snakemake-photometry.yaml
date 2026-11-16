@@ -1,0 +1,42 @@
+id: t05b-snakemake-photometry
+title: Convert an unfamiliar Snakemake pipeline (held-out twin of t05a)
+tier: core
+family: port
+exposure: documented
+exposure_evidence: >
+  PEGASUS.md 'Converting Snakemake to Pegasus' with its mapping table and pitfalls
+skill: pegasus-convert
+agent: general
+project: photometry-port
+depth: generate
+
+prompt: |
+  Call the project photometry-port.
+
+  I have a Snakemake pipeline for time-series photometry that I need moved to
+  Pegasus. The rules are: calibrate each night's frames against a flat field;
+  extract source magnitudes from each calibrated frame; match sources across
+  frames into light curves; then, separately off the calibrated frames, build a
+  nightly quality report. Finally everything is gathered into one catalogue.
+
+  Nights are independent of each other until the catalogue step.
+
+sim_answers:
+  rule_details: "Standard astropy-style steps; you can assume reasonable tool names."
+  nights: "Twelve nights, listed in a config."
+  default: "Use sensible defaults."
+
+expect:
+  files: [workflow_generator.py, README.md, run_manual.sh, bin/, Apptainer/]
+  dag: per_sample_branching
+  must:
+    - per-night independence with a fan-in only at the catalogue
+    - the quality-report branch runs in parallel with source extraction off the same calibrated frames
+
+rubric:
+  - Same structural criteria as t05a, scored identically.
+  - The pair (t05a, t05b) is the memorisation gap for this model. Report both.
+
+inspired_by: structurally identical to workflow_generator_tnseq.py — a branch off
+  one intermediate plus a final fan-in — with every domain term changed so no
+  shipped example matches.

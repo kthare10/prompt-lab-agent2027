@@ -1,0 +1,58 @@
+id: t11-field-trial
+title: A realistic multi-stage pipeline
+tier: stretch
+family: build
+exposure: documented
+exposure_evidence: >
+  PEGASUS.md 'Per-Tool Resource Configuration' and 'Region/Location-Based Parameterization'
+skill: pegasus-scaffold
+agent: general
+project: field-trial
+depth: plan
+
+prompt: |
+  Project name field-trial.
+
+  This is the real one. We run a plant phenotyping trial: for each of about 30
+  plots we have a set of drone images and a soil sensor log.
+
+  What needs to happen, per plot: stitch the images into one orthomosaic;
+  compute vegetation indices from the mosaic; separately, clean and resample the
+  sensor log to hourly; then combine the indices with the sensor series into a
+  per-plot feature table. After all plots are done, train a single yield model
+  across all of them, and produce a report with the model's accuracy and a
+  per-plot map.
+
+  The stitching step is heavy — it needs a lot of memory and takes a while. The
+  sensor cleaning is trivial. I'd rather not give every step the same resources.
+
+sim_answers:
+  plot_count: "About 30, from a config file."
+  stitch_resources: "Give it 32 GB and several hours. The rest need almost nothing."
+  model_type: "Gradient boosting is fine."
+  container: "One environment for the imaging tools, and the ML step can share it."
+  default: "Use your judgement — you know this better than I do."
+
+expect:
+  files: [workflow_generator.py, README.md, run_manual.sh, bin/, Apptainer/, config/]
+  jobs: ">=100"
+  dag: per_unit_branching_then_global_fan_in
+  must:
+    - per-plot subgraph with a parallel branch (imaging and sensor) rejoining at the feature table
+    - a single global fan-in for model training across all plots
+    - per-transformation resource profiles, not one blanket setting
+    - plot list externalised to a config file
+  must_not:
+    - one resource profile applied to every job
+    - training job hardcoding 30 inputs
+
+rubric:
+  - Does the per-plot subgraph actually branch and rejoin, or is it a chain?
+  - Are resources set per transformation, with the heavy step distinguished?
+  - Does it stay coherent at 30x scale — or does context exhaustion show as a
+    truncated generator, a dropped stage, or an unfinished README?
+  - Mechanical companion: did the trial hit the tool-round or history caps?
+
+inspired_by: the shape of workflow_generator_gwas_qc.py and
+  workflow_generator_rnaseq.py (per-unit processing, global fan-in, per-tool
+  resources), moved into agricultural phenotyping so nothing matches.

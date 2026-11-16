@@ -1,0 +1,257 @@
+- invocation: True
+  version: 3.0
+  start: 2026-08-31T15:40:44.358+00:00
+  duration: 101.745
+  transformation: "fetch_hydrofabric"
+  derivation: "fetch_hydrofabric"
+  resource: "condorpool"
+  wf-label: "nextgen"
+  wf-stamp: "2026-08-31T15:24:08+00:00"
+  interface: enp3s0
+  hostaddr: 10.30.6.179
+  hostname: ATLA-worker-1
+  pid: 128954
+  uid: 1000
+  user: ubuntu
+  gid: 1000
+  group: ubuntu
+  umask: 0o0022
+  mainjob:
+    start: 2026-08-31T15:40:44.370+00:00
+    duration: 101.730
+    pid: 128955
+    usage:
+      utime: 28.042
+      stime: 52.649
+      maxrss: 689876
+      minflt: 179155
+      majflt: 757
+      nswap: 0
+      inblock: 3400568
+      outblock: 26107096
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 555168
+      nivcsw: 23222
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /srv/fetch_hydrofabric
+      mode: 0o100755
+      size: 1972
+      inode: 528765
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-08-31T15:40:25+00:00
+      atime: 2026-08-31T15:40:42+00:00
+      ctime: 2026-08-31T15:40:42+00:00
+      uid: 1000
+      user: ubuntu
+      gid: 1000
+      group: ubuntu
+    argument_vector:
+      - "--gage"
+      - "gage-10109001"
+      - "--output"
+      - "hydrofabric_cache.tar"
+    procs:
+  jobids:
+    condor: 436.0
+  cwd: /srv
+  usage:
+    utime: 0.006
+    stime: 0.008
+    maxrss: 2176
+    minflt: 130
+    majflt: 4
+    nswap: 0
+    inblock: 32
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 19
+    nivcsw: 0
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: atla-worker-1
+    uname_release: 6.8.0-124-generic
+    uname_machine: x86_64
+    ram_total: 16375628
+    ram_free: 10267336
+    ram_shared: 4344
+    ram_buffer: 164056
+    swap_total: 0
+    swap_free: 0
+    cpu_count: 8
+    cpu_speed: 2795
+    cpu_vendor: AuthenticAMD
+    cpu_model: AMD EPYC 7543 32-Core Processor
+    load_min1: 0.08
+    load_min5: 0.02
+    load_min15: 0.01
+    procs_total: 239
+    procs_running: 1
+    procs_sleeping: 116
+    procs_other: 122
+    procs_vmsize: 9065504
+    procs_rss: 474272
+    task_total: 300
+    task_running: 1
+    task_sleeping: 177
+    task_other: 122
+  files:
+    hydrofabric_cache.tar:
+      lfn: "hydrofabric_cache.tar"
+      file_name: /srv/hydrofabric_cache.tar
+      mode: 0o100644
+      size: 6679818240
+      inode: 537754
+      nlink: 1
+      blksize: 4096
+      blocks: 13046528
+      mtime: 2026-08-31T15:42:26+00:00
+      atime: 2026-08-31T15:41:41+00:00
+      ctime: 2026-08-31T15:42:26+00:00
+      uid: 1000
+      user: ubuntu
+      gid: 1000
+      group: ubuntu
+      output: True
+      sha256: 333a36517db68805271024ff8759982dee68a6aa8bb59664f6bd6c5110c4f640
+      checksum_timing: 29.43
+    stdin:
+      file_name: /dev/null
+      mode: 0o20666
+      size: 0
+      inode: 5
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-08-17T14:15:22+00:00
+      atime: 2026-08-17T14:15:22+00:00
+      ctime: 2026-08-17T14:15:22+00:00
+      uid: 65534
+      user: nobody
+      gid: 65534
+      group: nobody
+    stdout:
+      temporary_name: /tmp/ks.out.PUTp8A
+      descriptor: 3
+      mode: 0o100600
+      size: 640
+      inode: 537733
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-08-31T15:42:26+00:00
+      atime: 2026-08-31T15:40:44+00:00
+      ctime: 2026-08-31T15:42:26+00:00
+      uid: 1000
+      user: ubuntu
+      gid: 1000
+      group: ubuntu
+      data_truncated: false
+      data: |
+        Warming the hydrofabric cache in /srv/job_home using gage-10109001
+        Hydrofabric files are missing. Would you like to download them now? [y/n] (y): 
+    stderr:
+      temporary_name: /tmp/ks.err.llWA51
+      descriptor: 4
+      mode: 0o100600
+      size: 1486
+      inode: 537734
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-08-31T15:42:26+00:00
+      atime: 2026-08-31T15:40:44+00:00
+      ctime: 2026-08-31T15:42:26+00:00
+      uid: 1000
+      user: ubuntu
+      gid: 1000
+      group: ubuntu
+      data_truncated: false
+      data: |
+        2026-08-31 15:40:44,547 - ngiab_pegasus - INFO - Running: /opt/preprocess/bin/python -m ngiab_data_cli -i gage-10109001 -s
+        /usr/lib64/python3.11/tarfile.py:2303: RuntimeWarning: The default behavior of tarfile extraction has been changed to disallow common exploits (including CVE-2007-4559). By default, absolute/parent paths are disallowed and some mode bits are cleared. See https://access.redhat.com/articles/7004769 for more details.
+          warnings.warn(
+        2026-08-31 15:41:39,569 - INFO - Getting catid for 10109001, in /srv/job_home/.ngiab/hydrofabric/v2.2/conus_nextgen.gpkg
+        2026-08-31 15:41:39,570 - INFO - Found cat-2861391 from gage-10109001
+        2026-08-31 15:41:39,571 - INFO - Processing cat-2861391 in /srv/job_home/ngiab_preprocess_output/gage-10109001
+        2026-08-31 15:41:40,299 - INFO - Upstream catchments: 88
+        2026-08-31 15:41:40,299 - INFO - Subsetting hydrofabric
+        2026-08-31 15:41:40,430 - INFO - Subsetting tables: ['divides', 'divide-attributes', 'flowpath-attributes', 'flowpath-attributes-ml', 'flowpaths', 'hydrolocations', 'nexus', 'pois', 'lakes', 'network']
+        2026-08-31 15:41:41,330 - INFO - Subset complete for 213 features (catchments + nexuses)
+        2026-08-31 15:41:41,330 - INFO - Subsetting complete.
+        2026-08-31 15:41:41,330 - INFO - All operations completed successfully.
+        2026-08-31 15:41:41,330 - INFO - Output folder: file:////srv/job_home/ngiab_preprocess_output/gage-10109001
+        
+        2026-08-31 15:42:26,090 - ngiab_pegasus - INFO - Wrote hydrofabric_cache.tar (1 members)
+        
+    metadata:
+      temporary_name: /tmp/ks.meta.mmJaAk
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 537735
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-08-31T15:40:44+00:00
+      atime: 2026-08-31T15:40:44+00:00
+      ctime: 2026-08-31T15:40:44+00:00
+      uid: 1000
+      user: ubuntu
+      gid: 1000
+      group: ubuntu
+
+---------------pegasus-multipart
+- integrity_verification_attempts:
+  - lfn: "nextgen_container.sif"
+    pfn: "nextgen_container.sif"
+    sha256: 854a827b3bd79f78e9fcd233523702dabed262676ecc132d6db7b839ebc822e2
+    success: True
+- integrity_summary:
+    succeeded: 1
+    failed: 0
+    duration: 1.056
+
+---------------pegasus-multipart
+- integrity_verification_attempts:
+  - lfn: "fetch_hydrofabric"
+    pfn: "fetch_hydrofabric"
+    sha256: b6845b0b3f61aba174980710c81b892bcc7bf51cba26e62ebdfe141676a8e89f
+    success: True
+  - lfn: "nextgen_container.sif"
+    pfn: "nextgen_container.sif"
+    sha256: 854a827b3bd79f78e9fcd233523702dabed262676ecc132d6db7b839ebc822e2
+    success: True
+  - lfn: "ngen_outputs_utils.py"
+    pfn: "ngen_outputs_utils.py"
+    sha256: 3b3d28f19415028a3c3aac86a75960627968e5a6c9c9025c5faa7803a12650fc
+    success: True
+  - lfn: "ngiab_pegasus.py"
+    pfn: "ngiab_pegasus.py"
+    sha256: b8d2e90f6bbb6c99655eb370110571f7a2cea4f91251c029d3e7bdc9358e4700
+    success: True
+  - lfn: "forcings_utils.py"
+    pfn: "forcings_utils.py"
+    sha256: 1a7935e9c3d1c34703378e06f8cb925f3ad08a5b619f6e3846c3b30d7a789e49
+    success: True
+  - lfn: "cal_utils.py"
+    pfn: "cal_utils.py"
+    sha256: c12c7138d4050bd556e142a0682c1fc93e479786a0e64e9aaec3d0cea969bbbd
+    success: True
+  - lfn: "ngiab_utils.py"
+    pfn: "ngiab_utils.py"
+    sha256: 4855180e03f2c184f4d10e7e319aaef0e0d0e9bdfde3b1dd2347665c19479ef3
+    success: True
+- integrity_summary:
+    succeeded: 7
+    failed: 0
+    duration: 1.091

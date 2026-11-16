@@ -1,0 +1,37 @@
+[
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "calibrate",
+   "id": 1,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "condorpool", "url": "file:///home/ubuntu/nextgen-workflow/bin/calibrate.py", "priority": 100 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003/./calibrate" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "outputs_analysis",
+   "id": 2,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "condorpool", "url": "file:///home/ubuntu/nextgen-workflow/bin/outputs_analysis.py", "priority": 100 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003/./outputs_analysis" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "teehr_evaluation",
+   "id": 3,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "condorpool", "url": "file:///home/ubuntu/nextgen-workflow/bin/teehr_evaluation.py", "priority": 100 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003/./teehr_evaluation" }
+   ] }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "_id": "plots/gage-10109001_water_balance.png",
+    "_type": "file",
+    "_attributes": {
+      "user": "ubuntu",
+      "size": "71646",
+      "ctime": "2026-08-31T16:09:00+00:00",
+      "checksum.type": "sha256",
+      "checksum.value": "fc0ac5137bc848814ca4f3d48b65e2a680cd7977b1f67f4fd7c1703d252b1fa4",
+      "checksum.timing": "0.0"
+    }
+  },
+  {
+    "_id": "analysis/gage-10109001_metrics.csv",
+    "_type": "file",
+    "_attributes": {
+      "user": "ubuntu",
+      "size": "302",
+      "ctime": "2026-08-31T16:08:59+00:00",
+      "checksum.type": "sha256",
+      "checksum.value": "6cf548ae70853999af6b3d37b725ea0bde8b38d36bbeb5c87dd17135a090098f",
+      "checksum.timing": "0.0"
+    }
+  },
+  {
+    "_id": "analysis/gage-10109001_basin_means.csv",
+    "_type": "file",
+    "_attributes": {
+      "user": "ubuntu",
+      "size": "15747535",
+      "ctime": "2026-08-31T16:08:59+00:00",
+      "checksum.type": "sha256",
+      "checksum.value": "bbffdf6bd39f6a76ca1d8b66f3ec358765711e23414551c908d103617e1e72a0",
+      "checksum.timing": "0.05"
+    }
+  }
+]

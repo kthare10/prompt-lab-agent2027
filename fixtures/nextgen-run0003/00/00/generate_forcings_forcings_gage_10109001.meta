@@ -1,0 +1,14 @@
+[
+  {
+    "_id": "gage-10109001_forcings.tar",
+    "_type": "file",
+    "_attributes": {
+      "user": "ubuntu",
+      "size": "1548892160",
+      "ctime": "2026-08-31T15:58:20+00:00",
+      "checksum.type": "sha256",
+      "checksum.value": "69a07d1007b84fb47512c643e66d6323851c86ef9664896af2811317697326a6",
+      "checksum.timing": "5.03"
+    }
+  }
+]

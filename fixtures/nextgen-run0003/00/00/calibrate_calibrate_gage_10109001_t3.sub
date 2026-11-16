@@ -1,0 +1,48 @@
+######################################################################
+# PEGASUS WMS GENERATED SUBMIT FILE
+# DAG : nextgen, Index = 0, Count = null
+# SUBMIT FILE NAME : calibrate_calibrate_gage_10109001_t3.sub
+######################################################################
+stream_error  = false
+stream_output = false
+environment = "LANG=en_US.UTF-8 CONDOR_JOBID=$(cluster).$(process) PEGASUS_WF_UUID=94c5b250-a44c-4f6e-85ef-09297a309d87 PEGASUS_WF_LABEL=nextgen PEGASUS_DAG_JOB_ID=calibrate_calibrate_gage_10109001_t3 PEGASUS_SITE=condorpool"
++WantIOProxy = True
+error = /home/ubuntu/nextgen-workflow/ubuntu/pegasus/nextgen/run0003//00/00/calibrate_calibrate_gage_10109001_t3.err
+executable = /home/ubuntu/nextgen-workflow/ubuntu/pegasus/nextgen/run0003/00/00/calibrate_calibrate_gage_10109001_t3.sh
+initialdir = /home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003
+log = /home/ubuntu/nextgen-workflow/ubuntu/pegasus/nextgen/run0003/nextgen-0.log
+notification = NEVER
+output = /home/ubuntu/nextgen-workflow/ubuntu/pegasus/nextgen/run0003//00/00/calibrate_calibrate_gage_10109001_t3.out
+periodic_release = False
+periodic_remove = (JobStatus == 5) && ((CurrentTime - EnteredCurrentStatus) > 1800)
+priority = 70
+request_cpus = 4
+request_memory = 14336
+should_transfer_files = YES
+submit_event_user_notes = pool:condorpool
+transfer_executable = true
+transfer_input_files = nextgen_container.sif,rundir_gage-10109001_run.tar,ngen_outputs_utils.py,ngiab_pegasus.py,forcings_utils.py,gage-10109001_usgs_obs.csv,cal_utils.py,calibrate,ngiab_utils.py,$(wf_submit_dir)/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz,$(wf_submit_dir)/00/00/fetch_usgs_obs_obs_gage_10109001.meta,$(wf_submit_dir)/00/00/stage_in_remote_local_0_0.meta,$(wf_submit_dir)/00/00/run_nextgen_run_gage_10109001.meta,$(wf_submit_dir)/00/00/stage_in_local_local_5_0.meta,$(wf_submit_dir)/pegasus-lite-common.sh
+transfer_output_files = calibration/gage-10109001_calibration_iterations_trial3.csv,gage-10109001_best_params_trial3.json
+transfer_output_remaps = "gage-10109001_calibration_iterations_trial3.csv=calibration/gage-10109001_calibration_iterations_trial3.csv"
+universe = vanilla
+wf_submit_dir = /home/ubuntu/nextgen-workflow/ubuntu/pegasus/nextgen/run0003
+when_to_transfer_output = ON_EXIT
++pegasus_generator = "Pegasus"
++pegasus_root_wf_uuid = "94c5b250-a44c-4f6e-85ef-09297a309d87"
++pegasus_wf_uuid = "94c5b250-a44c-4f6e-85ef-09297a309d87"
++pegasus_version = "5.1.2"
++pegasus_wf_name = "nextgen-0"
++pegasus_wf_time = "20260831T153923+0000"
++pegasus_wf_xformation = "calibrate"
++pegasus_wf_dax_job_id = "calibrate_gage_10109001_t3"
++pegasus_wf_dag_job_id = "calibrate_calibrate_gage_10109001_t3"
++pegasus_job_class = 1
++pegasus_site = "condorpool"
++pegasus_job_runtime = 0
++pegasus_cores = 4
++pegasus_gpus = 1
++pegasus_cluster_size = 1
+queue
+######################################################################
+# END OF SUBMIT FILE
+######################################################################

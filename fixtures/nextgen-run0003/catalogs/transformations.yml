@@ -1,0 +1,145 @@
+x-pegasus:
+  apiLang: python
+  createdBy: ubuntu
+  createdOn: 08-31-26T15:24:08Z
+pegasus: 5.0.4
+transformations:
+- name: fetch_hydrofabric
+  sites:
+  - name: condorpool
+    pfn: /home/ubuntu/nextgen-workflow/bin/fetch_hydrofabric.py
+    type: stageable
+    container: nextgen_container
+  profiles:
+    pegasus:
+      memory: 8192
+      cores: 1
+- name: subset_hydrofabric
+  sites:
+  - name: condorpool
+    pfn: /home/ubuntu/nextgen-workflow/bin/subset_hydrofabric.py
+    type: stageable
+    container: nextgen_container
+  profiles:
+    pegasus:
+      memory: 8192
+      cores: 1
+- name: generate_forcings
+  sites:
+  - name: condorpool
+    pfn: /home/ubuntu/nextgen-workflow/bin/generate_forcings.py
+    type: stageable
+    container: nextgen_container
+  profiles:
+    pegasus:
+      memory: 12288
+      cores: 2
+- name: generate_realization
+  sites:
+  - name: condorpool
+    pfn: /home/ubuntu/nextgen-workflow/bin/generate_realization.py
+    type: stageable
+    container: nextgen_container
+  profiles:
+    pegasus:
+      memory: 4096
+      cores: 1
+- name: assemble_rundir
+  sites:
+  - name: condorpool
+    pfn: /home/ubuntu/nextgen-workflow/bin/assemble_rundir.py
+    type: stageable
+    container: nextgen_container
+  profiles:
+    pegasus:
+      memory: 2048
+      cores: 1
+- name: fetch_usgs_obs
+  sites:
+  - name: condorpool
+    pfn: /home/ubuntu/nextgen-workflow/bin/fetch_usgs_obs.py
+    type: stageable
+    container: nextgen_container
+  profiles:
+    pegasus:
+      memory: 2048
+      cores: 1
+- name: run_nextgen
+  sites:
+  - name: condorpool
+    pfn: /home/ubuntu/nextgen-workflow/bin/run_nextgen.py
+    type: stageable
+    container: nextgen_container
+  profiles:
+    pegasus:
+      memory: 14336
+      cores: 4
+- name: outputs_analysis
+  sites:
+  - name: condorpool
+    pfn: /home/ubuntu/nextgen-workflow/bin/outputs_analysis.py
+    type: stageable
+    container: nextgen_container
+  profiles:
+    pegasus:
+      memory: 8192
+      cores: 1
+- name: teehr_evaluation
+  sites:
+  - name: condorpool
+    pfn: /home/ubuntu/nextgen-workflow/bin/teehr_evaluation.py
+    type: stageable
+    container: teehr_container
+  profiles:
+    pegasus:
+      memory: 12288
+      cores: 2
+- name: calibrate
+  sites:
+  - name: condorpool
+    pfn: /home/ubuntu/nextgen-workflow/bin/calibrate.py
+    type: stageable
+    container: nextgen_container
+  profiles:
+    pegasus:
+      memory: 14336
+      cores: 4
+- name: select_best_params
+  sites:
+  - name: condorpool
+    pfn: /home/ubuntu/nextgen-workflow/bin/select_best_params.py
+    type: stageable
+    container: nextgen_container
+  profiles:
+    pegasus:
+      memory: 2048
+      cores: 1
+- name: apply_params
+  sites:
+  - name: condorpool
+    pfn: /home/ubuntu/nextgen-workflow/bin/apply_params.py
+    type: stageable
+    container: nextgen_container
+  profiles:
+    pegasus:
+      memory: 14336
+      cores: 4
+- name: summarize
+  sites:
+  - name: condorpool
+    pfn: /home/ubuntu/nextgen-workflow/bin/summarize.py
+    type: stageable
+    container: nextgen_container
+  profiles:
+    pegasus:
+      memory: 2048
+      cores: 1
+containers:
+- name: nextgen_container
+  type: singularity
+  image: file:///home/ubuntu/nextgen-workflow/Apptainer/NextGen_Container.sif
+  image.site: local
+- name: teehr_container
+  type: singularity
+  image: file:///home/ubuntu/nextgen-workflow/Apptainer/Teehr_Container.sif
+  image.site: local

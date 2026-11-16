@@ -1,0 +1,26 @@
+2026-09-01 06:47:13: PegasusLite: version 5.1.2
+2026-09-01 06:47:13: Executing on host GPN-gpu-worker-1 IP=10.135.11.2
+
+########################[Pegasus Lite] Setting up workdir ########################
+2026-09-01 06:47:14: Not creating a new work directory as it is already set to /var/lib/condor/execute/dir_104347
+
+##############[Pegasus Lite] Figuring out the worker package to use ##############
+2026-09-01 06:47:14: The job contained a Pegasus worker package
+2026-09-01 06:47:14: Skipping sanity check of included worker package because pegasus.transfer.worker.package.strict=false
+
+######[Pegasus Lite] Checking file integrity for transferred container files ######
+
+##################### Setting the xbit for executables staged #####################
+
+##################### Checking file integrity for input files #####################
+
+########[Pegasus Lite] Writing out script to launch user task in container ########
+2026-09-01 06:47:19: Using /usr/bin/apptainer to run the container
+
+##############[Container] Figuring out Pegasus worker package to use ##############
+2026-09-01 06:47:19: The job contained a Pegasus worker package
+2026-09-01 06:47:19: Skipping sanity check of included worker package because pegasus.transfer.worker.package.strict=false
+PATH in container is set to is set to /srv/pegasus-5.1.2-x86_64_rhel_9/bin:/ngen/.venv/bin:/ngen/.venv/bin:/root/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib64/mpich/bin
+
+#########################[Container] Launching user task #########################
+PegasusLite: exitcode 0

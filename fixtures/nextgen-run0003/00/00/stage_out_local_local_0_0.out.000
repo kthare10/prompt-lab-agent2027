@@ -1,0 +1,185 @@
+- invocation: True
+  version: 3.0
+  start: 2026-08-31T15:40:56.207+00:00
+  duration: 2.258
+  transformation: "pegasus::transfer"
+  derivation: "null"
+  resource: "local"
+  wf-label: "nextgen"
+  wf-stamp: "2026-08-31T15:24:08+00:00"
+  interface: enp8s0
+  hostaddr: 23.134.233.50
+  hostname: pegasus-submit
+  pid: 402889
+  uid: 1000
+  user: ubuntu
+  gid: 1000
+  group: ubuntu
+  umask: 0o0022
+  mainjob:
+    start: 2026-08-31T15:40:56.218+00:00
+    duration: 2.247
+    pid: 402890
+    usage:
+      utime: 0.160
+      stime: 0.070
+      maxrss: 27760
+      minflt: 16529
+      majflt: 0
+      nswap: 0
+      inblock: 272
+      outblock: 2464
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 109
+      nivcsw: 1
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /usr/bin/pegasus-transfer
+      mode: 0o100755
+      size: 2901
+      inode: 86477
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-02-03T22:39:35+00:00
+      atime: 2026-08-30T19:18:53+00:00
+      ctime: 2026-08-17T15:10:12+00:00
+      uid: 0
+      user: root
+      gid: 0
+      group: root
+    argument_vector:
+      - "--threads"
+      - "16"
+    procs:
+  jobids:
+    condor: 438.0
+  cwd: /var/spool/condor/local_univ_execute/dir_402884
+  usage:
+    utime: 0.002
+    stime: 0.012
+    maxrss: 2816
+    minflt: 153
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 1
+    nivcsw: 1
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: pegasus-submit
+    uname_release: 6.8.0-124-generic
+    uname_machine: x86_64
+    ram_total: 16375628
+    ram_free: 6660204
+    ram_shared: 4388
+    ram_buffer: 82880
+    swap_total: 0
+    swap_free: 0
+    cpu_count: 8
+    cpu_speed: 2795
+    cpu_vendor: AuthenticAMD
+    cpu_model: AMD EPYC 7543 32-Core Processor
+    load_min1: 0.49
+    load_min5: 0.16
+    load_min15: 0.05
+    procs_total: 259
+    procs_running: 1
+    procs_sleeping: 126
+    procs_other: 132
+    procs_vmsize: 7889428
+    procs_rss: 536492
+    task_total: 312
+    task_running: 1
+    task_sleeping: 179
+    task_other: 132
+  files:
+    stdin:
+      descriptor_number: 0
+      mode: 0o10600
+      size: 0
+      inode: 2043025
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-08-31T15:40:56+00:00
+      atime: 2026-08-31T15:40:56+00:00
+      ctime: 2026-08-31T15:40:56+00:00
+      uid: 1000
+      user: ubuntu
+      gid: 1000
+      group: ubuntu
+    stdout:
+      temporary_name: /var/spool/condor/local_univ_execute/dir_402884/ks.out.vwzAWA
+      descriptor: 3
+      mode: 0o100600
+      size: 0
+      inode: 1081199
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-08-31T15:40:56+00:00
+      atime: 2026-08-31T15:40:56+00:00
+      ctime: 2026-08-31T15:40:56+00:00
+      uid: 1000
+      user: ubuntu
+      gid: 1000
+      group: ubuntu
+    stderr:
+      temporary_name: /var/spool/condor/local_univ_execute/dir_402884/ks.err.Th9g9w
+      descriptor: 4
+      mode: 0o100600
+      size: 1730
+      inode: 1081203
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-08-31T15:40:58+00:00
+      atime: 2026-08-31T15:40:56+00:00
+      ctime: 2026-08-31T15:40:58+00:00
+      uid: 1000
+      user: ubuntu
+      gid: 1000
+      group: ubuntu
+      data_truncated: false
+      data: |
+        2026-08-31 15:40:56,310    INFO:  Reading URL pairs from stdin
+        2026-08-31 15:40:56,311    INFO:  1 transfers loaded
+        2026-08-31 15:40:56,311    INFO:  PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/bin:/usr/bin:/usr/local/bin:/opt/local/bin
+        2026-08-31 15:40:56,311    INFO:  LD_LIBRARY_PATH=
+        2026-08-31 15:40:56,325    INFO:  --------------------------------------------------------------------------------
+        2026-08-31 15:40:56,325    INFO:  Starting transfers - attempt 1
+        2026-08-31 15:40:58,349    INFO:  /bin/cp -f -R -L '/home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003/./gage-10109001_usgs_obs.csv' '/home/ubuntu/nextgen-workflow/output/gage-10109001_usgs_obs.csv'
+        2026-08-31 15:40:58,359    INFO:  Tool found: pegasus-integrity   Version: N/A   Path: /usr/bin/pegasus-integrity
+        2026-08-31 15:40:58,359    INFO:  /usr/bin/pegasus-integrity --verify="gage-10109001_usgs_obs.csv=/home/ubuntu/nextgen-workflow/output/gage-10109001_usgs_obs.csv"
+        2026-08-31 15:40:58,453    INFO:  --------------------------------------------------------------------------------
+        2026-08-31 15:40:58,453    INFO:  @@@MONITORING_PAYLOAD - START@@@{"ts": 1788190858, "monitoring_event": "int.metric", "payload": [{"event": "check", "file_type": "output", "succeeded": 1, "failed": 0, "duration": "0.094"}]}@@@MONITORING_PAYLOAD - END@@@
+        2026-08-31 15:40:58,453    INFO:  Stats: Total 1 transfers, 1.2 MB transferred in 2 seconds. Rate: 566.9 KB/s (4.4 Mb/s)
+        2026-08-31 15:40:58,453    INFO:         Between sites local->local : 1 transfers, 1.2 MB transferred in 2 seconds. Rate: 566.9 KB/s (4.4 Mb/s)
+        2026-08-31 15:40:58,453    INFO:  All transfers completed successfully.
+        
+    metadata:
+      temporary_name: /var/spool/condor/local_univ_execute/dir_402884/ks.meta.VyM5JC
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 1081208
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-08-31T15:40:56+00:00
+      atime: 2026-08-31T15:40:56+00:00
+      ctime: 2026-08-31T15:40:56+00:00
+      uid: 1000
+      user: ubuntu
+      gid: 1000
+      group: ubuntu

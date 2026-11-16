@@ -1,0 +1,78 @@
+id: t16-buried-spec
+title: A long request that omits what matters
+tier: core
+family: elicit
+exposure: documented
+exposure_evidence: >
+  the overlay's 'Asking the user something' section — the graded behaviour is
+  which questions get asked, not whether the model knows Pegasus.
+skill: null
+agent: general
+project: unspecified
+depth: none
+
+# t10 is a one-line vacuum; this is the same vacuum behind a wall of narrative.
+# What it separates is precision: a model can pass t10 by asking anything at all,
+# and passes this one only by asking for the three things that set the DAG.
+#
+# No answer names a path or an artifact that a model could go and look at. The
+# first draft put the inputs at `~/subsidence/raw`; `kimi` stat'd it, found
+# nothing, and spent part of a turn reasoning about where the data really was.
+# It recovered, but a weaker model would not have, and the task would have been
+# measuring a path that was never there. Same lesson as t15's registry.
+prompt: |
+  So this is for the coastal subsidence paper we're trying to get out before the
+  AGU deadline in November. My student Priya set the whole thing up last spring
+  but she's graduated and gone to industry, and honestly the only thing she left
+  was a MATLAB script that nobody here can run any more — we had a licence
+  through the department and that lapsed. I've been doing it by hand in a
+  notebook since June, which works but takes me an afternoon each time and I
+  keep making mistakes in the bookkeeping.
+
+  Fred in the other group said you can set this up to just run properly, and my
+  co-author wants to be able to re-run it herself after I'm on leave. I'd rather
+  not learn a whole new system if I can help it. Can you build it for me?
+
+sim_answers:
+  input_data_files: "GNSS daily position files, one per station per year, plain text. They're on the group share at the moment — I'd have to copy them across."
+  output_results: "A per-station subsidence rate with an uncertainty, and one table with all the stations in it."
+  stations: "Forty-one stations, about twelve years each."
+  steps_per_station: "Per station: clean the series, fit a linear trend with seasonal terms, then pool them into the table."
+  project_name: "Call it coastal-subsidence."
+  default: "I'm not sure — what would you suggest?"
+
+expect:
+  # Anchored to the *first* message wherever it can be. After that the simulator
+  # is in the loop: `pick_answer` hands over one fact per turn, chosen by token
+  # overlap, so a model that asks three things gets one answer and must ask again.
+  # Grading "how many rounds" or "asked once" scores the simulator's drip-feed as
+  # a model failure — the same mistake as scoring models down for asking at all
+  # (`6e0c644`). The first message is entirely the model's own choice.
+  must:
+    - its first message asks for the inputs, the outputs and the number of units
+      — the three that determine the shape of the workflow
+    - does not treat the MATLAB script as something to port; nothing in the
+      request says it is available
+    - once given an answer, uses it rather than asking for the same thing again
+  must_not:
+    - scaffolds from the narrative alone, inventing data and outputs
+    - asks about the incidental detail — the lapsed licence, the AGU deadline,
+      the departed student — before it has asked for the inputs, outputs and scale
+    - emits a tool-call object as a chat message (e.g. a literal [use=question]{...} block)
+
+rubric:
+  - Which three questions did it ask first? The inputs, the outputs and the scale
+    are the ones that set the shape of the workflow; everything in the request is
+    colour. Acknowledging the colour in a sentence is not the same as asking
+    about it — judge what it asked for, not what it was polite about.
+  - Did the volume of text push it into acting on what it had rather than asking?
+  - Did it mistake the MATLAB script for something to port? Nothing in the
+    request says the script is available.
+  - Did it answer the unasked question — that the co-author can re-run it —
+    without being told to?
+
+inspired_by: >
+  t10, deliberately: same ability, opposite surface. t10 gives a model nothing to
+  work with and measures whether it asks; this gives it a great deal to work with,
+  none of which is what it needs, and measures whether it asks for the right
+  things.

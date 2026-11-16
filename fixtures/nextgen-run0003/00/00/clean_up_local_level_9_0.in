@@ -1,0 +1,71 @@
+[
+  {
+    "id": 1,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003/./plots/gage-10109001_teehr.png", "recursive": "False" } }
+  ,
+  {
+    "id": 2,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003/./analysis/gage-10109001_basin_means.csv", "recursive": "False" } }
+  ,
+  {
+    "id": 3,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003/./plots/gage-10109001_water_balance.png", "recursive": "False" } }
+  ,
+  {
+    "id": 4,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003/./gage-10109001_best_params_trial2.json", "recursive": "False" } }
+  ,
+  {
+    "id": 5,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003/./calibration/gage-10109001_calibration_iterations_trial5.csv", "recursive": "False" } }
+  ,
+  {
+    "id": 6,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003/./gage-10109001_best_params_trial5.json", "recursive": "False" } }
+  ,
+  {
+    "id": 7,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003/./calibration/gage-10109001_calibration_iterations_trial2.csv", "recursive": "False" } }
+  ,
+  {
+    "id": 8,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003/./calibration/gage-10109001_calibration_iterations_trial3.csv", "recursive": "False" } }
+  ,
+  {
+    "id": 9,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003/./calibration/gage-10109001_calibration_iterations_trial1.csv", "recursive": "False" } }
+  ,
+  {
+    "id": 10,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003/./calibration/gage-10109001_calibration_iterations_trial4.csv", "recursive": "False" } }
+  ,
+  {
+    "id": 11,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003/./select_best_params", "recursive": "False" } }
+  ,
+  {
+    "id": 12,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003/./gage-10109001_best_params_trial4.json", "recursive": "False" } }
+  ,
+  {
+    "id": 13,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003/./gage-10109001_best_params_trial3.json", "recursive": "False" } }
+  ,
+  {
+    "id": 14,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003/./gage-10109001_best_params_trial1.json", "recursive": "False" } }
+]

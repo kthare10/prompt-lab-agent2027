@@ -1,0 +1,54 @@
+id: t12-federated-rounds
+title: Sequential rounds with parallel workers — sub-workflows
+tier: stretch
+family: build
+exposure: pointed
+exposure_evidence: >
+  pegasus-scaffold, -review and -help all name workflow_generator_medical_imaging_fl.py for SubWorkflows — filename only, content unreachable (C9)
+skill: pegasus-scaffold
+agent: workflow-architect
+project: federated-rounds
+depth: generate
+
+prompt: |
+  Call it federated-rounds.
+
+  We have four hospitals that can't share raw data. The training has to go in
+  rounds: in each round every hospital trains on its own data, the results are
+  averaged centrally, and the averaged model is what each hospital starts the
+  next round from. Ten rounds.
+
+  Within a round the four hospitals run at the same time. The rounds themselves
+  have to be strictly in order.
+
+  Alongside that, I want summary statistics computed for each hospital's dataset
+  — those don't depend on the training at all and can run whenever.
+
+sim_answers:
+  rounds: "Ten. Make it a parameter, we'll tune it."
+  hospitals: "Four, listed in a config."
+  aggregation: "Simple weighted average by sample count."
+  default: "Whatever is cleanest."
+
+expect:
+  files: [workflow_generator.py, README.md, run_manual.sh, bin/, Apptainer/, config/]
+  dag: sequential_rounds_with_fanout
+  must:
+    - rounds are strictly ordered — round N+1 consumes round N's aggregated model
+    - within a round, per-site training jobs are independent of each other
+    - statistics jobs have no dependency on the training chain
+    - round count is a parameter, not unrolled by hand ten times
+  must_not:
+    - rounds expressed as one flat set of parallel jobs
+    - statistics jobs artificially chained to the training
+
+rubric:
+  - Is the round ordering carried by real data dependencies rather than an explicit
+    dependency bolted on afterwards?
+  - Does it reach for a SubWorkflow, and is that the right call here?
+  - Are the independent statistics jobs genuinely off the critical path?
+
+inspired_by: assets/examples/workflow_generator_medical_imaging_fl.py and
+  fl_round.py — the only shipped examples using SubWorkflows and sequential
+  rounds. Held out by dropping the TCIA/NIH dual-branch structure and changing
+  the domain, while keeping the round/fan-out shape that makes it hard.

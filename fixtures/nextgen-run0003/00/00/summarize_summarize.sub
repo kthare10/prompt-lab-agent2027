@@ -1,0 +1,48 @@
+######################################################################
+# PEGASUS WMS GENERATED SUBMIT FILE
+# DAG : nextgen, Index = 0, Count = null
+# SUBMIT FILE NAME : summarize_summarize.sub
+######################################################################
+stream_error  = false
+stream_output = false
+environment = "LANG=en_US.UTF-8 CONDOR_JOBID=$(cluster).$(process) PEGASUS_WF_UUID=94c5b250-a44c-4f6e-85ef-09297a309d87 PEGASUS_WF_LABEL=nextgen PEGASUS_DAG_JOB_ID=summarize_summarize PEGASUS_SITE=condorpool"
++WantIOProxy = True
+error = /home/ubuntu/nextgen-workflow/ubuntu/pegasus/nextgen/run0003//00/00/summarize_summarize.err
+executable = /home/ubuntu/nextgen-workflow/ubuntu/pegasus/nextgen/run0003/00/00/summarize_summarize.sh
+initialdir = /home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003
+log = /home/ubuntu/nextgen-workflow/ubuntu/pegasus/nextgen/run0003/nextgen-0.log
+notification = NEVER
+output = /home/ubuntu/nextgen-workflow/ubuntu/pegasus/nextgen/run0003//00/00/summarize_summarize.out
+periodic_release = False
+periodic_remove = (JobStatus == 5) && ((CurrentTime - EnteredCurrentStatus) > 1800)
+priority = 110
+request_cpus = 1
+request_memory = 2048
+should_transfer_files = YES
+submit_event_user_notes = pool:condorpool
+transfer_executable = true
+transfer_input_files = ngen_outputs_utils.py,nextgen_container.sif,ngiab_pegasus.py,analysis/gage-10109001_teehr_metrics.csv,analysis/gage-10109001_teehr_metrics_cal.csv,forcings_utils.py,analysis/gage-10109001_metrics_cal.csv,analysis/gage-10109001_metrics.csv,cal_utils.py,summarize,ngiab_utils.py,$(wf_submit_dir)/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz,$(wf_submit_dir)/00/00/stage_in_remote_local_0_0.meta,$(wf_submit_dir)/00/00/stage_in_local_local_9_0.meta,$(wf_submit_dir)/00/00/outputs_analysis_analysis_gage_10109001.meta,$(wf_submit_dir)/00/00/outputs_analysis_analysis_gage_10109001_cal.meta,$(wf_submit_dir)/00/00/teehr_evaluation_teehr_gage_10109001_cal.meta,$(wf_submit_dir)/00/00/teehr_evaluation_teehr_gage_10109001.meta,$(wf_submit_dir)/pegasus-lite-common.sh
+transfer_output_files = summary/summary_metrics.png,summary/summary_metrics.csv
+transfer_output_remaps = "summary_metrics.png=summary/summary_metrics.png;summary_metrics.csv=summary/summary_metrics.csv"
+universe = vanilla
+wf_submit_dir = /home/ubuntu/nextgen-workflow/ubuntu/pegasus/nextgen/run0003
+when_to_transfer_output = ON_EXIT
++pegasus_generator = "Pegasus"
++pegasus_root_wf_uuid = "94c5b250-a44c-4f6e-85ef-09297a309d87"
++pegasus_wf_uuid = "94c5b250-a44c-4f6e-85ef-09297a309d87"
++pegasus_version = "5.1.2"
++pegasus_wf_name = "nextgen-0"
++pegasus_wf_time = "20260831T153923+0000"
++pegasus_wf_xformation = "summarize"
++pegasus_wf_dax_job_id = "summarize"
++pegasus_wf_dag_job_id = "summarize_summarize"
++pegasus_job_class = 1
++pegasus_site = "condorpool"
++pegasus_job_runtime = 0
++pegasus_cores = 1
++pegasus_gpus = 1
++pegasus_cluster_size = 1
+queue
+######################################################################
+# END OF SUBMIT FILE
+######################################################################

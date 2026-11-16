@@ -1,0 +1,49 @@
+id: t02-tile-reduce
+title: Fan-out then a staged merge tree
+tier: core
+family: build
+exposure: pointed
+exposure_evidence: >
+  pegasus-scaffold's lookup table maps 'Hierarchical merge tree' to examples/workflow_generator_sra_search.py — the filename, not the content, and the content is unreachable (C9)
+skill: pegasus-scaffold
+agent: general
+project: tile-reduce
+depth: plan
+
+prompt: |
+  Call this one tile-reduce.
+
+  I have a large set of image tiles — could be 2,000 of them — and for each tile
+  I need to run a small detection script that writes out a table of features.
+  Then all those tables need to end up as one archive I can download.
+
+  Two things I've been bitten by before: I don't want 2,000 jobs all feeding
+  into a single final step, because that one step ends up enormous. And if a
+  handful of tiles fail I'd rather the rest still complete.
+
+sim_answers:
+  tile_count: "Between 500 and 2,000 depending on the survey. It varies per run."
+  merge_shape: "Whatever avoids one giant final step — you decide the grouping."
+  failures: "A few bad tiles are normal. I don't want the whole run lost."
+  default: "Your call."
+
+expect:
+  files: [workflow_generator.py, README.md, run_manual.sh, bin/, Apptainer/]
+  jobs: ">=10"
+  dag: merge_tree
+  must:
+    - merge is staged/hierarchical, not a single fan-in over every tile
+    - a chunk size or branching factor is a named constant or CLI argument
+    - per-tile failure tolerance is addressed (retry settings or explicit discussion)
+  must_not:
+    - one merge job with 2000 declared inputs
+
+rubric:
+  - Did it produce a real merge tree, or a flat fan-in with a tree-shaped comment?
+  - Is the branching factor reachable without editing the DAG logic?
+  - How is partial failure handled — Pegasus retry properties, or hand-waved?
+
+inspired_by: assets/examples/workflow_generator_sra_search.py — its
+  add_merge_jobs() builds exactly this upside-down triangle with max_parents=25.
+  The example is the answer key; the domain is changed so recall alone will not
+  produce it.

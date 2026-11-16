@@ -1,0 +1,6 @@
+[
+  {
+    "id": 1,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003", "recursive": "True" } }
+]

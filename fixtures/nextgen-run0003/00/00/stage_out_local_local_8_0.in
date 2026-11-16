@@ -1,0 +1,61 @@
+[
+ { "type": "transfer",
+   "linkage": "output",
+   "lfn": "plots/gage-10109001_water_balance_cal.png",
+   "id": 1,
+   "verify_checksum_remote": true,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003/./plots/gage-10109001_water_balance_cal.png" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/output/plots/gage-10109001_water_balance_cal.png" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "output",
+   "lfn": "analysis/gage-10109001_metrics_cal.csv",
+   "id": 2,
+   "verify_checksum_remote": true,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003/./analysis/gage-10109001_metrics_cal.csv" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/output/analysis/gage-10109001_metrics_cal.csv" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "output",
+   "lfn": "analysis/gage-10109001_basin_means_cal.csv",
+   "id": 3,
+   "verify_checksum_remote": true,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003/./analysis/gage-10109001_basin_means_cal.csv" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/output/analysis/gage-10109001_basin_means_cal.csv" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "output",
+   "lfn": "analysis/gage-10109001_teehr_metrics_cal.csv",
+   "id": 4,
+   "verify_checksum_remote": true,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003/./analysis/gage-10109001_teehr_metrics_cal.csv" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/output/analysis/gage-10109001_teehr_metrics_cal.csv" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "output",
+   "lfn": "plots/gage-10109001_teehr_cal.png",
+   "id": 5,
+   "verify_checksum_remote": true,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003/./plots/gage-10109001_teehr_cal.png" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/output/plots/gage-10109001_teehr_cal.png" }
+   ] }
+]

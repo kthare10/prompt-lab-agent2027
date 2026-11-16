@@ -1,0 +1,35 @@
+{"name": ".//00/00/create_dir_nextgen_0_local.out", "timestamp": "2026-08-31T15:39:40.474086", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/stage_in_local_local_4_0.out", "timestamp": "2026-08-31T15:39:55.713707", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/stage_in_local_local_9_0.out", "timestamp": "2026-08-31T15:39:55.717382", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/stage_in_local_local_0_0.out", "timestamp": "2026-08-31T15:39:55.722942", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/stage_in_local_local_1_0.out", "timestamp": "2026-08-31T15:39:55.725602", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/stage_in_local_local_6_0.out", "timestamp": "2026-08-31T15:39:55.725492", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/stage_in_local_local_2_0.out", "timestamp": "2026-08-31T15:39:55.736223", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/stage_in_local_local_7_0.out", "timestamp": "2026-08-31T15:39:55.766479", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/stage_in_local_local_5_0.out", "timestamp": "2026-08-31T15:40:00.868759", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/stage_in_remote_local_5_0.out", "timestamp": "2026-08-31T15:40:00.872950", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/stage_in_local_local_3_0.out", "timestamp": "2026-08-31T15:40:05.973990", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/stage_in_remote_local_0_0.out", "timestamp": "2026-08-31T15:40:05.974916", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/fetch_usgs_obs_obs_gage_10109001.out", "timestamp": "2026-08-31T15:40:46.127096", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/stage_out_local_local_0_0.out", "timestamp": "2026-08-31T15:41:01.243496", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/fetch_hydrofabric_fetch_hydrofabric.out", "timestamp": "2026-08-31T15:43:51.508983", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/01/clean_up_local_level_3_0.out", "timestamp": "2026-08-31T15:44:06.634551", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/subset_hydrofabric_subset_gage_10109001.out", "timestamp": "2026-08-31T15:46:27.192770", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/01/clean_up_local_level_4_0.out", "timestamp": "2026-08-31T15:46:42.355402", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/generate_realization_realization_gage_10109001.out", "timestamp": "2026-08-31T15:48:12.536532", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/generate_forcings_forcings_gage_10109001.out", "timestamp": "2026-08-31T15:58:43.286495", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/01/clean_up_local_level_5_0.out", "timestamp": "2026-08-31T15:58:58.426333", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/assemble_rundir_assemble_gage_10109001.out", "timestamp": "2026-08-31T16:00:03.586297", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/clean_up_local_level_6_0.out", "timestamp": "2026-08-31T16:00:23.729482", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/run_nextgen_run_gage_10109001.out", "timestamp": "2026-08-31T16:07:54.096159", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/stage_out_local_local_4_0.out", "timestamp": "2026-08-31T16:08:09.381130", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/clean_up_local_level_7_0.out", "timestamp": "2026-08-31T16:08:09.402457", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/outputs_analysis_analysis_gage_10109001.out", "timestamp": "2026-08-31T16:09:04.552176", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/teehr_evaluation_teehr_gage_10109001.out", "timestamp": "2026-08-31T16:09:29.675936", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/stage_out_local_local_5_0.out", "timestamp": "2026-08-31T16:09:54.838616", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/calibrate_calibrate_gage_10109001_t5.out", "timestamp": "2026-09-01T15:05:59.944663", "exitcode": 1, "app_exitcode": 1, "retry": 0, "std_out": "", "std_err": "dagman reported non-zero exitcode: 1\n"}
+{"name": ".//00/00/calibrate_calibrate_gage_10109001_t1.out", "timestamp": "2026-09-01T18:39:45.707866", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/calibrate_calibrate_gage_10109001_t5.out", "timestamp": "2026-09-01T19:58:33.761274", "exitcode": 1, "app_exitcode": 1, "retry": 1, "std_out": "", "std_err": "dagman reported non-zero exitcode: 1\n"}
+{"name": ".//00/00/calibrate_calibrate_gage_10109001_t3.out", "timestamp": "2026-09-02T05:10:33.577745", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/calibrate_calibrate_gage_10109001_t4.out", "timestamp": "2026-09-02T06:30:26.241796", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/calibrate_calibrate_gage_10109001_t2.out", "timestamp": "2026-09-02T09:33:36.219826", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}

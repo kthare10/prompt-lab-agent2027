@@ -1,0 +1,14 @@
+[
+  {
+    "_id": "hydrofabric_cache.tar",
+    "_type": "file",
+    "_attributes": {
+      "user": "ubuntu",
+      "size": "6679818240",
+      "ctime": "2026-08-31T15:42:26+00:00",
+      "checksum.type": "sha256",
+      "checksum.value": "333a36517db68805271024ff8759982dee68a6aa8bb59664f6bd6c5110c4f640",
+      "checksum.timing": "29.43"
+    }
+  }
+]

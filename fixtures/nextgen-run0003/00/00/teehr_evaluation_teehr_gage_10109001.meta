@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "plots/gage-10109001_teehr.png",
+    "_type": "file",
+    "_attributes": {
+      "user": "ubuntu",
+      "size": "34626",
+      "ctime": "2026-08-31T16:09:25+00:00",
+      "checksum.type": "sha256",
+      "checksum.value": "50f8b8a5c578784f5e6b46bd0f82e0cfeba2a4a04c71e260af7a0f8ec5516d8a",
+      "checksum.timing": "0.0"
+    }
+  },
+  {
+    "_id": "analysis/gage-10109001_teehr_metrics.csv",
+    "_type": "file",
+    "_attributes": {
+      "user": "ubuntu",
+      "size": "2535",
+      "ctime": "2026-08-31T16:09:25+00:00",
+      "checksum.type": "sha256",
+      "checksum.value": "57c7cf2b3aec7133be520a0972ee6d210cadc03bd32857caf6338af49cc7651e",
+      "checksum.timing": "0.0"
+    }
+  }
+]

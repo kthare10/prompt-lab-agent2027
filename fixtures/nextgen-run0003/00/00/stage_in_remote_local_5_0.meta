@@ -1,0 +1,14 @@
+[
+  {
+    "_id": "teehr_container.sif",
+    "_type": "file",
+    "_attributes": {
+      "user": "ubuntu",
+      "size": "1099608064",
+      "ctime": "2026-08-17T18:20:39.385549",
+      "checksum.type": "sha256",
+      "checksum.value": "a274efb0658f79ceb20fef26a9e1dba79948c155c2dc7fe2696430a91cfb02fb",
+      "checksum.timing": "0.857"
+    }
+  }
+]

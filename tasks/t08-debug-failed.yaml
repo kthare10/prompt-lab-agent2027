@@ -1,0 +1,64 @@
+id: t08-debug-failed
+title: Diagnose a run that failed for a known reason
+tier: core
+family: debug
+exposure: documented
+exposure_evidence: >
+  PEGASUS.md 'Debugging Failed Jobs'; pegasus-analyzer is on PATH in the container
+skill: pegasus-debug
+agent: pipeline-debugger
+project: nextgen
+depth: none
+
+# A real failed run, taken from the FABRIC submit host on 2026-09-02 — 49 jobs,
+# 33 succeeded, one job failed twice with POST_SCRIPT_FAILED. Seeded where
+# Pegasus itself would have written it. See fixtures/nextgen-run0003/GROUND-TRUTH.md.
+seed_files:
+  - from: nextgen-run0003
+    to: ubuntu/pegasus/nextgen/run0003
+
+prompt: |
+  I ran nextgen and it stopped. I don't understand the logs. What went wrong and
+  what do I do about it?
+
+sim_answers:
+  default: "I can run commands if you tell me exactly what to type."
+
+expect:
+  # The last error in the log is NOT the cause. A model that reads the tail
+  # reports a missing NetCDF file; the file is missing *because* MPI aborted.
+  ground_truth_cause: >
+    An MPI transport assertion aborted ngen-parallel partway through the run
+    (nemesis/netmod/tcp/socksm.c:569, "internal ABORT - process 5"). The
+    troute_output_201710010000.nc that the calibrate step then could not open was
+    never written because of that abort — it is the symptom, not the cause.
+  decoy: >
+    "FileNotFoundError / calibrate failed: No such file or directory:
+    .../troute/troute_output_201710010000.nc" — the final line of stdout, and the
+    wrong answer.
+  evidence_location: >
+    Not in stderr: the .err file is 1.6 KB of Pegasus Lite scaffolding ending in
+    "Last command exited with 1". The diagnosis is ~12,600 lines into
+    00/00/calibrate_calibrate_gage_10109001_t5.out.001.
+  must:
+    - names the MPI abort as the cause, not the missing NetCDF file
+    - notices that the failing job is calibrate_calibrate_gage_10109001_t5
+    - names a concrete next action (a command to run, or a specific thing to change)
+    - explains it without unexplained Pegasus jargon
+  must_not:
+    - reports the missing .nc file as the root cause
+    - claims the run succeeded, or that no failure is visible
+    - invents a cause with no line in the logs to support it
+
+rubric:
+  - Did it find the true cause, or stop at the last error message?
+  - Did it actually read the job's stdout, or only the (uninformative) stderr?
+  - Is the action actionable — a command to run, a file to look at — or generic advice?
+  - Did it use pegasus-analyzer, or navigate the run directory by hand?
+
+inspired_by: >
+  a real run on the FABRIC submit host, not a seeded defect. Chosen
+  over the originally-planned variants because the error message and the cause
+  disagree, which is what distinguishes diagnosis from log-tailing. The planned
+  GLIBC variant was dropped: verified 2026-09-02 that ubuntu:22.04 now builds
+  cleanly here with --ignore-fakeroot-command, so that failure no longer occurs.

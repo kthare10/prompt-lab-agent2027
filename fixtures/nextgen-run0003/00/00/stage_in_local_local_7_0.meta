@@ -1,0 +1,14 @@
+[
+  {
+    "_id": "apply_params",
+    "_type": "file",
+    "_attributes": {
+      "user": "ubuntu",
+      "size": "5231",
+      "ctime": "2026-08-31T15:23:50.334182",
+      "checksum.type": "sha256",
+      "checksum.value": "6f4f43bb9174f3524d4523b1319e6dd5b63823654cb91cf943865256d1337f85",
+      "checksum.timing": "0.034"
+    }
+  }
+]

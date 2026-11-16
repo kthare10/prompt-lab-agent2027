@@ -1,0 +1,304 @@
+- invocation: True
+  version: 3.0
+  start: 2026-08-31T16:08:37.557+00:00
+  duration: 22.720
+  transformation: "outputs_analysis"
+  derivation: "analysis_gage_10109001"
+  resource: "condorpool"
+  wf-label: "nextgen"
+  wf-stamp: "2026-08-31T15:24:08+00:00"
+  interface: enp3s0
+  hostaddr: 10.30.6.179
+  hostname: ATLA-worker-1
+  pid: 130519
+  uid: 1000
+  user: ubuntu
+  gid: 1000
+  group: ubuntu
+  umask: 0o0022
+  mainjob:
+    start: 2026-08-31T16:08:37.569+00:00
+    duration: 22.708
+    pid: 130520
+    usage:
+      utime: 12.990
+      stime: 4.549
+      maxrss: 386608
+      minflt: 538506
+      majflt: 1258
+      nswap: 0
+      inblock: 0
+      outblock: 5401400
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 17249
+      nivcsw: 391
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /srv/outputs_analysis
+      mode: 0o100755
+      size: 8812
+      inode: 528791
+      nlink: 1
+      blksize: 4096
+      blocks: 24
+      mtime: 2026-08-31T16:08:22+00:00
+      atime: 2026-08-31T16:08:35+00:00
+      ctime: 2026-08-31T16:08:33+00:00
+      uid: 1000
+      user: ubuntu
+      gid: 1000
+      group: ubuntu
+    argument_vector:
+      - "--gage"
+      - "gage-10109001"
+      - "--run-tar"
+      - "rundir_gage-10109001_run.tar"
+      - "--obs"
+      - "gage-10109001_usgs_obs.csv"
+      - "--output-basin-means"
+      - "analysis/gage-10109001_basin_means.csv"
+      - "--output-metrics"
+      - "analysis/gage-10109001_metrics.csv"
+      - "--output-plot"
+      - "plots/gage-10109001_water_balance.png"
+    procs:
+  jobids:
+    condor: 450.0
+  cwd: /srv
+  usage:
+    utime: 0.006
+    stime: 0.008
+    maxrss: 2048
+    minflt: 124
+    majflt: 4
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 18
+    nivcsw: 0
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: atla-worker-1
+    uname_release: 6.8.0-124-generic
+    uname_machine: x86_64
+    ram_total: 16375628
+    ram_free: 8303892
+    ram_shared: 4344
+    ram_buffer: 145100
+    swap_total: 0
+    swap_free: 0
+    cpu_count: 8
+    cpu_speed: 2795
+    cpu_vendor: AuthenticAMD
+    cpu_model: AMD EPYC 7543 32-Core Processor
+    load_min1: 0.26
+    load_min5: 0.31
+    load_min15: 0.58
+    procs_total: 238
+    procs_running: 1
+    procs_sleeping: 116
+    procs_other: 121
+    procs_vmsize: 8996508
+    procs_rss: 472948
+    task_total: 298
+    task_running: 1
+    task_sleeping: 176
+    task_other: 121
+  files:
+    plots/gage-10109001_water_balance.png:
+      lfn: "plots/gage-10109001_water_balance.png"
+      file_name: /srv/plots/gage-10109001_water_balance.png
+      mode: 0o100644
+      size: 71646
+      inode: 538076
+      nlink: 1
+      blksize: 4096
+      blocks: 144
+      mtime: 2026-08-31T16:09:00+00:00
+      atime: 2026-08-31T16:09:00+00:00
+      ctime: 2026-08-31T16:09:00+00:00
+      uid: 1000
+      user: ubuntu
+      gid: 1000
+      group: ubuntu
+      output: True
+      sha256: fc0ac5137bc848814ca4f3d48b65e2a680cd7977b1f67f4fd7c1703d252b1fa4
+      checksum_timing: 0.00
+    analysis/gage-10109001_metrics.csv:
+      lfn: "analysis/gage-10109001_metrics.csv"
+      file_name: /srv/analysis/gage-10109001_metrics.csv
+      mode: 0o100644
+      size: 302
+      inode: 538074
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-08-31T16:08:59+00:00
+      atime: 2026-08-31T16:08:59+00:00
+      ctime: 2026-08-31T16:08:59+00:00
+      uid: 1000
+      user: ubuntu
+      gid: 1000
+      group: ubuntu
+      output: True
+      sha256: 6cf548ae70853999af6b3d37b725ea0bde8b38d36bbeb5c87dd17135a090098f
+      checksum_timing: 0.00
+    analysis/gage-10109001_basin_means.csv:
+      lfn: "analysis/gage-10109001_basin_means.csv"
+      file_name: /srv/analysis/gage-10109001_basin_means.csv
+      mode: 0o100644
+      size: 15747535
+      inode: 538073
+      nlink: 1
+      blksize: 4096
+      blocks: 30760
+      mtime: 2026-08-31T16:08:59+00:00
+      atime: 2026-08-31T16:08:58+00:00
+      ctime: 2026-08-31T16:08:59+00:00
+      uid: 1000
+      user: ubuntu
+      gid: 1000
+      group: ubuntu
+      output: True
+      sha256: bbffdf6bd39f6a76ca1d8b66f3ec358765711e23414551c908d103617e1e72a0
+      checksum_timing: 0.05
+    stdin:
+      file_name: /dev/null
+      mode: 0o20666
+      size: 0
+      inode: 5
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-08-17T14:15:22+00:00
+      atime: 2026-08-17T14:15:22+00:00
+      ctime: 2026-08-17T14:15:22+00:00
+      uid: 65534
+      user: nobody
+      gid: 65534
+      group: nobody
+    stdout:
+      temporary_name: /tmp/ks.out.CfWI9u
+      descriptor: 3
+      mode: 0o100600
+      size: 654
+      inode: 537737
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-08-31T16:09:00+00:00
+      atime: 2026-08-31T16:08:37+00:00
+      ctime: 2026-08-31T16:09:00+00:00
+      uid: 1000
+      user: ubuntu
+      gid: 1000
+      group: ubuntu
+      data_truncated: false
+      data: |
+        Analyzing gage-10109001 (routing feature 2861391)
+        CSV file created at: /srv/job_home/ngiab_preprocess_output/gage-10109001/outputs/weighted_average_variables_gage-10109001.csv
+        Wrote analysis/gage-10109001_basin_means.csv (35040 rows, 31 columns)
+        Metrics: {'gage': 'gage-10109001', 'feature_id': 2861391, 'n_timesteps': 35040, 'kge_resolution': 'hourly', 'n_hours_compared': 34994, 'rmse_cfs': 150.35485060587592, 'kge': 0.43653435557394926, 'mean_sim_cfs': 112.54019480706854, 'mean_obs_cfs': 197.65780681450153, 'n_days_compared': 1460, 'kge_daily': 0.43715322989033867, 'rmse_daily_cfs': 150.07464913214312}
+        Wrote plots/gage-10109001_water_balance.png
+        
+    stderr:
+      temporary_name: /tmp/ks.err.PxcUB3
+      descriptor: 4
+      mode: 0o100600
+      size: 562
+      inode: 537738
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-08-31T16:08:46+00:00
+      atime: 2026-08-31T16:08:37+00:00
+      ctime: 2026-08-31T16:08:46+00:00
+      uid: 1000
+      user: ubuntu
+      gid: 1000
+      group: ubuntu
+      data_truncated: false
+      data: |
+        2026-08-31 16:08:37,723 - ngiab_pegasus - INFO - Extracting rundir_gage-10109001_run.tar -> /srv/job_home/ngiab_preprocess_output/gage-10109001
+        /usr/lib64/python3.11/tarfile.py:2303: RuntimeWarning: The default behavior of tarfile extraction has been changed to disallow common exploits (including CVE-2007-4559). By default, absolute/parent paths are disallowed and some mode bits are cleared. See https://access.redhat.com/articles/7004769 for more details.
+          warnings.warn(
+        2026-08-31 16:08:46,256 - matplotlib.font_manager - INFO - generated new fontManager
+        
+    metadata:
+      temporary_name: /tmp/ks.meta.Rj1iTO
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 537739
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-08-31T16:08:37+00:00
+      atime: 2026-08-31T16:08:37+00:00
+      ctime: 2026-08-31T16:08:37+00:00
+      uid: 1000
+      user: ubuntu
+      gid: 1000
+      group: ubuntu
+
+---------------pegasus-multipart
+- integrity_verification_attempts:
+  - lfn: "nextgen_container.sif"
+    pfn: "nextgen_container.sif"
+    sha256: 854a827b3bd79f78e9fcd233523702dabed262676ecc132d6db7b839ebc822e2
+    success: True
+- integrity_summary:
+    succeeded: 1
+    failed: 0
+    duration: 1.049
+
+---------------pegasus-multipart
+- integrity_verification_attempts:
+  - lfn: "rundir_gage-10109001_run.tar"
+    pfn: "rundir_gage-10109001_run.tar"
+    sha256: 622a71e6473fa721de23a8c659c8a0b1a53c22319eae1979e3dbdcf0bfe1d29b
+    success: True
+  - lfn: "ngen_outputs_utils.py"
+    pfn: "ngen_outputs_utils.py"
+    sha256: 3b3d28f19415028a3c3aac86a75960627968e5a6c9c9025c5faa7803a12650fc
+    success: True
+  - lfn: "outputs_analysis"
+    pfn: "outputs_analysis"
+    sha256: b900651da4311fe71e7c3df8854ced281b2e857016f1d881bf660097bda6d08d
+    success: True
+  - lfn: "ngiab_pegasus.py"
+    pfn: "ngiab_pegasus.py"
+    sha256: b8d2e90f6bbb6c99655eb370110571f7a2cea4f91251c029d3e7bdc9358e4700
+    success: True
+  - lfn: "forcings_utils.py"
+    pfn: "forcings_utils.py"
+    sha256: 1a7935e9c3d1c34703378e06f8cb925f3ad08a5b619f6e3846c3b30d7a789e49
+    success: True
+  - lfn: "gage-10109001_usgs_obs.csv"
+    pfn: "gage-10109001_usgs_obs.csv"
+    sha256: e5526a61cf91fc252a259db83e3a0cd29235d4adb849260f738e85e9257762f9
+    success: True
+  - lfn: "cal_utils.py"
+    pfn: "cal_utils.py"
+    sha256: c12c7138d4050bd556e142a0682c1fc93e479786a0e64e9aaec3d0cea969bbbd
+    success: True
+  - lfn: "nextgen_container.sif"
+    pfn: "nextgen_container.sif"
+    sha256: 854a827b3bd79f78e9fcd233523702dabed262676ecc132d6db7b839ebc822e2
+    success: True
+  - lfn: "ngiab_utils.py"
+    pfn: "ngiab_utils.py"
+    sha256: 4855180e03f2c184f4d10e7e319aaef0e0d0e9bdfde3b1dd2347665c19479ef3
+    success: True
+- integrity_summary:
+    succeeded: 9
+    failed: 0
+    duration: 3.132

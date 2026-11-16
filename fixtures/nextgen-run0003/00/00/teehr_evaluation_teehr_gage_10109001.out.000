@@ -1,0 +1,358 @@
+- invocation: True
+  version: 3.0
+  start: 2026-08-31T16:08:44.866+00:00
+  duration: 41.440
+  transformation: "teehr_evaluation"
+  derivation: "teehr_gage_10109001"
+  resource: "condorpool"
+  wf-label: "nextgen"
+  wf-stamp: "2026-08-31T15:24:08+00:00"
+  interface: enp3s0
+  hostaddr: 10.30.6.97
+  hostname: NCSA-gpu-worker-1
+  pid: 88231
+  uid: 1000
+  user: ubuntu
+  gid: 1000
+  group: ubuntu
+  umask: 0o0022
+  mainjob:
+    start: 2026-08-31T16:08:44.888+00:00
+    duration: 41.419
+    pid: 88232
+    usage:
+      utime: 15.190
+      stime: 10.325
+      maxrss: 863768
+      minflt: 1270901
+      majflt: 1825
+      nswap: 0
+      inblock: 8
+      outblock: 5340128
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 46762
+      nivcsw: 445
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /srv/teehr_evaluation
+      mode: 0o100755
+      size: 17922
+      inode: 2883602
+      nlink: 1
+      blksize: 4096
+      blocks: 40
+      mtime: 2026-08-31T16:08:37+00:00
+      atime: 2026-08-31T16:08:44+00:00
+      ctime: 2026-08-31T16:08:40+00:00
+      uid: 1000
+      user: ubuntu
+      gid: 1000
+      group: ubuntu
+    argument_vector:
+      - "--gage"
+      - "gage-10109001"
+      - "--run-tar"
+      - "rundir_gage-10109001_run.tar"
+      - "--obs"
+      - "gage-10109001_usgs_obs.csv"
+      - "--start"
+      - "2017-10-01"
+      - "--end"
+      - "2021-09-30"
+      - "--training-start"
+      - "2019-10-01"
+      - "--output-metrics"
+      - "analysis/gage-10109001_teehr_metrics.csv"
+      - "--output-plot"
+      - "plots/gage-10109001_teehr.png"
+    procs:
+  jobids:
+    condor: 452.0
+  cwd: /srv
+  usage:
+    utime: 0.005
+    stime: 0.019
+    maxrss: 2304
+    minflt: 144
+    majflt: 4
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 33
+    nivcsw: 0
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: ncsa-gpu-worker-1
+    uname_release: 6.8.0-138-generic
+    uname_machine: x86_64
+    ram_total: 16375624
+    ram_free: 9069068
+    ram_shared: 4404
+    ram_buffer: 177312
+    swap_total: 0
+    swap_free: 0
+    cpu_count: 8
+    cpu_speed: 2396
+    cpu_vendor: AuthenticAMD
+    cpu_model: AMD EPYC 7532 32-Core Processor
+    load_min1: 0.42
+    load_min5: 0.11
+    load_min15: 0.04
+    procs_total: 263
+    procs_running: 1
+    procs_sleeping: 142
+    procs_waiting: 1
+    procs_other: 119
+    procs_vmsize: 17786760
+    procs_rss: 493692
+    task_total: 326
+    task_running: 1
+    task_sleeping: 205
+    task_waiting: 1
+    task_other: 119
+  files:
+    plots/gage-10109001_teehr.png:
+      lfn: "plots/gage-10109001_teehr.png"
+      file_name: /srv/plots/gage-10109001_teehr.png
+      mode: 0o100644
+      size: 34626
+      inode: 3932219
+      nlink: 1
+      blksize: 4096
+      blocks: 72
+      mtime: 2026-08-31T16:09:25+00:00
+      atime: 2026-08-31T16:09:25+00:00
+      ctime: 2026-08-31T16:09:25+00:00
+      uid: 1000
+      user: ubuntu
+      gid: 1000
+      group: ubuntu
+      output: True
+      sha256: 50f8b8a5c578784f5e6b46bd0f82e0cfeba2a4a04c71e260af7a0f8ec5516d8a
+      checksum_timing: 0.00
+    analysis/gage-10109001_teehr_metrics.csv:
+      lfn: "analysis/gage-10109001_teehr_metrics.csv"
+      file_name: /srv/analysis/gage-10109001_teehr_metrics.csv
+      mode: 0o100644
+      size: 2535
+      inode: 3932217
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-08-31T16:09:25+00:00
+      atime: 2026-08-31T16:09:25+00:00
+      ctime: 2026-08-31T16:09:25+00:00
+      uid: 1000
+      user: ubuntu
+      gid: 1000
+      group: ubuntu
+      output: True
+      sha256: 57c7cf2b3aec7133be520a0972ee6d210cadc03bd32857caf6338af49cc7651e
+      checksum_timing: 0.00
+    stdin:
+      file_name: /dev/null
+      mode: 0o20666
+      size: 0
+      inode: 5
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-08-17T15:53:29+00:00
+      atime: 2026-08-17T15:53:29+00:00
+      ctime: 2026-08-17T15:53:29+00:00
+      uid: 65534
+      user: nobody
+      gid: 65534
+      group: nogroup
+    stdout:
+      temporary_name: /tmp/ks.out.zBmzTQ
+      descriptor: 3
+      mode: 0o100600
+      size: 2229
+      inode: 3416801
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-08-31T16:09:25+00:00
+      atime: 2026-08-31T16:08:44+00:00
+      ctime: 2026-08-31T16:09:25+00:00
+      uid: 1000
+      user: ubuntu
+      gid: 1000
+      group: ubuntu
+      data_truncated: false
+      data: |
+        NWM v3.0 reach for gage-10109001: 664424 (from NLDI)
+                 gage  feature_id     period resolution       primary           secondary          method     n       rmse       nse      kge        r    alpha     beta
+        gage-10109001     2861391     spinup     hourly usgs_observed   nextgen_simulated pandas_fallback 17474 204.902299 -0.474002 0.175224 0.679065 0.736945 0.287218
+        gage-10109001     2861391 evaluation     hourly usgs_observed   nextgen_simulated pandas_fallback 17520  57.263334  0.797578 0.859797 0.914368 1.101433 0.954885
+        gage-10109001     2861391       full     hourly usgs_observed   nextgen_simulated pandas_fallback 34994 150.354851  0.029168 0.436534 0.645279 0.921111 0.569369
+        gage-10109001     2861391     spinup      daily usgs_observed   nextgen_simulated pandas_fallback   729 204.641459 -0.476240 0.175771 0.680074 0.738011 0.287004
+        gage-10109001     2861391 evaluation      daily usgs_observed   nextgen_simulated pandas_fallback   731  56.741788  0.800420 0.859493 0.915956 1.103136 0.954814
+        gage-10109001     2861391       full      daily usgs_observed   nextgen_simulated pandas_fallback  1460 150.074649  0.028987 0.437153 0.646196 0.922412 0.569187
+        gage-10109001     2861391     spinup     hourly usgs_observed nwm30_retrospective pandas_fallback 17474 127.552774  0.428805 0.418478 0.881028 0.565341 0.632461
+        gage-10109001     2861391 evaluation     hourly usgs_observed nwm30_retrospective pandas_fallback 17543  63.101489  0.754023 0.736057 0.914473 0.876264 0.783112
+        gage-10109001     2861391       full     hourly usgs_observed nwm30_retrospective pandas_fallback 35017 100.566632  0.565554 0.540941 0.869216 0.681716 0.696148
+        gage-10109001     2861391     spinup      daily usgs_observed nwm30_retrospective pandas_fallback   729 124.115743  0.456971 0.409290 0.920028 0.544441 0.632565
+        gage-10109001     2861391 evaluation      daily usgs_observed nwm30_retrospective pandas_fallback   731  52.855968  0.826820 0.727049 0.960539 0.839056 0.783108
+        gage-10109001     2861391       full      daily usgs_observed nwm30_retrospective pandas_fallback  1460  95.344626  0.608075 0.531229 0.910466 0.654426 0.696177
+        Wrote analysis/gage-10109001_teehr_metrics.csv
+        Wrote plots/gage-10109001_teehr.png
+        
+    stderr:
+      temporary_name: /tmp/ks.err.Jsbncj
+      descriptor: 4
+      mode: 0o100600
+      size: 7307
+      inode: 3416802
+      nlink: 1
+      blksize: 4096
+      blocks: 16
+      mtime: 2026-08-31T16:09:25+00:00
+      atime: 2026-08-31T16:08:44+00:00
+      ctime: 2026-08-31T16:09:25+00:00
+      uid: 1000
+      user: ubuntu
+      gid: 1000
+      group: ubuntu
+      data_truncated: false
+      data: |
+        2026-08-31 16:08:45,056 - ngiab_pegasus - INFO - Extracting rundir_gage-10109001_run.tar -> /srv/job_home/ngiab_preprocess_output/gage-10109001
+        2026-08-31 16:09:00,765 - matplotlib.font_manager - INFO - generated new fontManager
+        2026-08-31 16:09:01,078 - teehr.evaluation.evaluation - INFO - Creating a new Spark session.
+        Setting default log level to "WARN".
+        To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+        26/08/31 16:09:03 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+        2026-08-31 16:09:05,220 - teehr.evaluation.evaluation - INFO - Copying template from /usr/local/lib/python3.11/site-packages/teehr/template to data/teehr
+        2026-08-31 16:09:05,221 - teehr.loading.utils - DEBUG - Copying file /usr/local/lib/python3.11/site-packages/teehr/template/__init__.py to data/teehr/__init__.py
+        2026-08-31 16:09:05,223 - teehr.loading.utils - DEBUG - Making directory data/teehr/cache
+        2026-08-31 16:09:05,223 - teehr.loading.utils - DEBUG - Making directory data/teehr/dataset
+        2026-08-31 16:09:05,223 - teehr.loading.utils - DEBUG - Copying file /usr/local/lib/python3.11/site-packages/teehr/template/gitignore_template to data/teehr/gitignore_template
+        2026-08-31 16:09:05,224 - teehr.loading.utils - DEBUG - Copying file /usr/local/lib/python3.11/site-packages/teehr/template/readme.md to data/teehr/readme.md
+        2026-08-31 16:09:05,225 - teehr.loading.utils - DEBUG - Making directory data/teehr/scripts
+        2026-08-31 16:09:05,226 - teehr.loading.utils - DEBUG - Copying file /usr/local/lib/python3.11/site-packages/teehr/template/cache/readme.md to data/teehr/cache/readme.md
+        2026-08-31 16:09:05,227 - teehr.loading.utils - DEBUG - Making directory data/teehr/dataset/attributes
+        2026-08-31 16:09:05,228 - teehr.loading.utils - DEBUG - Making directory data/teehr/dataset/configurations
+        2026-08-31 16:09:05,228 - teehr.loading.utils - DEBUG - Making directory data/teehr/dataset/joined_timeseries
+        2026-08-31 16:09:05,228 - teehr.loading.utils - DEBUG - Making directory data/teehr/dataset/location_attributes
+        2026-08-31 16:09:05,229 - teehr.loading.utils - DEBUG - Making directory data/teehr/dataset/location_crosswalks
+        2026-08-31 16:09:05,229 - teehr.loading.utils - DEBUG - Making directory data/teehr/dataset/locations
+        2026-08-31 16:09:05,229 - teehr.loading.utils - DEBUG - Making directory data/teehr/dataset/primary_timeseries
+        2026-08-31 16:09:05,230 - teehr.loading.utils - DEBUG - Making directory data/teehr/dataset/secondary_timeseries
+        2026-08-31 16:09:05,230 - teehr.loading.utils - DEBUG - Making directory data/teehr/dataset/units
+        2026-08-31 16:09:05,231 - teehr.loading.utils - DEBUG - Making directory data/teehr/dataset/variables
+        2026-08-31 16:09:05,232 - teehr.loading.utils - DEBUG - Copying file /usr/local/lib/python3.11/site-packages/teehr/template/dataset/attributes/_readme.md to data/teehr/dataset/attributes/_readme.md
+        2026-08-31 16:09:05,233 - teehr.loading.utils - DEBUG - Copying file /usr/local/lib/python3.11/site-packages/teehr/template/dataset/attributes/attributes.csv to data/teehr/dataset/attributes/attributes.csv
+        2026-08-31 16:09:05,234 - teehr.loading.utils - DEBUG - Copying file /usr/local/lib/python3.11/site-packages/teehr/template/dataset/configurations/_readme.md to data/teehr/dataset/configurations/_readme.md
+        2026-08-31 16:09:05,235 - teehr.loading.utils - DEBUG - Copying file /usr/local/lib/python3.11/site-packages/teehr/template/dataset/configurations/configurations.csv to data/teehr/dataset/configurations/configurations.csv
+        2026-08-31 16:09:05,236 - teehr.loading.utils - DEBUG - Copying file /usr/local/lib/python3.11/site-packages/teehr/template/dataset/joined_timeseries/_readme.md to data/teehr/dataset/joined_timeseries/_readme.md
+        2026-08-31 16:09:05,237 - teehr.loading.utils - DEBUG - Copying file /usr/local/lib/python3.11/site-packages/teehr/template/dataset/location_attributes/_readme.md to data/teehr/dataset/location_attributes/_readme.md
+        2026-08-31 16:09:05,239 - teehr.loading.utils - DEBUG - Copying file /usr/local/lib/python3.11/site-packages/teehr/template/dataset/location_crosswalks/_readme.md to data/teehr/dataset/location_crosswalks/_readme.md
+        2026-08-31 16:09:05,240 - teehr.loading.utils - DEBUG - Copying file /usr/local/lib/python3.11/site-packages/teehr/template/dataset/locations/_readme.md to data/teehr/dataset/locations/_readme.md
+        2026-08-31 16:09:05,241 - teehr.loading.utils - DEBUG - Copying file /usr/local/lib/python3.11/site-packages/teehr/template/dataset/primary_timeseries/_readme.md to data/teehr/dataset/primary_timeseries/_readme.md
+        2026-08-31 16:09:05,243 - teehr.loading.utils - DEBUG - Copying file /usr/local/lib/python3.11/site-packages/teehr/template/dataset/secondary_timeseries/_readme.md to data/teehr/dataset/secondary_timeseries/_readme.md
+        2026-08-31 16:09:05,244 - teehr.loading.utils - DEBUG - Copying file /usr/local/lib/python3.11/site-packages/teehr/template/dataset/units/_readme.md to data/teehr/dataset/units/_readme.md
+        2026-08-31 16:09:05,245 - teehr.loading.utils - DEBUG - Copying file /usr/local/lib/python3.11/site-packages/teehr/template/dataset/units/units.csv to data/teehr/dataset/units/units.csv
+        2026-08-31 16:09:05,246 - teehr.loading.utils - DEBUG - Copying file /usr/local/lib/python3.11/site-packages/teehr/template/dataset/variables/_readme.md to data/teehr/dataset/variables/_readme.md
+        2026-08-31 16:09:05,247 - teehr.loading.utils - DEBUG - Copying file /usr/local/lib/python3.11/site-packages/teehr/template/dataset/variables/variables.csv to data/teehr/dataset/variables/variables.csv
+        2026-08-31 16:09:05,248 - teehr.loading.utils - DEBUG - Copying file /usr/local/lib/python3.11/site-packages/teehr/template/scripts/__init__.py to data/teehr/scripts/__init__.py
+        2026-08-31 16:09:05,249 - teehr.loading.utils - DEBUG - Copying file /usr/local/lib/python3.11/site-packages/teehr/template/scripts/user_defined_fields.py to data/teehr/scripts/user_defined_fields.py
+        2026-08-31 16:09:05,250 - teehr.loading.utils - DEBUG - Renaming data/teehr/gitignore_template to .gitignore
+        2026-08-31 16:09:08,822 - teehr_ngen - INFO - Found 1 USGS gages in the hydrofabric.
+        2026-08-31 16:09:08,822 - teehr_ngen - INFO - Simulation output format: netcdf
+        Traceback (most recent call last):
+          File "/srv/./teehr_evaluation", line 86, in try_teehr
+            teehr_ngen.main()
+          File "/app/teehr_ngen.py", line 87, in main
+            all_ngen_output = pd.concat(gage_output_list)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          File "/usr/local/lib/python3.11/site-packages/pandas/core/reshape/concat.py", line 382, in concat
+            op = _Concatenator(
+                 ^^^^^^^^^^^^^^
+          File "/usr/local/lib/python3.11/site-packages/pandas/core/reshape/concat.py", line 445, in __init__
+            objs, keys = self._clean_keys_and_objs(objs, keys)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          File "/usr/local/lib/python3.11/site-packages/pandas/core/reshape/concat.py", line 507, in _clean_keys_and_objs
+            raise ValueError("No objects to concatenate")
+        ValueError: No objects to concatenate
+        TEEHR evaluation failed (No objects to concatenate); using the pandas fallback. See SPEC.md section 7 risk 2.
+        2026-08-31 16:09:25,220 - py4j.clientserver - INFO - Closing down clientserver connection
+        
+    metadata:
+      temporary_name: /tmp/ks.meta.IE8xW9
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 3416803
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-08-31T16:08:44+00:00
+      atime: 2026-08-31T16:08:44+00:00
+      ctime: 2026-08-31T16:08:44+00:00
+      uid: 1000
+      user: ubuntu
+      gid: 1000
+      group: ubuntu
+
+---------------pegasus-multipart
+- integrity_verification_attempts:
+  - lfn: "teehr_container.sif"
+    pfn: "teehr_container.sif"
+    sha256: a274efb0658f79ceb20fef26a9e1dba79948c155c2dc7fe2696430a91cfb02fb
+    success: True
+- integrity_summary:
+    succeeded: 1
+    failed: 0
+    duration: 0.938
+
+---------------pegasus-multipart
+- integrity_verification_attempts:
+  - lfn: "rundir_gage-10109001_run.tar"
+    pfn: "rundir_gage-10109001_run.tar"
+    sha256: 622a71e6473fa721de23a8c659c8a0b1a53c22319eae1979e3dbdcf0bfe1d29b
+    success: True
+  - lfn: "ngen_outputs_utils.py"
+    pfn: "ngen_outputs_utils.py"
+    sha256: 3b3d28f19415028a3c3aac86a75960627968e5a6c9c9025c5faa7803a12650fc
+    success: True
+  - lfn: "teehr_container.sif"
+    pfn: "teehr_container.sif"
+    sha256: a274efb0658f79ceb20fef26a9e1dba79948c155c2dc7fe2696430a91cfb02fb
+    success: True
+  - lfn: "ngiab_pegasus.py"
+    pfn: "ngiab_pegasus.py"
+    sha256: b8d2e90f6bbb6c99655eb370110571f7a2cea4f91251c029d3e7bdc9358e4700
+    success: True
+  - lfn: "forcings_utils.py"
+    pfn: "forcings_utils.py"
+    sha256: 1a7935e9c3d1c34703378e06f8cb925f3ad08a5b619f6e3846c3b30d7a789e49
+    success: True
+  - lfn: "gage-10109001_usgs_obs.csv"
+    pfn: "gage-10109001_usgs_obs.csv"
+    sha256: e5526a61cf91fc252a259db83e3a0cd29235d4adb849260f738e85e9257762f9
+    success: True
+  - lfn: "cal_utils.py"
+    pfn: "cal_utils.py"
+    sha256: c12c7138d4050bd556e142a0682c1fc93e479786a0e64e9aaec3d0cea969bbbd
+    success: True
+  - lfn: "ngiab_utils.py"
+    pfn: "ngiab_utils.py"
+    sha256: 4855180e03f2c184f4d10e7e319aaef0e0d0e9bdfde3b1dd2347665c19479ef3
+    success: True
+  - lfn: "teehr_evaluation"
+    pfn: "teehr_evaluation"
+    sha256: 481a0c005848c3c7a53a82c28bd2eabf7bf3e1c47d151d30fdd976cbfaa863f6
+    success: True
+- integrity_summary:
+    succeeded: 9
+    failed: 0
+    duration: 3.248

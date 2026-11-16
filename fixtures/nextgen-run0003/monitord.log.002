@@ -1,0 +1,40 @@
+2026-09-01 06:22:37,966:INFO:pegasus-monitord(65): pegasus-monitord starting - pid 521124 
+2026-09-01 06:22:37,969:INFO:pegasus-monitord(463): Final Command line options are: ['-N', 'nextgen-0.dag.dagman.out']
+2026-09-01 06:22:37,969:INFO:Pegasus.tools.utils(569): pid 520260 not running anymore...
+2026-09-01 06:22:37,970:WARNING:pegasus-monitord(1168): monitord entering it's own recovery mode. Population will start again for the workflow..
+2026-09-01 06:22:37,970:INFO:Pegasus.monitoring.event_output(628): Connecting workflow event sink to sqlite:////home/ubuntu/nextgen-workflow/ubuntu/pegasus/nextgen/run0003/nextgen-0.stampede.db
+2026-09-01 06:22:37,970:INFO:Pegasus.db.connection(731): Rotating sqlite db file /home/ubuntu/nextgen-workflow/ubuntu/pegasus/nextgen/run0003/nextgen-0.stampede.db
+2026-09-01 06:22:37,970:INFO:Pegasus.db.connection(734): Rotated sqlite db file to /home/ubuntu/nextgen-workflow/ubuntu/pegasus/nextgen/run0003/nextgen-0.stampede.db.001
+0
+2026-09-01 06:22:37,971:INFO:Pegasus.db.connection(762): Truncated db file  /home/ubuntu/nextgen-workflow/ubuntu/pegasus/nextgen/run0003/nextgen-0.stampede.db.000 to 0 bytes
+Pegasus database was successfully created.
+Database version: '5.1.2' (sqlite:////home/ubuntu/nextgen-workflow/ubuntu/pegasus/nextgen/run0003/nextgen-0.stampede.db)
+2026-09-01 06:22:38,243:INFO:Pegasus.monitoring.event_output(702): output type=DB namespace=stampede. name=sqlite:////home/ubuntu/nextgen-workflow/ubuntu/pegasus/nextgen/run0003/nextgen-0.stampede.db
+2026-09-01 06:22:38,244:INFO:Pegasus.monitoring.event_output(628): Connecting workflow event sink to sqlite:////home/ubuntu/.pegasus/workflow.db
+Database version: '5.1.2' (sqlite:////home/ubuntu/.pegasus/workflow.db)
+2026-09-01 06:22:38,459:INFO:Pegasus.monitoring.event_output(702): output type=DB namespace=dashboard. name=sqlite:////home/ubuntu/.pegasus/workflow.db
+2026-09-01 06:22:38,460:INFO:Pegasus.db.expunge(100): Expunging 94c5b250-a44c-4f6e-85ef-09297a309d87 from dashboard database
+Database version: '5.1.2' (sqlite:////home/ubuntu/.pegasus/workflow.db)
+2026-09-01 06:22:38,686:INFO:Pegasus.db.expunge(116): Flush took: 0.002930 seconds
+2026-09-01 06:22:38,686:INFO:pegasus-monitord(1258): monitord started in fast start mode
+2026-09-01 06:22:38,704:INFO:Pegasus.monitoring.workflow(563): monitord last processed line: 1911
+2026-09-01 06:22:38,704:INFO:Pegasus.monitoring.workflow(1126): Setting last processed line to 0 in recovery mode to ensure population starts afresh
+2026-09-01 06:22:38,704:INFO:Pegasus.monitoring.workflow(1165):  Rotating jobstate.log replay_mode 0 previous_processed_line 1911
+2026-09-01 06:22:38,704:INFO:Pegasus.monitoring.notifications(472): loading notifications from /home/ubuntu/nextgen-workflow/ubuntu/pegasus/nextgen/run0003/nextgen-0.notify
+2026-09-01 06:22:38,788:INFO:Pegasus.monitoring.workflow(203): Parsing DAG file /home/ubuntu/nextgen-workflow/ubuntu/pegasus/nextgen/run0003/nextgen-0.dag
+2026-09-01 06:22:38,789:INFO:pegasus-monitord(985): Using DAGMan version 24.12.22 241222
+2026-09-01 06:22:38,791:INFO:pegasus-monitord(968): using dag nextgen-0.dag
+2026-09-01 06:22:38,791:INFO:Pegasus.monitoring.workflow(809): DAGMan starting with condor id 423.0
+2026-09-01 06:22:40,076:WARNING:Pegasus.monitoring.workflow(1702): truncating stdout for job run_nextgen_run_gage_10109001
+2026-09-01 06:22:40,341:INFO:pegasus-monitord(985): Using DAGMan version 24.12.22 241222
+2026-09-01 06:22:40,343:INFO:pegasus-monitord(968): using dag nextgen-0.dag
+2026-09-01 06:22:40,343:WARNING:Pegasus.monitoring.workflow(793): Consecutive workflow START events detected for workflow with condor id 423.0 running in directory /home/ubuntu/nextgen-workflow/ubuntu/pegasus/nextgen/run0003 . Inserting Workflow END event with timestamp 1788243744.0
+2026-09-01 06:22:40,345:INFO:Pegasus.monitoring.workflow(809): DAGMan starting with condor id 423.0
+2026-09-01 06:22:40,349:INFO:pegasus-monitord(1033): Enabling DAGMAN RECOVERY MODE
+2026-09-01 06:22:40,353:INFO:pegasus-monitord(838): DONE with DAGMAN RECOVERY MODE
+2026-09-01 06:22:40,353:INFO:pegasus-monitord(985): Using DAGMan version 24.12.22 241222
+2026-09-01 06:22:40,355:INFO:pegasus-monitord(968): using dag nextgen-0.dag
+2026-09-01 06:22:40,355:WARNING:Pegasus.monitoring.workflow(793): Consecutive workflow START events detected for workflow with condor id 423.0 running in directory /home/ubuntu/nextgen-workflow/ubuntu/pegasus/nextgen/run0003 . Inserting Workflow END event with timestamp 1788243755.0
+2026-09-01 06:22:40,357:INFO:Pegasus.monitoring.workflow(809): DAGMan starting with condor id 423.0
+2026-09-01 06:22:40,360:INFO:pegasus-monitord(1033): Enabling DAGMAN RECOVERY MODE
+2026-09-01 06:22:40,364:INFO:pegasus-monitord(838): DONE with DAGMAN RECOVERY MODE

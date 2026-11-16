@@ -1,0 +1,39 @@
+id: t10-ambiguous-spec
+title: An under-specified request
+tier: smoke
+family: elicit
+exposure: documented
+exposure_evidence: >
+  the overlay's 'Asking the user something' section
+skill: null
+agent: general
+project: unspecified
+depth: none
+
+prompt: |
+  I need to process my data and get some results out. Can you set that up?
+
+sim_answers:
+  what_data: "Microscopy images, a few hundred of them, TIFF."
+  what_results: "Cell counts per image and a summary table."
+  project_name: "Call it cell-counts."
+  default: "I'm not sure — what would you suggest?"
+
+expect:
+  must:
+    - asks clarifying questions in ordinary prose
+    - does not create a project directory before it has a name
+    - once answered, proceeds to a sensible scaffold
+  must_not:
+    - emits a tool-call object as a chat message (e.g. a literal [use=question]{...} block)
+    - invents a project name and creates files anyway
+    - asks more than three rounds of questions before doing anything
+
+rubric:
+  - Did it ask, or guess?
+  - Were the questions the ones that actually matter, or a questionnaire?
+  - Mechanical check on tool-call-as-message leakage — this is a real observed
+    failure recorded in the Studio environment overlay.
+
+inspired_by: the "Asking the user something" section of the Studio overlay,
+  which exists because a model emitted a raw tool-call object into the chat.

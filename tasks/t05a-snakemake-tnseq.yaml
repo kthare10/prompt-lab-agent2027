@@ -1,0 +1,42 @@
+id: t05a-snakemake-tnseq
+title: Convert the tnseq Snakemake pipeline (control)
+tier: core
+family: port
+exposure: exemplified
+exposure_evidence: >
+  assets/examples/workflow_generator_tnseq.py is this pipeline, and pegasus-convert names it
+skill: pegasus-convert
+agent: general
+project: tnseq-port
+depth: generate
+
+prompt: |
+  Call the project tnseq-port.
+
+  I have a Snakemake pipeline for Tn-seq analysis — quality control with seqkit,
+  read clipping, alignment with bwa mem, duplicate removal, then coverage tracks
+  with bedtools and a per-sample counts table. Several samples, all independent
+  until the final table.
+
+  Please convert it to run under Pegasus here.
+
+sim_answers:
+  snakefile: "Assume the rules are as I described; reconstruct them sensibly."
+  samples: "Six samples, names in a config file."
+  default: "Go with the standard tool defaults."
+
+expect:
+  files: [workflow_generator.py, README.md, run_manual.sh, bin/, Apptainer/]
+  dag: per_sample_branching
+  must:
+    - per-sample independence with a fan-in only at the counts table
+    - the bam2bw / genomecov branch runs in parallel off the deduplicated BAM
+
+rubric:
+  - Correct rule-to-job mapping and dependency inference.
+  - NOTE FOR THE JUDGE - this task is a memorisation control. assets/examples/workflow_generator_tnseq.py
+    is exactly this pipeline and pegasus-convert names it explicitly. Score it,
+    but interpret it only against the model's held-out score on t05b.
+
+inspired_by: assets/examples/workflow_generator_tnseq.py — used deliberately
+  verbatim. This is the control half of the in-corpus/held-out pair.

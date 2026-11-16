@@ -1,0 +1,61 @@
+[
+ { "type": "transfer",
+   "linkage": "output",
+   "lfn": "plots/gage-10109001_water_balance.png",
+   "id": 1,
+   "verify_checksum_remote": true,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003/./plots/gage-10109001_water_balance.png" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/output/plots/gage-10109001_water_balance.png" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "output",
+   "lfn": "analysis/gage-10109001_metrics.csv",
+   "id": 2,
+   "verify_checksum_remote": true,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003/./analysis/gage-10109001_metrics.csv" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/output/analysis/gage-10109001_metrics.csv" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "output",
+   "lfn": "analysis/gage-10109001_basin_means.csv",
+   "id": 3,
+   "verify_checksum_remote": true,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003/./analysis/gage-10109001_basin_means.csv" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/output/analysis/gage-10109001_basin_means.csv" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "output",
+   "lfn": "plots/gage-10109001_teehr.png",
+   "id": 4,
+   "verify_checksum_remote": true,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003/./plots/gage-10109001_teehr.png" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/output/plots/gage-10109001_teehr.png" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "output",
+   "lfn": "analysis/gage-10109001_teehr_metrics.csv",
+   "id": 5,
+   "verify_checksum_remote": true,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/scratch/ubuntu/pegasus/nextgen/run0003/./analysis/gage-10109001_teehr_metrics.csv" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///home/ubuntu/nextgen-workflow/output/analysis/gage-10109001_teehr_metrics.csv" }
+   ] }
+]

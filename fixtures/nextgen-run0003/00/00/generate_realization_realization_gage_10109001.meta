@@ -1,0 +1,14 @@
+[
+  {
+    "_id": "gage-10109001_realization.tar",
+    "_type": "file",
+    "_attributes": {
+      "user": "ubuntu",
+      "size": "1484800",
+      "ctime": "2026-08-31T15:48:08+00:00",
+      "checksum.type": "sha256",
+      "checksum.value": "bf22f8de2127f3eb064495e8ce22aa75c72fef00ac8570bb03bceb077270796d",
+      "checksum.timing": "0.0"
+    }
+  }
+]

@@ -1,0 +1,12 @@
+2026-09-01 06:22:26,898:INFO:pegasus-monitord(65): pegasus-monitord starting - pid 520260 
+2026-09-01 06:22:26,911:INFO:pegasus-monitord(463): Final Command line options are: ['-N', 'nextgen-0.dag.dagman.out']
+2026-09-01 06:22:26,922:INFO:Pegasus.tools.utils(569): pid 401711 not running anymore...
+2026-09-01 06:22:26,924:WARNING:pegasus-monitord(1168): monitord entering it's own recovery mode. Population will start again for the workflow..
+2026-09-01 06:22:26,924:INFO:Pegasus.monitoring.event_output(628): Connecting workflow event sink to sqlite:////home/ubuntu/nextgen-workflow/ubuntu/pegasus/nextgen/run0003/nextgen-0.stampede.db
+2026-09-01 06:22:26,924:INFO:Pegasus.db.connection(731): Rotating sqlite db file /home/ubuntu/nextgen-workflow/ubuntu/pegasus/nextgen/run0003/nextgen-0.stampede.db
+2026-09-01 06:22:26,924:INFO:Pegasus.db.connection(734): Rotated sqlite db file to /home/ubuntu/nextgen-workflow/ubuntu/pegasus/nextgen/run0003/nextgen-0.stampede.db.000
+0
+Pegasus database was successfully created.
+Database version: '5.1.2' (sqlite:////home/ubuntu/nextgen-workflow/ubuntu/pegasus/nextgen/run0003/nextgen-0.stampede.db)
+2026-09-01 06:22:28,120:INFO:Pegasus.monitoring.event_output(702): output type=DB namespace=stampede. name=sqlite:////home/ubuntu/nextgen-workflow/ubuntu/pegasus/nextgen/run0003/nextgen-0.stampede.db
+2026-09-01 06:22:28,121:INFO:Pegasus.monitoring.event_output(628): Connecting workflow event sink to sqlite:////home/ubuntu/.pegasus/workflow.db

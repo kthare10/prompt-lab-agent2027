@@ -1,0 +1,923 @@
+x-pegasus:
+  apiLang: python
+  createdBy: ubuntu
+  createdOn: 08-31-26T15:24:08Z
+pegasus: 5.0.4
+name: nextgen
+jobs:
+- type: job
+  name: fetch_hydrofabric
+  id: fetch_hydrofabric
+  nodeLabel: fetch_hydrofabric
+  arguments:
+  - --gage
+  - gage-10109001
+  - --output
+  - hydrofabric_cache.tar
+  uses:
+  - lfn: ngiab_pegasus.py
+    type: input
+  - lfn: forcings_utils.py
+    type: input
+  - lfn: hydrofabric_cache.tar
+    type: output
+    stageOut: false
+    registerReplica: false
+  - lfn: ngen_outputs_utils.py
+    type: input
+  - lfn: cal_utils.py
+    type: input
+  - lfn: ngiab_utils.py
+    type: input
+  profiles:
+    dagman:
+      RETRY: '2'
+- type: job
+  name: subset_hydrofabric
+  id: subset_gage_10109001
+  nodeLabel: subset_gage-10109001
+  arguments:
+  - --gage
+  - gage-10109001
+  - --hydrofabric-cache
+  - hydrofabric_cache.tar
+  - --output
+  - gage-10109001_subset.tar
+  uses:
+  - lfn: ngiab_pegasus.py
+    type: input
+  - lfn: forcings_utils.py
+    type: input
+  - lfn: hydrofabric_cache.tar
+    type: input
+  - lfn: ngen_outputs_utils.py
+    type: input
+  - lfn: cal_utils.py
+    type: input
+  - lfn: ngiab_utils.py
+    type: input
+  - lfn: gage-10109001_subset.tar
+    type: output
+    stageOut: false
+    registerReplica: false
+  profiles:
+    pegasus:
+      label: gage-10109001
+- type: job
+  name: generate_forcings
+  id: forcings_gage_10109001
+  nodeLabel: forcings_gage-10109001
+  arguments:
+  - --gage
+  - gage-10109001
+  - --subset-tar
+  - gage-10109001_subset.tar
+  - --start
+  - '2017-10-01'
+  - --end
+  - '2021-09-30'
+  - --output
+  - gage-10109001_forcings.tar
+  uses:
+  - lfn: ngiab_pegasus.py
+    type: input
+  - lfn: gage-10109001_forcings.tar
+    type: output
+    stageOut: false
+    registerReplica: false
+  - lfn: forcings_utils.py
+    type: input
+  - lfn: ngen_outputs_utils.py
+    type: input
+  - lfn: cal_utils.py
+    type: input
+  - lfn: ngiab_utils.py
+    type: input
+  - lfn: gage-10109001_subset.tar
+    type: input
+  profiles:
+    pegasus:
+      label: gage-10109001
+- type: job
+  name: generate_realization
+  id: realization_gage_10109001
+  nodeLabel: realization_gage-10109001
+  arguments:
+  - --gage
+  - gage-10109001
+  - --subset-tar
+  - gage-10109001_subset.tar
+  - --start
+  - '2017-10-01'
+  - --end
+  - '2021-09-30'
+  - --output
+  - gage-10109001_realization.tar
+  uses:
+  - lfn: ngiab_pegasus.py
+    type: input
+  - lfn: gage-10109001_realization.tar
+    type: output
+    stageOut: false
+    registerReplica: false
+  - lfn: forcings_utils.py
+    type: input
+  - lfn: ngen_outputs_utils.py
+    type: input
+  - lfn: cal_utils.py
+    type: input
+  - lfn: ngiab_utils.py
+    type: input
+  - lfn: gage-10109001_subset.tar
+    type: input
+  profiles:
+    pegasus:
+      label: gage-10109001
+- type: job
+  name: assemble_rundir
+  id: assemble_gage_10109001
+  nodeLabel: assemble_gage-10109001
+  arguments:
+  - --gage
+  - gage-10109001
+  - --subset-tar
+  - gage-10109001_subset.tar
+  - --forcings-tar
+  - gage-10109001_forcings.tar
+  - --realization-tar
+  - gage-10109001_realization.tar
+  - --output
+  - rundir_gage-10109001.tar
+  uses:
+  - lfn: rundir_gage-10109001.tar
+    type: output
+    stageOut: false
+    registerReplica: false
+  - lfn: ngiab_pegasus.py
+    type: input
+  - lfn: gage-10109001_forcings.tar
+    type: input
+  - lfn: gage-10109001_realization.tar
+    type: input
+  - lfn: forcings_utils.py
+    type: input
+  - lfn: ngen_outputs_utils.py
+    type: input
+  - lfn: cal_utils.py
+    type: input
+  - lfn: ngiab_utils.py
+    type: input
+  - lfn: gage-10109001_subset.tar
+    type: input
+  profiles:
+    pegasus:
+      label: gage-10109001
+- type: job
+  name: fetch_usgs_obs
+  id: obs_gage_10109001
+  nodeLabel: obs_gage-10109001
+  arguments:
+  - --gage
+  - gage-10109001
+  - --start
+  - '2017-10-01'
+  - --end
+  - '2021-09-30'
+  - --output
+  - gage-10109001_usgs_obs.csv
+  uses:
+  - lfn: ngiab_pegasus.py
+    type: input
+  - lfn: gage-10109001_usgs_obs.csv
+    type: output
+    stageOut: true
+    registerReplica: false
+  - lfn: forcings_utils.py
+    type: input
+  - lfn: ngen_outputs_utils.py
+    type: input
+  - lfn: cal_utils.py
+    type: input
+  - lfn: ngiab_utils.py
+    type: input
+  profiles:
+    dagman:
+      RETRY: '2'
+    pegasus:
+      label: gage-10109001
+- type: job
+  name: run_nextgen
+  id: run_gage_10109001
+  nodeLabel: run_gage-10109001
+  arguments:
+  - --gage
+  - gage-10109001
+  - --rundir-tar
+  - rundir_gage-10109001.tar
+  - --obs
+  - gage-10109001_usgs_obs.csv
+  - --output
+  - rundir_gage-10109001_run.tar
+  - --plot
+  - plots/gage-10109001_hydrograph.png
+  uses:
+  - lfn: rundir_gage-10109001.tar
+    type: input
+  - lfn: plots/gage-10109001_hydrograph.png
+    type: output
+    stageOut: true
+    registerReplica: false
+  - lfn: ngiab_pegasus.py
+    type: input
+  - lfn: gage-10109001_usgs_obs.csv
+    type: input
+  - lfn: forcings_utils.py
+    type: input
+  - lfn: rundir_gage-10109001_run.tar
+    type: output
+    stageOut: false
+    registerReplica: false
+  - lfn: ngen_outputs_utils.py
+    type: input
+  - lfn: cal_utils.py
+    type: input
+  - lfn: ngiab_utils.py
+    type: input
+  profiles:
+    pegasus:
+      label: gage-10109001
+- type: job
+  name: outputs_analysis
+  id: analysis_gage_10109001
+  nodeLabel: analysis_gage-10109001
+  arguments:
+  - --gage
+  - gage-10109001
+  - --run-tar
+  - rundir_gage-10109001_run.tar
+  - --obs
+  - gage-10109001_usgs_obs.csv
+  - --output-basin-means
+  - analysis/gage-10109001_basin_means.csv
+  - --output-metrics
+  - analysis/gage-10109001_metrics.csv
+  - --output-plot
+  - plots/gage-10109001_water_balance.png
+  uses:
+  - lfn: analysis/gage-10109001_metrics.csv
+    type: output
+    stageOut: true
+    registerReplica: false
+  - lfn: ngiab_pegasus.py
+    type: input
+  - lfn: gage-10109001_usgs_obs.csv
+    type: input
+  - lfn: analysis/gage-10109001_basin_means.csv
+    type: output
+    stageOut: true
+    registerReplica: false
+  - lfn: forcings_utils.py
+    type: input
+  - lfn: rundir_gage-10109001_run.tar
+    type: input
+  - lfn: ngen_outputs_utils.py
+    type: input
+  - lfn: cal_utils.py
+    type: input
+  - lfn: ngiab_utils.py
+    type: input
+  - lfn: plots/gage-10109001_water_balance.png
+    type: output
+    stageOut: true
+    registerReplica: false
+  profiles:
+    pegasus:
+      label: gage-10109001
+- type: job
+  name: teehr_evaluation
+  id: teehr_gage_10109001
+  nodeLabel: teehr_gage-10109001
+  arguments:
+  - --gage
+  - gage-10109001
+  - --run-tar
+  - rundir_gage-10109001_run.tar
+  - --obs
+  - gage-10109001_usgs_obs.csv
+  - --start
+  - '2017-10-01'
+  - --end
+  - '2021-09-30'
+  - --training-start
+  - '2019-10-01'
+  - --output-metrics
+  - analysis/gage-10109001_teehr_metrics.csv
+  - --output-plot
+  - plots/gage-10109001_teehr.png
+  uses:
+  - lfn: ngiab_pegasus.py
+    type: input
+  - lfn: analysis/gage-10109001_teehr_metrics.csv
+    type: output
+    stageOut: true
+    registerReplica: false
+  - lfn: gage-10109001_usgs_obs.csv
+    type: input
+  - lfn: forcings_utils.py
+    type: input
+  - lfn: rundir_gage-10109001_run.tar
+    type: input
+  - lfn: ngen_outputs_utils.py
+    type: input
+  - lfn: cal_utils.py
+    type: input
+  - lfn: plots/gage-10109001_teehr.png
+    type: output
+    stageOut: true
+    registerReplica: false
+  - lfn: ngiab_utils.py
+    type: input
+  profiles:
+    dagman:
+      RETRY: '2'
+    pegasus:
+      label: gage-10109001
+- type: job
+  name: calibrate
+  id: calibrate_gage_10109001_t1
+  nodeLabel: calibrate_gage-10109001_t1
+  arguments:
+  - --gage
+  - gage-10109001
+  - --rundir-tar
+  - rundir_gage-10109001_run.tar
+  - --obs
+  - gage-10109001_usgs_obs.csv
+  - --start
+  - '2017-10-01'
+  - --end
+  - '2021-09-30'
+  - --training-start
+  - '2019-10-01'
+  - --repetitions
+  - '200'
+  - --dds-trials
+  - '1'
+  - --seed
+  - '1'
+  - --output-params
+  - gage-10109001_best_params_trial1.json
+  - --output-iterations
+  - calibration/gage-10109001_calibration_iterations_trial1.csv
+  uses:
+  - lfn: ngiab_pegasus.py
+    type: input
+  - lfn: gage-10109001_best_params_trial1.json
+    type: output
+    stageOut: false
+    registerReplica: false
+  - lfn: gage-10109001_usgs_obs.csv
+    type: input
+  - lfn: forcings_utils.py
+    type: input
+  - lfn: rundir_gage-10109001_run.tar
+    type: input
+  - lfn: calibration/gage-10109001_calibration_iterations_trial1.csv
+    type: output
+    stageOut: false
+    registerReplica: false
+  - lfn: ngen_outputs_utils.py
+    type: input
+  - lfn: cal_utils.py
+    type: input
+  - lfn: ngiab_utils.py
+    type: input
+  profiles:
+    pegasus:
+      label: gage-10109001
+- type: job
+  name: calibrate
+  id: calibrate_gage_10109001_t2
+  nodeLabel: calibrate_gage-10109001_t2
+  arguments:
+  - --gage
+  - gage-10109001
+  - --rundir-tar
+  - rundir_gage-10109001_run.tar
+  - --obs
+  - gage-10109001_usgs_obs.csv
+  - --start
+  - '2017-10-01'
+  - --end
+  - '2021-09-30'
+  - --training-start
+  - '2019-10-01'
+  - --repetitions
+  - '200'
+  - --dds-trials
+  - '1'
+  - --seed
+  - '2'
+  - --output-params
+  - gage-10109001_best_params_trial2.json
+  - --output-iterations
+  - calibration/gage-10109001_calibration_iterations_trial2.csv
+  uses:
+  - lfn: calibration/gage-10109001_calibration_iterations_trial2.csv
+    type: output
+    stageOut: false
+    registerReplica: false
+  - lfn: ngiab_pegasus.py
+    type: input
+  - lfn: gage-10109001_best_params_trial2.json
+    type: output
+    stageOut: false
+    registerReplica: false
+  - lfn: gage-10109001_usgs_obs.csv
+    type: input
+  - lfn: forcings_utils.py
+    type: input
+  - lfn: rundir_gage-10109001_run.tar
+    type: input
+  - lfn: ngen_outputs_utils.py
+    type: input
+  - lfn: cal_utils.py
+    type: input
+  - lfn: ngiab_utils.py
+    type: input
+  profiles:
+    pegasus:
+      label: gage-10109001
+- type: job
+  name: calibrate
+  id: calibrate_gage_10109001_t3
+  nodeLabel: calibrate_gage-10109001_t3
+  arguments:
+  - --gage
+  - gage-10109001
+  - --rundir-tar
+  - rundir_gage-10109001_run.tar
+  - --obs
+  - gage-10109001_usgs_obs.csv
+  - --start
+  - '2017-10-01'
+  - --end
+  - '2021-09-30'
+  - --training-start
+  - '2019-10-01'
+  - --repetitions
+  - '200'
+  - --dds-trials
+  - '1'
+  - --seed
+  - '3'
+  - --output-params
+  - gage-10109001_best_params_trial3.json
+  - --output-iterations
+  - calibration/gage-10109001_calibration_iterations_trial3.csv
+  uses:
+  - lfn: ngiab_pegasus.py
+    type: input
+  - lfn: gage-10109001_best_params_trial3.json
+    type: output
+    stageOut: false
+    registerReplica: false
+  - lfn: gage-10109001_usgs_obs.csv
+    type: input
+  - lfn: forcings_utils.py
+    type: input
+  - lfn: rundir_gage-10109001_run.tar
+    type: input
+  - lfn: calibration/gage-10109001_calibration_iterations_trial3.csv
+    type: output
+    stageOut: false
+    registerReplica: false
+  - lfn: ngen_outputs_utils.py
+    type: input
+  - lfn: cal_utils.py
+    type: input
+  - lfn: ngiab_utils.py
+    type: input
+  profiles:
+    pegasus:
+      label: gage-10109001
+- type: job
+  name: calibrate
+  id: calibrate_gage_10109001_t4
+  nodeLabel: calibrate_gage-10109001_t4
+  arguments:
+  - --gage
+  - gage-10109001
+  - --rundir-tar
+  - rundir_gage-10109001_run.tar
+  - --obs
+  - gage-10109001_usgs_obs.csv
+  - --start
+  - '2017-10-01'
+  - --end
+  - '2021-09-30'
+  - --training-start
+  - '2019-10-01'
+  - --repetitions
+  - '200'
+  - --dds-trials
+  - '1'
+  - --seed
+  - '4'
+  - --output-params
+  - gage-10109001_best_params_trial4.json
+  - --output-iterations
+  - calibration/gage-10109001_calibration_iterations_trial4.csv
+  uses:
+  - lfn: ngiab_pegasus.py
+    type: input
+  - lfn: gage-10109001_best_params_trial4.json
+    type: output
+    stageOut: false
+    registerReplica: false
+  - lfn: gage-10109001_usgs_obs.csv
+    type: input
+  - lfn: forcings_utils.py
+    type: input
+  - lfn: rundir_gage-10109001_run.tar
+    type: input
+  - lfn: ngen_outputs_utils.py
+    type: input
+  - lfn: cal_utils.py
+    type: input
+  - lfn: ngiab_utils.py
+    type: input
+  - lfn: calibration/gage-10109001_calibration_iterations_trial4.csv
+    type: output
+    stageOut: false
+    registerReplica: false
+  profiles:
+    pegasus:
+      label: gage-10109001
+- type: job
+  name: calibrate
+  id: calibrate_gage_10109001_t5
+  nodeLabel: calibrate_gage-10109001_t5
+  arguments:
+  - --gage
+  - gage-10109001
+  - --rundir-tar
+  - rundir_gage-10109001_run.tar
+  - --obs
+  - gage-10109001_usgs_obs.csv
+  - --start
+  - '2017-10-01'
+  - --end
+  - '2021-09-30'
+  - --training-start
+  - '2019-10-01'
+  - --repetitions
+  - '200'
+  - --dds-trials
+  - '1'
+  - --seed
+  - '5'
+  - --output-params
+  - gage-10109001_best_params_trial5.json
+  - --output-iterations
+  - calibration/gage-10109001_calibration_iterations_trial5.csv
+  uses:
+  - lfn: gage-10109001_best_params_trial5.json
+    type: output
+    stageOut: false
+    registerReplica: false
+  - lfn: ngiab_pegasus.py
+    type: input
+  - lfn: calibration/gage-10109001_calibration_iterations_trial5.csv
+    type: output
+    stageOut: false
+    registerReplica: false
+  - lfn: gage-10109001_usgs_obs.csv
+    type: input
+  - lfn: forcings_utils.py
+    type: input
+  - lfn: rundir_gage-10109001_run.tar
+    type: input
+  - lfn: ngen_outputs_utils.py
+    type: input
+  - lfn: cal_utils.py
+    type: input
+  - lfn: ngiab_utils.py
+    type: input
+  profiles:
+    pegasus:
+      label: gage-10109001
+- type: job
+  name: select_best_params
+  id: selectbest_gage_10109001
+  nodeLabel: selectbest_gage-10109001
+  arguments:
+  - --gage
+  - gage-10109001
+  - --trial-params
+  - gage-10109001_best_params_trial1.json
+  - gage-10109001_best_params_trial2.json
+  - gage-10109001_best_params_trial3.json
+  - gage-10109001_best_params_trial4.json
+  - gage-10109001_best_params_trial5.json
+  - --trial-iterations
+  - calibration/gage-10109001_calibration_iterations_trial1.csv
+  - calibration/gage-10109001_calibration_iterations_trial2.csv
+  - calibration/gage-10109001_calibration_iterations_trial3.csv
+  - calibration/gage-10109001_calibration_iterations_trial4.csv
+  - calibration/gage-10109001_calibration_iterations_trial5.csv
+  - --output-params
+  - gage-10109001_best_params.json
+  - --output-iterations
+  - calibration/gage-10109001_calibration_iterations.csv
+  uses:
+  - lfn: calibration/gage-10109001_calibration_iterations.csv
+    type: output
+    stageOut: true
+    registerReplica: false
+  - lfn: gage-10109001_best_params.json
+    type: output
+    stageOut: true
+    registerReplica: false
+  - lfn: gage-10109001_best_params_trial5.json
+    type: input
+  - lfn: gage-10109001_best_params_trial3.json
+    type: input
+  - lfn: calibration/gage-10109001_calibration_iterations_trial2.csv
+    type: input
+  - lfn: gage-10109001_best_params_trial1.json
+    type: input
+  - lfn: ngiab_pegasus.py
+    type: input
+  - lfn: gage-10109001_best_params_trial2.json
+    type: input
+  - lfn: calibration/gage-10109001_calibration_iterations_trial5.csv
+    type: input
+  - lfn: forcings_utils.py
+    type: input
+  - lfn: calibration/gage-10109001_calibration_iterations_trial1.csv
+    type: input
+  - lfn: calibration/gage-10109001_calibration_iterations_trial3.csv
+    type: input
+  - lfn: ngiab_utils.py
+    type: input
+  - lfn: ngen_outputs_utils.py
+    type: input
+  - lfn: cal_utils.py
+    type: input
+  - lfn: gage-10109001_best_params_trial4.json
+    type: input
+  - lfn: calibration/gage-10109001_calibration_iterations_trial4.csv
+    type: input
+  profiles:
+    pegasus:
+      label: gage-10109001
+- type: job
+  name: apply_params
+  id: apply_gage_10109001
+  nodeLabel: apply_gage-10109001
+  arguments:
+  - --gage
+  - gage-10109001
+  - --rundir-tar
+  - rundir_gage-10109001_run.tar
+  - --params
+  - gage-10109001_best_params.json
+  - --output
+  - rundir_gage-10109001_cal.tar
+  uses:
+  - lfn: gage-10109001_best_params.json
+    type: input
+  - lfn: ngiab_pegasus.py
+    type: input
+  - lfn: forcings_utils.py
+    type: input
+  - lfn: rundir_gage-10109001_run.tar
+    type: input
+  - lfn: rundir_gage-10109001_cal.tar
+    type: output
+    stageOut: false
+    registerReplica: false
+  - lfn: ngen_outputs_utils.py
+    type: input
+  - lfn: cal_utils.py
+    type: input
+  - lfn: ngiab_utils.py
+    type: input
+  profiles:
+    pegasus:
+      label: gage-10109001
+- type: job
+  name: outputs_analysis
+  id: analysis_gage_10109001_cal
+  nodeLabel: analysis_gage-10109001_cal
+  arguments:
+  - --gage
+  - gage-10109001
+  - --run-tar
+  - rundir_gage-10109001_cal.tar
+  - --obs
+  - gage-10109001_usgs_obs.csv
+  - --output-basin-means
+  - analysis/gage-10109001_basin_means_cal.csv
+  - --output-metrics
+  - analysis/gage-10109001_metrics_cal.csv
+  - --output-plot
+  - plots/gage-10109001_water_balance_cal.png
+  uses:
+  - lfn: ngiab_pegasus.py
+    type: input
+  - lfn: plots/gage-10109001_water_balance_cal.png
+    type: output
+    stageOut: true
+    registerReplica: false
+  - lfn: gage-10109001_usgs_obs.csv
+    type: input
+  - lfn: forcings_utils.py
+    type: input
+  - lfn: analysis/gage-10109001_basin_means_cal.csv
+    type: output
+    stageOut: true
+    registerReplica: false
+  - lfn: ngiab_utils.py
+    type: input
+  - lfn: ngen_outputs_utils.py
+    type: input
+  - lfn: cal_utils.py
+    type: input
+  - lfn: rundir_gage-10109001_cal.tar
+    type: input
+  - lfn: analysis/gage-10109001_metrics_cal.csv
+    type: output
+    stageOut: true
+    registerReplica: false
+  profiles:
+    pegasus:
+      label: gage-10109001
+- type: job
+  name: teehr_evaluation
+  id: teehr_gage_10109001_cal
+  nodeLabel: teehr_gage-10109001_cal
+  arguments:
+  - --gage
+  - gage-10109001
+  - --run-tar
+  - rundir_gage-10109001_cal.tar
+  - --obs
+  - gage-10109001_usgs_obs.csv
+  - --start
+  - '2017-10-01'
+  - --end
+  - '2021-09-30'
+  - --training-start
+  - '2019-10-01'
+  - --output-metrics
+  - analysis/gage-10109001_teehr_metrics_cal.csv
+  - --output-plot
+  - plots/gage-10109001_teehr_cal.png
+  uses:
+  - lfn: ngiab_pegasus.py
+    type: input
+  - lfn: analysis/gage-10109001_teehr_metrics_cal.csv
+    type: output
+    stageOut: true
+    registerReplica: false
+  - lfn: gage-10109001_usgs_obs.csv
+    type: input
+  - lfn: plots/gage-10109001_teehr_cal.png
+    type: output
+    stageOut: true
+    registerReplica: false
+  - lfn: forcings_utils.py
+    type: input
+  - lfn: ngiab_utils.py
+    type: input
+  - lfn: ngen_outputs_utils.py
+    type: input
+  - lfn: cal_utils.py
+    type: input
+  - lfn: rundir_gage-10109001_cal.tar
+    type: input
+  profiles:
+    dagman:
+      RETRY: '2'
+    pegasus:
+      label: gage-10109001
+- type: job
+  name: summarize
+  id: summarize
+  nodeLabel: summarize
+  arguments:
+  - --metrics
+  - analysis/gage-10109001_metrics.csv
+  - --metrics
+  - analysis/gage-10109001_teehr_metrics.csv
+  - --metrics
+  - analysis/gage-10109001_metrics_cal.csv
+  - --metrics
+  - analysis/gage-10109001_teehr_metrics_cal.csv
+  - --output-csv
+  - summary/summary_metrics.csv
+  - --output-plot
+  - summary/summary_metrics.png
+  uses:
+  - lfn: analysis/gage-10109001_metrics.csv
+    type: input
+  - lfn: ngiab_pegasus.py
+    type: input
+  - lfn: analysis/gage-10109001_teehr_metrics.csv
+    type: input
+  - lfn: analysis/gage-10109001_teehr_metrics_cal.csv
+    type: input
+  - lfn: forcings_utils.py
+    type: input
+  - lfn: ngen_outputs_utils.py
+    type: input
+  - lfn: cal_utils.py
+    type: input
+  - lfn: summary/summary_metrics.csv
+    type: output
+    stageOut: true
+    registerReplica: false
+  - lfn: ngiab_utils.py
+    type: input
+  - lfn: analysis/gage-10109001_metrics_cal.csv
+    type: input
+  - lfn: summary/summary_metrics.png
+    type: output
+    stageOut: true
+    registerReplica: false
+jobDependencies:
+- id: fetch_hydrofabric
+  children:
+  - subset_gage_10109001
+- id: subset_gage_10109001
+  children:
+  - realization_gage_10109001
+  - forcings_gage_10109001
+  - assemble_gage_10109001
+- id: forcings_gage_10109001
+  children:
+  - assemble_gage_10109001
+- id: realization_gage_10109001
+  children:
+  - assemble_gage_10109001
+- id: assemble_gage_10109001
+  children:
+  - run_gage_10109001
+- id: obs_gage_10109001
+  children:
+  - calibrate_gage_10109001_t5
+  - calibrate_gage_10109001_t3
+  - analysis_gage_10109001
+  - calibrate_gage_10109001_t4
+  - run_gage_10109001
+  - teehr_gage_10109001
+  - teehr_gage_10109001_cal
+  - analysis_gage_10109001_cal
+  - calibrate_gage_10109001_t2
+  - calibrate_gage_10109001_t1
+- id: run_gage_10109001
+  children:
+  - calibrate_gage_10109001_t5
+  - calibrate_gage_10109001_t3
+  - analysis_gage_10109001
+  - calibrate_gage_10109001_t4
+  - teehr_gage_10109001
+  - apply_gage_10109001
+  - calibrate_gage_10109001_t2
+  - calibrate_gage_10109001_t1
+- id: analysis_gage_10109001
+  children:
+  - summarize
+- id: teehr_gage_10109001
+  children:
+  - summarize
+- id: calibrate_gage_10109001_t1
+  children:
+  - selectbest_gage_10109001
+- id: calibrate_gage_10109001_t2
+  children:
+  - selectbest_gage_10109001
+- id: calibrate_gage_10109001_t3
+  children:
+  - selectbest_gage_10109001
+- id: calibrate_gage_10109001_t4
+  children:
+  - selectbest_gage_10109001
+- id: calibrate_gage_10109001_t5
+  children:
+  - selectbest_gage_10109001
+- id: selectbest_gage_10109001
+  children:
+  - apply_gage_10109001
+- id: apply_gage_10109001
+  children:
+  - analysis_gage_10109001_cal
+  - teehr_gage_10109001_cal
+- id: analysis_gage_10109001_cal
+  children:
+  - summarize
+- id: teehr_gage_10109001_cal
+  children:
+  - summarize

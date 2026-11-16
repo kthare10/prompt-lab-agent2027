@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "generate_forcings",
+    "_type": "file",
+    "_attributes": {
+      "user": "ubuntu",
+      "size": "2014",
+      "ctime": "2026-08-17T18:11:04.974677",
+      "checksum.type": "sha256",
+      "checksum.value": "6800fb70131ddea3ea1ec8be66f974767305247bb77581536f7ef558a848b928",
+      "checksum.timing": "0.021"
+    }
+  },
+  {
+    "_id": "generate_realization",
+    "_type": "file",
+    "_attributes": {
+      "user": "ubuntu",
+      "size": "4021",
+      "ctime": "2026-08-17T18:11:04.974677",
+      "checksum.type": "sha256",
+      "checksum.value": "1dc8e83748e1b8aae24435888ff07379026aa07b1a93038272d42985e3adf049",
+      "checksum.timing": "0.022"
+    }
+  }
+]

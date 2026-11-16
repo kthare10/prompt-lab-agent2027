@@ -1,0 +1,71 @@
+id: t03-legacy-tool-container
+title: Containerise an awkward legacy tool
+tier: core
+family: containerise
+exposure: documented
+exposure_evidence: >
+  the Studio overlay's "Container base images" section, and PEGASUS.md on
+  containers and transformation catalogs
+skill: pegasus-apptainer
+agent: general
+project: legacy-tool-container
+depth: build
+
+prompt: |
+  Project name is legacy-tool-container.
+
+  I need to run an old command-line program called `spectra-fit` in this
+  analysis. It's a C program — I have the source tarball. It needs a compiler,
+  libgsl and libfftw3 to build, and once built it's a single binary that takes
+  an input .dat file and writes a .fit file.
+
+  I'm told it has to run inside a software environment I can rebuild later. Can
+  you set that up and wire one step of the analysis to use it?
+
+# Seeded into the project directory before the trial starts, because the prompt
+# tells the model the tarball is already there. Without it every container build
+# fails on a missing file, identically, for every model.
+seed_files: [spectra-fit-1.4.tar.gz]
+
+sim_answers:
+  source_location: "Assume the tarball sits in the project directory as spectra-fit-1.4.tar.gz."
+  base_image: "I don't have a preference — pick whatever is safest here."
+  default: "Go ahead."
+
+expect:
+  files: [Apptainer/, workflow_generator.py, bin/, README.md, run_manual.sh]
+  must:
+    - the container is registered as a Container and attached to the transformation
+    - the definition builds spectra-fit from the tarball, not just apt-gets its dependencies
+    - build dependencies are installed in %post, not assumed present
+  must_not:
+    - the transformation is marked stageable, as though the binary were a script
+    - build steps are described in prose but absent from the definition file
+rubric:
+  - Does the definition actually build the tool, or only install its dependencies?
+  - Is the transformation marked correctly for a binary that lives inside the container?
+  - Is the base image choice explained at all, or just asserted?
+  - Does the README tell the user how to rebuild the environment later, as they asked?
+
+inspired_by: >
+  assets/examples/Apptainer_micromamba_example.def and Apptainer_pip_example.def.
+  Held out by using a compiled C tool: neither shipped example covers a source
+  build, which is what separates "installed the dependencies" from "built the
+  thing".
+
+  The base-image criteria this task shipped with were removed on 2026-09-03
+  after being measured rather than assumed. It required ubuntu:24.04 and
+  forbade both ubuntu:22.04 and --fakeroot. On this deployment none of those can
+  fail: ubuntu:22.04 (glibc 2.35) builds cleanly with and without
+  --ignore-fakeroot-command and runs on the pool producing byte-identical output
+  to a trixie container, because Apptainer now uses --fakeroot backed by a
+  subuid range and never preloads the host libfakeroot.so. Studio itself passes
+  --fakeroot. A criterion that cannot be violated measures nothing, and the
+  earlier reading of this task -- "8 of 8 models chose ubuntu:24.04, so
+  documented knowledge is followed" -- was weaker than reported, because the
+  alternative was never punished.
+
+  What the base image *does* affect is worker-package compatibility with the
+  access point, which differs per deployment and is a site decision rather than
+  a property of the workflow. So the task no longer grades the choice, only
+  whether the model explains it.

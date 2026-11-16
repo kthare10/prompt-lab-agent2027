@@ -1,0 +1,26 @@
+x-pegasus:
+  apiLang: python
+  createdBy: ubuntu
+  createdOn: 08-31-26T15:24:08Z
+pegasus: 5.0.4
+replicas:
+- lfn: ngiab_pegasus.py
+  pfns:
+  - site: local
+    pfn: file:///home/ubuntu/nextgen-workflow/bin/lib/ngiab_pegasus.py
+- lfn: ngen_outputs_utils.py
+  pfns:
+  - site: local
+    pfn: file:///home/ubuntu/nextgen-workflow/bin/lib/ngen_outputs_utils.py
+- lfn: forcings_utils.py
+  pfns:
+  - site: local
+    pfn: file:///home/ubuntu/nextgen-workflow/bin/lib/forcings_utils.py
+- lfn: cal_utils.py
+  pfns:
+  - site: local
+    pfn: file:///home/ubuntu/nextgen-workflow/bin/lib/cal_utils.py
+- lfn: ngiab_utils.py
+  pfns:
+  - site: local
+    pfn: file:///home/ubuntu/nextgen-workflow/bin/lib/ngiab_utils.py

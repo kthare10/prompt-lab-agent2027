@@ -1,0 +1,66 @@
+id: t07-review-broken
+title: Review a workflow with six seeded defects
+tier: core
+family: review
+exposure: documented
+exposure_evidence: >
+  every seeded defect corresponds to a documented pitfall
+skill: pegasus-review
+agent: general
+project: rainfall-totals
+depth: none
+
+# The project under review, seeded where the user says it already is. Ground
+# truth lives in fixtures/review-01-DEFECTS.md — deliberately *outside* the
+# seeded directory, because everything inside it is readable by the model.
+seed_files:
+  - from: review-01
+    to: .
+
+prompt: |
+  Have a look at the rainfall-totals analysis and tell me what's wrong with it.
+  I haven't run it yet and I'd rather find out now than after it fails.
+
+sim_answers:
+  default: "Just tell me what you find."
+
+expect:
+  ground_truth_defects:
+    - station-metadata.csv is an input to every summarise job but has no replica-catalog entry
+    - summarise.py discovers its inputs with glob instead of taking them as arguments
+    - the Container is declared and staged but never attached to either Transformation
+    - summarise.py is registered in the replica catalog instead of the transformation catalog
+    - the wrapper writes results/<gauge>.tab while the job declares the output as <gauge>.tab
+    - rainfall-report.csv has stage_out=False, so the user never receives it
+  not_defects:
+    - the debian:trixie base image is correct for this host
+    - installing curl/wget in the container definition is deliberate, not a mistake
+  scoring: recall over the six, plus false-positive count
+
+# L1, not mechanical. The rubric used to say "mechanical, no judgement needed",
+# and nothing mechanical scored it: `ground_truth_defects` is prose that L0 never
+# reads, exactly as `expect.jobs` / `expect.dag` went unread until dag_checks.
+# Keyword matching was considered and rejected — a model that writes "the
+# container is never used" has found "declared but never attached", and a matcher
+# that misses that is measuring phrasing. The judge already cites evidence per
+# criterion, which is what recall scoring needs.
+#
+# L0 cannot rank this task at all: `depth: none` means no files, no generator and
+# no flow stages, and the 18 measured cells took only four distinct L0 values —
+# a model with 33 tool calls and one with 7 both scored 0.626.
+rubric:
+  - Recall against the six seeded defects — how many were found, each with a quote?
+  - Precision — anything reported that is not on the list, especially the not_defects.
+  - For each defect found, does it name a fix as well as the problem?
+  - Is the report ordered by what would break the run first, or just a list?
+
+inspired_by: >
+  defect list drawn from the pitfalls sections of PEGASUS.md and from the four
+  generator defects recorded in marketplace commit 0bd0b99.
+
+  One of the original six was dropped on 2026-09-04: "Apptainer base image is
+  ubuntu:22.04 against this 24.04 host". It is no longer true — the host is
+  Debian trixie, and ubuntu:22.04 builds and runs here producing byte-identical
+  output to a trixie container, measured on the pool. Seeding it would have been
+  seeding a lie, and rewarding models for repeating stale guidance. A declared
+  but unattached Container replaces it. See fixtures/review-01-DEFECTS.md.

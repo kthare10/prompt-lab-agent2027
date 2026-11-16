@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "rundir_gage-10109001_run.tar",
+    "_type": "file",
+    "_attributes": {
+      "user": "ubuntu",
+      "size": "2733834240",
+      "ctime": "2026-08-31T16:07:32+00:00",
+      "checksum.type": "sha256",
+      "checksum.value": "622a71e6473fa721de23a8c659c8a0b1a53c22319eae1979e3dbdcf0bfe1d29b",
+      "checksum.timing": "8.83"
+    }
+  },
+  {
+    "_id": "plots/gage-10109001_hydrograph.png",
+    "_type": "file",
+    "_attributes": {
+      "user": "ubuntu",
+      "size": "92509",
+      "ctime": "2026-08-31T16:07:19+00:00",
+      "checksum.type": "sha256",
+      "checksum.value": "d644d51a109cab7a15987ee850aa8ebb4d0543d32702aa50aa4bdc2e7953c45a",
+      "checksum.timing": "0.0"
+    }
+  }
+]

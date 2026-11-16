@@ -1,0 +1,49 @@
+id: t04-tide-gauge-fetch
+title: Input that arrives from a URL
+tier: core
+family: build
+exposure: documented
+exposure_evidence: >
+  PEGASUS.md 'Getting External Data In: URL Inputs vs Fetch Jobs'
+skill: pegasus-scaffold
+agent: general
+project: tide-gauge-fetch
+depth: plan
+
+prompt: |
+  Name it tide-gauge-fetch.
+
+  The data I need isn't on this machine — it comes from a public web service.
+  For a list of tide gauge station IDs, each one has a CSV of water levels at a
+  URL like https://example-tides.org/api/v1/station/<id>/levels.csv
+
+  For each station I want the series cleaned up (drop obviously bad readings),
+  then a plot and a small stats file. Stations are listed in a config file I can
+  edit — I don't want to edit the workflow every time we add one.
+
+sim_answers:
+  station_list: "Put them in a JSON config in the project. Four example IDs is plenty."
+  auth: "No API key, it's open data."
+  bad_readings: "Anything outside -5 to +15 metres, and any gap flagged as null."
+  default: "Whatever is simplest to maintain."
+
+expect:
+  files: [workflow_generator.py, README.md, run_manual.sh, bin/, Apptainer/]
+  must:
+    - remote inputs are registered as replica-catalog entries with http/https URLs
+    - station list is read from a config file, not hardcoded in the DAG
+    - downstream jobs depend on the fetched file via File objects
+  must_not:
+    - a bespoke fetch job that curls inside a wrapper when direct URL staging would do
+    - credentials or tokens invented for an open endpoint
+
+rubric:
+  - Direct URL staging via the replica catalog, or a reflexive fetch job?
+  - Is the station list genuinely externalised?
+  - Does it explain to a non-specialist where the data comes from and what happens if the service is down?
+
+inspired_by: assets/examples/workflow_generator_soilmoisture.py,
+  workflow_generator_airquality.py and workflow_generator_earthquake.py — all
+  three fetch from public APIs and are parameterised by site/region/polygon id.
+  This is also a live regression test for marketplace commit 839739c, which
+  taught the skill direct URL staging instead of reflexive fetch jobs.

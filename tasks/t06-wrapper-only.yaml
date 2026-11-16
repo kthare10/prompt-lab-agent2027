@@ -1,0 +1,42 @@
+id: t06-wrapper-only
+title: One wrapper script, done properly
+tier: smoke
+family: containerise
+exposure: documented
+exposure_evidence: >
+  PEGASUS.md 'Wrapper Script Rules' and 'Finding Support Files'
+skill: pegasus-wrapper
+agent: general
+project: wrapper-only
+depth: generate
+
+prompt: |
+  Project wrapper-only.
+
+  I just need the wrapper for one step. It takes a reference file and one or
+  more sample files, runs a program called `qmap` on them, and produces a
+  results file and a log. If qmap fails I need the step to fail properly rather
+  than quietly carrying on.
+
+sim_answers:
+  qmap_args: "qmap --ref <ref> --in <sample> --out <results> and it writes progress to stderr."
+  multiple_samples: "One wrapper call per sample."
+  default: "Your judgement is fine."
+
+expect:
+  files: [bin/]
+  must:
+    - every input and output is an explicit command-line argument
+    - non-zero exit on tool failure (set -e or an explicit check)
+    - output written to the working directory, not an absolute path
+  must_not:
+    - scanning a directory to find its inputs
+    - using __file__ or a script-relative path to locate a staged support file
+
+rubric:
+  - Explicit file arguments throughout?
+  - Correct failure propagation?
+  - Does it avoid the staged-file path trap the guide calls out?
+
+inspired_by: assets/templates/wrapper_template.py and wrapper_template.sh,
+  plus assets/examples/wrapper_shell_example.sh.

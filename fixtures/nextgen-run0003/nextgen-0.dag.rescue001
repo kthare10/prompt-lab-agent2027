@@ -1,0 +1,92 @@
+# Rescue DAG file, created after running
+#   the nextgen-0.dag DAG file
+# Created 9/2/2026 09:33:41 UTC
+# Rescue DAG version: 2.0.1 (partial)
+#
+# Total number of Nodes: 49
+# Nodes premarked DONE: 33
+# Nodes that failed: 1
+#   calibrate_calibrate_gage_10109001_t5,<ENDLIST>
+
+DONE create_dir_nextgen_0_local
+RETRY create_dir_nextgen_0_local 1
+DONE stage_in_remote_local_0_0
+RETRY stage_in_remote_local_0_0 1
+DONE stage_in_local_local_9_0
+RETRY stage_in_local_local_9_0 1
+DONE stage_in_local_local_4_0
+RETRY stage_in_local_local_4_0 1
+DONE stage_in_local_local_5_0
+RETRY stage_in_local_local_5_0 1
+DONE stage_in_local_local_6_0
+RETRY stage_in_local_local_6_0 1
+DONE stage_in_local_local_7_0
+RETRY stage_in_local_local_7_0 1
+DONE stage_in_local_local_0_0
+RETRY stage_in_local_local_0_0 1
+DONE stage_in_local_local_1_0
+RETRY stage_in_local_local_1_0 1
+DONE stage_in_remote_local_5_0
+RETRY stage_in_remote_local_5_0 1
+DONE stage_in_local_local_2_0
+RETRY stage_in_local_local_2_0 1
+DONE stage_in_local_local_3_0
+RETRY stage_in_local_local_3_0 1
+DONE fetch_hydrofabric_fetch_hydrofabric
+RETRY fetch_hydrofabric_fetch_hydrofabric 2
+DONE fetch_usgs_obs_obs_gage_10109001
+RETRY fetch_usgs_obs_obs_gage_10109001 2
+DONE subset_hydrofabric_subset_gage_10109001
+RETRY subset_hydrofabric_subset_gage_10109001 1
+DONE clean_up_local_level_3_0
+RETRY clean_up_local_level_3_0 1
+DONE stage_out_local_local_0_0
+RETRY stage_out_local_local_0_0 1
+DONE generate_realization_realization_gage_10109001
+RETRY generate_realization_realization_gage_10109001 1
+DONE generate_forcings_forcings_gage_10109001
+RETRY generate_forcings_forcings_gage_10109001 1
+DONE clean_up_local_level_4_0
+RETRY clean_up_local_level_4_0 1
+DONE assemble_rundir_assemble_gage_10109001
+RETRY assemble_rundir_assemble_gage_10109001 1
+DONE clean_up_local_level_5_0
+RETRY clean_up_local_level_5_0 1
+DONE run_nextgen_run_gage_10109001
+RETRY run_nextgen_run_gage_10109001 1
+DONE clean_up_local_level_6_0
+RETRY clean_up_local_level_6_0 1
+DONE stage_out_local_local_4_0
+RETRY stage_out_local_local_4_0 1
+DONE outputs_analysis_analysis_gage_10109001
+RETRY outputs_analysis_analysis_gage_10109001 1
+DONE clean_up_local_level_7_0
+RETRY clean_up_local_level_7_0 1
+DONE calibrate_calibrate_gage_10109001_t3
+RETRY calibrate_calibrate_gage_10109001_t3 1
+DONE teehr_evaluation_teehr_gage_10109001
+RETRY teehr_evaluation_teehr_gage_10109001 2
+DONE calibrate_calibrate_gage_10109001_t2
+RETRY calibrate_calibrate_gage_10109001_t2 1
+RETRY calibrate_calibrate_gage_10109001_t5 1
+DONE calibrate_calibrate_gage_10109001_t4
+RETRY calibrate_calibrate_gage_10109001_t4 1
+DONE calibrate_calibrate_gage_10109001_t1
+RETRY calibrate_calibrate_gage_10109001_t1 1
+DONE stage_out_local_local_5_0
+RETRY stage_out_local_local_5_0 1
+RETRY select_best_params_selectbest_gage_10109001 1
+RETRY clean_up_local_level_8_0 1
+RETRY stage_out_local_local_6_0 1
+RETRY apply_params_apply_gage_10109001 1
+RETRY clean_up_local_level_9_0 1
+RETRY outputs_analysis_analysis_gage_10109001_cal 1
+RETRY teehr_evaluation_teehr_gage_10109001_cal 2
+RETRY clean_up_local_level_10_0 1
+RETRY stage_out_local_local_8_0 1
+RETRY clean_up_local_level_11_0 1
+RETRY summarize_summarize 1
+RETRY clean_up_local_level_12_0 1
+RETRY stage_out_local_local_9_0 1
+RETRY clean_up_local_level_13_0 1
+RETRY cleanup_nextgen_0_local 1
